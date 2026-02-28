@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>The B2B Tinkerers — Brand Strategy v1.1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --forest: #1C4A3A;
+    --cream:  #F5F0E8;
+    --lime:   #D4E84A;
+    --linen:  #E8E3D8;
+    --mid:    #2A6B54;
+    --ink:    #1A1A1A;
+    --gray:   #6B6B6B;
+    --pad: clamp(20px, 5vw, 64px);
+  }
+
+  html { scroll-behavior:smooth; color-scheme: light only; }
+  body { background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif; font-size:14px; line-height:1.75; -webkit-text-size-adjust:100%; }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background:var(--forest);
+    padding: clamp(36px, 6vw, 64px) var(--pad) clamp(32px, 5vw, 56px);
+    position:relative; overflow:hidden;
+  }
+  .doc-header::after {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse at 85% 20%, rgba(212,232,74,0.08) 0%, transparent 60%);
+    pointer-events:none;
+  }
+  .doc-header-label {
+    font-size:10px; font-weight:700; letter-spacing:0.22em;
+    text-transform:uppercase; color:var(--lime);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:16px;
+  }
+  .doc-header-label::before {
+    content:''; display:block; width:20px; height:1px; background:var(--lime);
+  }
+  .doc-title {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:clamp(32px, 7vw, 64px); font-weight:800;
+    letter-spacing:-0.04em; line-height:0.95;
+    color:var(--cream); margin-bottom:20px;
+  }
+  .doc-title span { color:var(--lime); }
+  .doc-subtitle {
+    font-size:clamp(13px, 2vw, 16px); color:rgba(245,240,232,0.75);
+    max-width:520px; line-height:1.7; margin-bottom:32px;
+  }
+  .doc-meta {
+    display:flex; gap:clamp(16px, 4vw, 40px); flex-wrap:wrap;
+    padding-top:24px; border-top:1px solid rgba(245,240,232,0.1);
+  }
+  .doc-meta-item { display:flex; flex-direction:column; gap:4px; }
+  .doc-meta-key { font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(245,240,232,0.55); }
+  .doc-meta-val { font-size:13px; color:rgba(245,240,232,0.85); font-weight:500; }
+
+  /* ── TOC ── */
+  .toc {
+    background:var(--linen);
+    padding:16px var(--pad);
+    display:flex; gap:6px; flex-wrap:wrap; align-items:center;
+    border-bottom:1px solid rgba(28,74,58,0.08);
+    position:sticky; top:0; z-index:10;
+  }
+  .toc-label {
+    font-size:9px; font-weight:700; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--forest); opacity:0.35;
+    margin-right:4px; white-space:nowrap;
+  }
+  .toc-item {
+    font-size:10px; font-weight:600; color:#1C4A3A;
+    background:transparent;
+    text-decoration:none; padding:4px 10px;
+    border:1px solid rgba(28,74,58,0.15);
+    cursor:pointer; transition:all 0.15s; white-space:nowrap;
+    font-family:'Inter',sans-serif;
+  }
+  .toc-item:hover { background:#1C4A3A; color:#F5F0E8; border-color:#1C4A3A; }
+
+  /* ── BODY ── */
+  .doc-body { max-width:860px; margin:0 auto; padding: clamp(36px, 6vw, 72px) var(--pad); background:#F5F0E8; }
+
+  /* ── SECTION ── */
+  .doc-section { margin-bottom: clamp(48px, 8vw, 80px); }
+  .section-header {
+    display:flex; align-items:baseline; gap:14px;
+    margin-bottom:28px; padding-bottom:14px;
+    border-bottom:2px solid var(--forest);
+    flex-wrap:wrap;
+  }
+  .section-num {
+    font-size:10px; font-weight:700; letter-spacing:0.2em;
+    text-transform:uppercase; color:var(--lime);
+    background:var(--forest); padding:3px 10px; flex-shrink:0;
+  }
+  .section-title {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:clamp(18px, 3vw, 22px); font-weight:800;
+    letter-spacing:-0.03em; color:var(--forest);
+  }
+
+  /* ── SUBSECTION ── */
+  .subsection { margin-bottom:32px; }
+  .subsection-title {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:14px; font-weight:700; letter-spacing:-0.02em;
+    color:var(--forest); margin-bottom:12px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .subsection-title::before {
+    content:''; display:block; width:14px; height:2px; background:var(--lime); flex-shrink:0;
+  }
+
+  /* ── TEXT ── */
+  p { color:#5a5a5a; margin-bottom:12px; line-height:1.8; }
+  strong { color:#1a1a1a; font-weight:600; }
+
+  /* ── HIGHLIGHT ── */
+  .highlight {
+    background:var(--forest);
+    padding:clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px);
+    margin:20px 0; border-left:3px solid var(--lime);
+  }
+  .highlight p { color:rgba(245,240,232,0.92); margin:0; }
+  .highlight strong { color:var(--lime); }
+  .highlight-label {
+    font-size:9px; font-weight:700; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--lime);
+    display:block; margin-bottom:10px; opacity:0.9;
+  }
+
+  /* ── INFO BOX ── */
+  .info-box {
+    background:var(--linen);
+    border-left:3px solid var(--forest);
+    padding:18px 22px; margin:16px 0;
+  }
+  .info-box p { color:#1a1a1a; margin:0; }
+
+  /* ── PROMISE BOX ── */
+  .promise-box {
+    padding:clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px);
+    margin:4px 0;
+  }
+  .promise-box.lime { background:var(--lime); }
+  .promise-box.dark { background:var(--forest); }
+  .promise-box.lime p { color:var(--forest); font-weight:600; margin:0; font-size:clamp(14px, 2vw, 16px); line-height:1.6; }
+  .promise-box.dark p { color:var(--lime); font-weight:600; margin:0; font-size:clamp(14px, 2vw, 16px); line-height:1.6; }
+  .promise-label {
+    font-size:9px; font-weight:700; letter-spacing:0.18em;
+    text-transform:uppercase; display:block; margin-bottom:8px;
+  }
+  .promise-box.lime .promise-label { color:rgba(28,74,58,0.65); }
+  .promise-box.dark .promise-label { color:rgba(212,232,74,0.85); }
+
+  /* ── TABLE ── */
+  .table-wrap { overflow-x:auto; margin:20px 0; -webkit-overflow-scrolling:touch; }
+  table { width:100%; border-collapse:collapse; min-width:400px; }
+  th {
+    background:var(--forest); color:var(--cream);
+    font-size:10px; font-weight:700; letter-spacing:0.15em;
+    text-transform:uppercase; padding:10px 14px; text-align:left;
+    white-space:nowrap;
+  }
+  td {
+    padding:12px 14px; border-bottom:1px solid var(--linen);
+    font-size:13px; color:#1a1a1a; vertical-align:top; line-height:1.6;
+  }
+  tr:last-child td { border:none; }
+  tr:nth-child(even) td { background:rgba(232,227,216,0.3); }
+
+  /* ── TWO COL ── */
+  .two-col {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap:2px; margin:20px 0;
+  }
+  .col-box { background:var(--linen); padding:clamp(16px, 3vw, 24px); }
+  .col-box-label {
+    font-size:9px; font-weight:700; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--forest); opacity:0.75;
+    display:block; margin-bottom:10px;
+  }
+  .col-box p { color:#1a1a1a; margin:0; font-size:13px; line-height:1.7; }
+
+  /* ── PILLS ── */
+  .pill-row { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0; }
+  .pill { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:5px 12px; }
+  .pill-lime { background:var(--lime); color:var(--forest); }
+  .pill-forest { background:var(--forest); color:var(--cream); }
+  .pill-outline { border:1.5px solid rgba(28,74,58,0.2); color:var(--forest); }
+
+  /* ── NUM LIST ── */
+  .num-list { display:flex; flex-direction:column; gap:0; margin:16px 0; }
+  .num-item {
+    display:flex; gap:16px; align-items:flex-start;
+    padding:16px 0; border-bottom:1px solid var(--linen);
+  }
+  .num-item:last-child { border:none; }
+  .num-badge {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:11px; font-weight:700;
+    color:var(--lime); background:var(--forest);
+    min-width:28px; height:28px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    letter-spacing:0.05em; margin-top:1px;
+    padding:0 6px;
+  }
+  .num-content { flex:1; min-width:0; }
+  .num-title { font-size:14px; font-weight:600; color:#1a1a1a; margin-bottom:4px; }
+  .num-body { font-size:13px; color:#5a5a5a; line-height:1.65; margin:0; }
+
+  /* ── SLIDERS ── */
+  .sliders { display:flex; flex-direction:column; gap:20px; margin:20px 0; }
+  .slider-row { display:flex; flex-direction:column; gap:6px; }
+  .slider-name { font-size:11px; font-weight:700; color:#1C4A3A; letter-spacing:0.05em; text-transform:uppercase; }
+  .slider-labels { display:flex; justify-content:space-between; }
+  .slider-label-l, .slider-label-r { font-size:11px; color:#5a5a5a; }
+  .slider-track { height:5px; background:#E8E3D8; position:relative; }
+  .slider-fill { position:absolute; top:0; left:0; height:100%; background:var(--forest); }
+  .slider-dot {
+    position:absolute; top:50%;
+    width:14px; height:14px;
+    background:var(--lime); border:2px solid var(--forest);
+    border-radius:50%; transform:translate(-50%,-50%);
+  }
+
+  /* ── STATS GRID ── */
+  .stats-row {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:2px; margin:20px 0;
+  }
+  .stat-box { background:var(--forest); padding:clamp(16px, 3vw, 24px); }
+  .stat-box.alt { background:var(--lime); }
+  .stat-n {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:clamp(28px, 5vw, 36px); font-weight:800;
+    letter-spacing:-0.05em; color:var(--lime);
+    display:block; line-height:1; margin-bottom:6px;
+  }
+  .stat-box.alt .stat-n { color:var(--forest); }
+  .stat-l { font-size:11px; color:rgba(245,240,232,0.82); line-height:1.5; }
+  .stat-box.alt .stat-l { color:rgba(28,74,58,0.8); }
+  .stat-source { font-size:9px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:rgba(245,240,232,0.45); display:block; margin-top:8px; }
+  .stat-box.alt .stat-source { color:rgba(28,74,58,0.5); }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background:var(--ink);
+    padding:24px var(--pad);
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:12px;
+  }
+  .doc-footer-logo { font-family:'Inter',sans-serif; font-size:13px; font-weight:700; letter-spacing:-0.02em; color:var(--cream); }
+  .doc-footer-logo span { color:var(--lime); }
+  .doc-footer-copy { font-size:11px; color:rgba(245,240,232,0.2); }
+
+  /* ── SCROLL OFFSET for sticky TOC ── */
+  .doc-section {
+    scroll-margin-top: 70px;
+  }
+
+  /* ── RESPONSIVE BREAKPOINTS ── */
+  @media (max-width: 600px) {
+    .toc { padding:12px 16px; gap:4px; overflow-x:auto; flex-wrap:nowrap; }
+    .toc-label { display:none; }
+    .toc-item { font-size:9px; padding:3px 8px; }
+    .doc-meta { gap:16px; }
+    .two-col { grid-template-columns:1fr; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .num-badge { font-size:10px; min-width:24px; height:24px; }
+  }
+
+  @media (max-width: 400px) {
+    .stats-row { grid-template-columns:1fr; }
+    .doc-title { font-size:28px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<div class="doc-header">
+  <div class="doc-header-label">Brand Strategy Document</div>
+  <div class="doc-title">The B2B <span>Tinkerers</span></div>
+  <p class="doc-subtitle">Brand strategy, positioning, tone of voice, messaging architecture and engagement model. Version 1.1 — Confidential.</p>
+  <div class="doc-meta">
+    <div class="doc-meta-item">
+      <span class="doc-meta-key">Version</span>
+      <span class="doc-meta-val">1.1</span>
+    </div>
+    <div class="doc-meta-item">
+      <span class="doc-meta-key">Status</span>
+      <span class="doc-meta-val">In progress</span>
+    </div>
+    <div class="doc-meta-item">
+      <span class="doc-meta-key">Language</span>
+      <span class="doc-meta-val">English (primary)</span>
+    </div>
+    <div class="doc-meta-item">
+      <span class="doc-meta-key">Market</span>
+      <span class="doc-meta-val">Europe · US · Asia-Pacific</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TOC ══ -->
+<div class="toc">
+  <span class="toc-label">Contents</span>
+  <button class="toc-item" onclick="document.getElementById('s01').scrollIntoView({behavior:'smooth',block:'start'})">01 Origin</button>
+  <button class="toc-item" onclick="document.getElementById('s02').scrollIntoView({behavior:'smooth',block:'start'})">02 Who we serve</button>
+  <button class="toc-item" onclick="document.getElementById('s03').scrollIntoView({behavior:'smooth',block:'start'})">03 The problem</button>
+  <button class="toc-item" onclick="document.getElementById('s04').scrollIntoView({behavior:'smooth',block:'start'})">04 Positioning</button>
+  <button class="toc-item" onclick="document.getElementById('s05').scrollIntoView({behavior:'smooth',block:'start'})">05 Value prop</button>
+  <button class="toc-item" onclick="document.getElementById('s06').scrollIntoView({behavior:'smooth',block:'start'})">06 Differentiators</button>
+  <button class="toc-item" onclick="document.getElementById('s07').scrollIntoView({behavior:'smooth',block:'start'})">07 Engagement</button>
+  <button class="toc-item" onclick="document.getElementById('s08').scrollIntoView({behavior:'smooth',block:'start'})">08 Promise</button>
+  <button class="toc-item" onclick="document.getElementById('s09').scrollIntoView({behavior:'smooth',block:'start'})">09 Tone</button>
+  <button class="toc-item" onclick="document.getElementById('s10').scrollIntoView({behavior:'smooth',block:'start'})">10 Messaging</button>
+  <button class="toc-item" onclick="document.getElementById('s11').scrollIntoView({behavior:'smooth',block:'start'})" style="border-color:rgba(28,74,58,0.4);color:#1C4A3A;font-weight:700">↳ Motion Tinkerers</button>
+</div>
+
+<div class="doc-body">
+
+  <!-- 01 -->
+  <div class="doc-section" id="s01">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <span class="section-title">Context & Origin</span>
+    </div>
+    <p>The B2B Tinkerers was born from a personal and professional reality. After 12+ years leading marketing teams in B2B industrial and technology companies — including THIELMANN and Mimacom/Flowable — the founder identified a persistent gap in the market.</p>
+    <div class="num-list">
+      <div class="num-item">
+        <div class="num-badge">01</div>
+        <div class="num-content">
+          <div class="num-title">Missing strategic leadership</div>
+          <p class="num-body">Most B2B companies of medium size have marketing teams but no strategic leadership. Activities happen, but without direction.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">02</div>
+        <div class="num-content">
+          <div class="num-title">Agency vs. insider perspective</div>
+          <p class="num-body">External agencies bring an agency perspective, not a business one. They optimise for deliverables, not for outcomes.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">03</div>
+        <div class="num-content">
+          <div class="num-title">Activity without impact</div>
+          <p class="num-body">Marketing activity rarely connects to business outcomes. Campaigns run, budgets are spent, but the bridge to revenue is missing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="info-box">
+      <p><strong>'Tinkerers' is plural by design</strong> — the vision is a firm where multiple senior practitioners, each with deep insider experience, serve clients across markets. The founder is the first Tinkerer, but not the last.</p>
+    </div>
+  </div>
+
+  <!-- 02 -->
+  <div class="doc-section" id="s02">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <span class="section-title">Who We Serve</span>
+    </div>
+    <p>The common thread is not company size — it is the situation. We work with CEOs and founders of B2B tech and industrial companies where marketing has no strategic direction.</p>
+    <div class="two-col">
+      <div class="col-box">
+        <span class="col-box-label">The client</span>
+        <p>CEO or founder of a B2B tech or industrial company. Has a marketing team but no real strategic direction. Marketing executes but doesn't decide.</p>
+      </div>
+      <div class="col-box">
+        <span class="col-box-label">The situation</span>
+        <p>Marketing spends budget but the CEO can't tell if it's working. No clear connection between what marketing does and what the business needs.</p>
+      </div>
+    </div>
+    <div class="subsection">
+      <div class="subsection-title">Who we are NOT for</div>
+      <div class="num-list">
+        <div class="num-item">
+          <div class="num-badge">✕</div>
+          <div class="num-content"><p class="num-body">Companies looking for a traditional agency to produce content or run campaigns.</p></div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">✕</div>
+          <div class="num-content"><p class="num-body">Junior marketing managers seeking tactical support — they may see us as competition, not help.</p></div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">✕</div>
+          <div class="num-content"><p class="num-body">Companies that want more marketing activity. We are for companies that want better marketing outcomes.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 -->
+  <div class="doc-section" id="s03">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <span class="section-title">The Problem We Solve</span>
+    </div>
+    <p>The real problem is not a lack of marketing talent or budget. It is a lack of alignment between marketing and business.</p>
+    <div class="highlight">
+      <span class="highlight-label">Core insight</span>
+      <p><strong>Marketing teams measure activity. CEOs need to see impact on the business.</strong> Nobody has built the bridge between the two — and that gap is costing B2B companies real money.</p>
+    </div>
+    <div class="num-list">
+      <div class="num-item">
+        <div class="num-badge">01</div>
+        <div class="num-content">
+          <div class="num-title">Marketing and business are not aligned</div>
+          <p class="num-body">Marketing has its own objectives. Sales has theirs. The CEO has the business goals. Nobody is working from the same page.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">02</div>
+        <div class="num-content">
+          <div class="num-title">Activity is not the same as impact</div>
+          <p class="num-body">Paid campaigns, events, content — all running. But when someone asks "is it working?", the honest answer is: we don't really know.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">03</div>
+        <div class="num-content">
+          <div class="num-title">The brand doesn't reflect where you're going</div>
+          <p class="num-body">The market has changed. The business has evolved. But the brand still says what it said three years ago.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">04</div>
+        <div class="num-content">
+          <div class="num-title">The marketing plan exists. But nobody follows it</div>
+          <p class="num-body">It's on a slide deck somewhere. It doesn't connect to real business objectives — so it gets ignored.</p>
+        </div>
+      </div>
+    </div>
+    <div class="highlight">
+      <span class="highlight-label">The twist</span>
+      <p><strong>Your marketing team is not the problem.</strong> They have the skills. They have the energy. What they're missing is direction, alignment, and someone who has sat in that chair before.</p>
+    </div>
+  </div>
+
+  <!-- 04 -->
+  <div class="doc-section" id="s04">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <span class="section-title">Strategic Positioning</span>
+    </div>
+    <div class="highlight">
+      <span class="highlight-label">Our positioning</span>
+      <p><strong>We are the strategic marketing firm that thinks like an insider.</strong><br><br>Not an agency with resources to sell. Not a consultant with a generic framework. A firm that has sat in your chair — and knows exactly what it takes to make marketing move the business forward.</p>
+    </div>
+    <div class="subsection">
+      <div class="subsection-title">The Insider Advantage</div>
+      <div class="num-list">
+        <div class="num-item">
+          <div class="num-badge">→</div>
+          <div class="num-content"><p class="num-body">We know what a realistic marketing budget looks like from the inside.</p></div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">→</div>
+          <div class="num-content"><p class="num-body">We know which activities can be done with the existing team and which need to be outsourced.</p></div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">→</div>
+          <div class="num-content"><p class="num-body">We know how to connect marketing spend to business outcomes in a conversation with a CEO.</p></div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">→</div>
+          <div class="num-content"><p class="num-body">We know the difference between a plan that looks good on paper and one that will actually be executed.</p></div>
+        </div>
+      </div>
+      <div class="info-box" style="margin-top:16px;">
+        <p>An agency sells you resources. An insider helps you use what you already have — <strong>better</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 -->
+  <div class="doc-section" id="s05">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <span class="section-title">Value Proposition</span>
+    </div>
+    <div class="two-col">
+      <div class="col-box">
+        <span class="col-box-label">What we deliver</span>
+        <p>Marketing aligned with business objectives, measurable in terms that matter to the business, executed with the team that already exists.</p>
+      </div>
+      <div class="col-box">
+        <span class="col-box-label">What we are not</span>
+        <p>A content factory. A campaign manager. An agency that charges by deliverable and disappears when the project ends.</p>
+      </div>
+    </div>
+    <div class="subsection" style="margin-top:28px;">
+      <div class="subsection-title">The Three Dimensions of Impact</div>
+      <div class="num-list">
+        <div class="num-item">
+          <div class="num-badge">01</div>
+          <div class="num-content">
+            <div class="num-title">More business</div>
+            <p class="num-body">Pipeline, qualified leads, and revenue attributed to marketing. Not just activity metrics.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">02</div>
+          <div class="num-content">
+            <div class="num-title">Marketing-business alignment</div>
+            <p class="num-body">Both teams working with the same objectives, the same language, and the same definition of success.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">03</div>
+          <div class="num-content">
+            <div class="num-title">Brand coherence</div>
+            <p class="num-body">What the company says externally reflects what it actually is and where it is going.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 -->
+  <div class="doc-section" id="s06">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <span class="section-title">Key Differentiators</span>
+    </div>
+    <div class="num-list">
+      <div class="num-item">
+        <div class="num-badge">01</div>
+        <div class="num-content">
+          <div class="num-title">Insider perspective</div>
+          <p class="num-body">We have led marketing from the inside. We understand internal politics, budget cycles, pressure from sales, and the CEO's real priorities. We don't arrive with assumptions — we arrive with recognition.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">02</div>
+        <div class="num-content">
+          <div class="num-title">Cross-sector pattern recognition</div>
+          <p class="num-body">Working across multiple clients and sectors simultaneously gives us visibility into a wide range of projects and market realities. When you hire The B2B Tinkerers, you are not hiring one CMO's experience — you are hiring exposure to many fronts at once.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">03</div>
+        <div class="num-content">
+          <div class="num-title">AI & hybrid marketing strategy</div>
+          <p class="num-body">We help clients define the marketing team of the future: where humans lead, where agents execute, and how both work together. Strategy first, infrastructure second.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">04</div>
+        <div class="num-content">
+          <div class="num-title">Leave-behind independence</div>
+          <p class="num-body">We are not building dependency. Our engagements are designed to leave the client more capable, not more reliant on us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 -->
+  <div class="doc-section" id="s07">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <span class="section-title">Engagement Model</span>
+    </div>
+    <p>Depth first, then continuity. Three phases — each with a clear purpose and a natural transition to the next.</p>
+    <div class="num-list">
+      <div class="num-item">
+        <div class="num-badge">01</div>
+        <div class="num-content">
+          <div class="num-title">Audit & Diagnosis</div>
+          <p class="num-body">Understand the current state: positioning, brand, activities, team, business objectives. The natural entry point — low risk for the client, high value from day one.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">02</div>
+        <div class="num-content">
+          <div class="num-title">Strategic Build</div>
+          <p class="num-body">Positioning, GTM strategy, marketing plan, AI & hybrid team setup. Designed for the client's team, budget, and reality — not for a presentation.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">03</div>
+        <div class="num-content">
+          <div class="num-title">Advisory Retainer / Fractional CMO</div>
+          <p class="num-body">Flexible ongoing engagement — from a light monthly advisory retainer to a more active Fractional CMO role. Senior marketing leadership without the full-time cost. A fraction of a CMO salary, the same strategic impact.</p>
+        </div>
+      </div>
+      <div class="num-item">
+        <div class="num-badge">04</div>
+        <div class="num-content">
+          <div class="num-title">Project Execution</div>
+          <p class="num-body">The audit surfaces gaps. Some of those gaps require execution — a rebranding, a new website, a platform migration, a campaign build. These are scoped and quoted separately as standalone projects, and appear in the client's roadmap as concrete next steps.</p>
+          <p class="num-body" style="margin-top:8px">Execution is flexible by design: projects can be led directly with the support of trusted third parties, or we step in as project lead when the client already has their own supplier. The key is that strategic ownership stays consistent — the same person who defined what needs to happen also ensures it happens correctly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <p><strong>On projects:</strong> A project only enters the roadmap if it was identified through the audit — not because it's a service we want to sell. This keeps the client's trust intact and the scope honest.</p>
+    </div>
+
+    <div class="subsection" style="margin-top:36px">
+      <div class="subsection-title">Martech Review</div>
+      <p>A dedicated service that sits across all phases of the engagement. Most B2B mid-market companies have accumulated tools over time — without a clear architecture, without full adoption, and often paying for platforms nobody uses. The review brings clarity and ROI back to the stack.</p>
+      <div class="num-list" style="margin-top:16px">
+        <div class="num-item">
+          <div class="num-badge">01</div>
+          <div class="num-content">
+            <div class="num-title">Stack audit</div>
+            <p class="num-body">Map every tool in use: what it does, who uses it, how much it costs, and whether it's actually being used. Most companies are surprised by what they find.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">02</div>
+          <div class="num-content">
+            <div class="num-title">Tool recommendation</div>
+            <p class="num-body">Based on the team's size, maturity, and objectives — not on vendor relationships. CRM, marketing automation, analytics, SEO, ABM, and AI tooling assessed against what the company actually needs and can realistically operate.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">03</div>
+          <div class="num-content">
+            <div class="num-title">Implementation & migration</div>
+            <p class="num-body">From selection to go-live. Managed directly or in coordination with the client's existing IT or agency resources. Configuration, data migration, integrations, and QA.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">04</div>
+          <div class="num-content">
+            <div class="num-title">Team enablement</div>
+            <p class="num-body">A tool nobody knows how to use is a tool nobody uses. Training is built into every implementation — tailored to the team's role, not a generic vendor tutorial.</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box">
+        <p><strong>On Martech:</strong> The goal is never the most sophisticated stack. The goal is the most effective stack for that specific team. Simpler, well-adopted, and properly integrated beats complex and underused every time.</p>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:16px">
+      <p><strong>On the retainer:</strong> The goal is not to create dependency. The retainer exists to maintain direction, catch drift early, and provide a senior voice when decisions matter.</p>
+    </div>
+  </div>
+
+  <!-- 08 -->
+  <div class="doc-section" id="s08">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <span class="section-title">Brand Promise</span>
+    </div>
+    <p>Two expressions of the same promise. Both approved.</p>
+    <div class="promise-box lime">
+      <span class="promise-label">Primary</span>
+      <p>We don't do more marketing. We do marketing that works.</p>
+    </div>
+    <div class="promise-box dark">
+      <span class="promise-label">Secondary</span>
+      <p>Less noise. More signal. Real growth.</p>
+    </div>
+  </div>
+
+  <!-- 09 -->
+  <div class="doc-section" id="s09">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <span class="section-title">Tone of Voice</span>
+    </div>
+    <p>The B2B Tinkerers is a <strong>challenger brand</strong> — the anti-agency. Bold in the headline, humble in the detail. We compete in the attention economy.</p>
+    <div class="subsection">
+      <div class="subsection-title">Tone sliders</div>
+      <div class="sliders">
+        <div class="slider-row">
+          <div class="slider-name">Register</div>
+          <div class="slider-labels"><span class="slider-label-l">Formal</span><span class="slider-label-r">Conversational</span></div>
+          <div class="slider-track"><div class="slider-fill" style="width:75%;"></div><div class="slider-dot" style="left:75%;"></div></div>
+        </div>
+        <div class="slider-row">
+          <div class="slider-name">Stance</div>
+          <div class="slider-labels"><span class="slider-label-l">Prudent</span><span class="slider-label-r">Provocateur</span></div>
+          <div class="slider-track"><div class="slider-fill" style="width:60%;"></div><div class="slider-dot" style="left:60%;"></div></div>
+        </div>
+        <div class="slider-row">
+          <div class="slider-name">Relationship</div>
+          <div class="slider-labels"><span class="slider-label-l">Distant</span><span class="slider-label-r">Close</span></div>
+          <div class="slider-track"><div class="slider-fill" style="width:80%;"></div><div class="slider-dot" style="left:80%;"></div></div>
+        </div>
+        <div class="slider-row">
+          <div class="slider-name">Scope</div>
+          <div class="slider-labels"><span class="slider-label-l">Generalist</span><span class="slider-label-r">Specialist</span></div>
+          <div class="slider-track"><div class="slider-fill" style="width:55%;"></div><div class="slider-dot" style="left:55%;"></div></div>
+        </div>
+        <div class="slider-row">
+          <div class="slider-name">Tone</div>
+          <div class="slider-labels"><span class="slider-label-l">Serious</span><span class="slider-label-r">Humorous</span></div>
+          <div class="slider-track"><div class="slider-fill" style="width:30%;"></div><div class="slider-dot" style="left:30%;"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="subsection">
+      <div class="subsection-title">Voice principles</div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Principle</th><th>What it means</th><th>Example</th></tr>
+          <tr><td><strong>Bold in the headline</strong></td><td>Challenge the status quo from the first line.</td><td>"Your marketing budget isn't the problem. How you use it is."</td></tr>
+          <tr><td><strong>Humble in the detail</strong></td><td>We're facilitators, not gurus.</td><td>"We don't arrive with answers. We arrive with the right questions."</td></tr>
+          <tr><td><strong>Insider, not outsider</strong></td><td>Speak like someone who has been in that room.</td><td>"We know what a realistic marketing budget looks like from the inside."</td></tr>
+          <tr><td><strong>Direct, not cold</strong></td><td>Clear and concise, but warm. People talking to people.</td><td>"30 minutes. No pitch. Just an honest conversation."</td></tr>
+          <tr><td><strong>Anti-jargon</strong></td><td>No buzzwords. Say what you mean.</td><td>"Not more marketing. Marketing that works."</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="doc-section" id="s10">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <span class="section-title">Messaging Architecture</span>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Elevator pitch — Event version</div>
+      <div class="highlight">
+        <p>"We help B2B tech and industrial companies connect marketing to the business. Most of them are spending on marketing but can't tell if it's actually working — because nobody has built the bridge between what marketing does and what the business needs.<br><br>We come in as insiders, not an agency. We've sat in that chair. So we know what's realistic, what's not, and how to make marketing move the needle without spending more."</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Web headlines — approved copy</div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Section</th><th>Headline</th></tr>
+          <tr><td>Hero</td><td>"Your marketing budget isn't the problem. How you use it is."</td></tr>
+          <tr><td>Hero subtext</td><td>"We help B2B companies get more from marketing — without spending more."</td></tr>
+          <tr><td>Problem</td><td>"You're not spending too little on marketing. You're spending it wrong."</td></tr>
+          <tr><td>Services</td><td>"We help your marketing team punch above its weight."</td></tr>
+          <tr><td>Method</td><td>"We don't arrive with answers. We arrive with the right questions."</td></tr>
+          <tr><td>Results</td><td>"This is what misaligned marketing costs."</td></tr>
+          <tr><td>CTA</td><td>"Your team is ready. What's missing is the direction."</td></tr>
+          <tr><td>CTA subtext</td><td>"30 minutes. No pitch. Just an honest conversation."</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Market data — Results section</div>
+      <div class="stats-row">
+        <div class="stat-box alt">
+          <span class="stat-n">65%</span>
+          <span class="stat-l">of B2B sales and marketing professionals say their leaders are not aligned — even as 82% of C-suite executives believe they are</span>
+          <span class="stat-source">Forrester Q2 2024 Sales &amp; Marketing Alignment Survey</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">85%</span>
+          <span class="stat-l">of B2B marketers struggle to connect marketing performance to business outcomes</span>
+          <span class="stat-source">WPromote, 2024</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">+20%</span>
+          <span class="stat-l">annual revenue growth at companies with strong sales and marketing alignment — vs a 4% decline at misaligned ones</span>
+          <span class="stat-source">Marketo / ZoomInfo, 2024</span>
+        </div>
+        <div class="stat-box alt">
+          <span class="stat-n">27%</span>
+          <span class="stat-l">faster three-year profit growth in B2B organisations with tightly aligned marketing and sales operations</span>
+          <span class="stat-source">Marketo / ZoomInfo, 2024</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">$1T</span>
+          <span class="stat-l">lost every year due to sales and marketing misalignment — in decreased productivity and wasted marketing spend</span>
+          <span class="stat-source">G2 / Industry, 2024</span>
+        </div>
+        <div class="stat-box alt">
+          <span class="stat-n">58%</span>
+          <span class="stat-l">of B2B marketers say budget waste is their main concern — over half estimate losing between 16% and 45% of their total budget</span>
+          <span class="stat-source">Demandbase / EMARKETER, 2025</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">60–70%</span>
+          <span class="stat-l">of B2B content created is never used — most often because it isn't relevant to the buyer audience</span>
+          <span class="stat-source">Content Marketing Institute / ZoomInfo</span>
+        </div>
+        <div class="stat-box alt">
+          <span class="stat-n">8%</span>
+          <span class="stat-l">of B2B companies have genuinely strong alignment between sales and marketing — the rest are flying blind</span>
+          <span class="stat-source">ZoomInfo / Marketo, 2024</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Roadmap</div>
+      <div class="num-list">
+        <div class="num-item">
+          <div class="num-badge">01</div>
+          <div class="num-content">
+            <div class="num-title">Visual direction · Logo · Design system</div>
+            <p class="num-body">Choose the visual direction from the moodboard exploration, design the logo, and build the full design system. The visual foundation that everything else depends on.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">02</div>
+          <div class="num-content">
+            <div class="num-title">Tagline</div>
+            <p class="num-body">A single line that crystallises the positioning. Needs to be resolved before the web is built — it shapes how the brand is introduced everywhere.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">03</div>
+          <div class="num-content">
+            <div class="num-title">Content pillars</div>
+            <p class="num-body">Define the 3–5 themes the brand will own. Structures the web copy, the thought leadership, and the editorial calendar before any page is written.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">04</div>
+          <div class="num-content">
+            <div class="num-title">Website</div>
+            <p class="num-body">With visual direction, tagline, and pillars in place, the web can be built with real clarity. Not a placeholder — a conversion tool.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">05</div>
+          <div class="num-content">
+            <div class="num-title">LinkedIn voice guide</div>
+            <p class="num-body">Define how the brand shows up on LinkedIn — content formats, posting cadence, tone rules, and what to never say. The web becomes the reference point.</p>
+          </div>
+        </div>
+        <div class="num-item">
+          <div class="num-badge">06</div>
+          <div class="num-content">
+            <div class="num-title">Proposal · Deck template</div>
+            <p class="num-body">Once the brand has a visual system and a clear voice, the commercial documents build themselves. The deck is the final expression of everything above.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ══ MOTION TINKERERS ══ -->
+<div style="background:#1A1A1A; padding: clamp(36px,6vw,64px) var(--pad);">
+  <div style="max-width:860px; margin:0 auto;">
+
+    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:28px; padding-bottom:14px; border-bottom:2px solid rgba(212,168,67,0.5);" id="s11">
+      <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(212,168,67,0.5)">Ecosystem</span>
+      <span style="font-family:'Bricolage Grotesque',sans-serif; font-size:clamp(18px,3vw,26px); font-weight:800; letter-spacing:-0.03em; color:#F5F0E8;">Motion Tinkerers — Studio Spin-off</span>
+    </div>
+
+    <p style="color:rgba(245,240,232,0.6); line-height:1.8; margin-bottom:20px;">Motion Tinkerers is an independent creative studio born from The B2B Tinkerers ecosystem. It offers what the parent does not: AI-powered visual production — video, photorealistic renders, motion graphics, and data visualisation — for the same B2B client profile, at a fraction of traditional production cost and time.</p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px; margin-bottom:20px;">
+      <div style="background:#111; padding:clamp(16px,3vw,22px);">
+        <span style="display:block; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(212,168,67,0.5); margin-bottom:10px;">The B2B Tinkerers</span>
+        <p style="color:rgba(245,240,232,0.6); font-size:13px; margin:0; line-height:1.7;">Strategy, positioning, and marketing leadership. The thinking layer — what to do, why, and how to connect it to the business.</p>
+      </div>
+      <div style="background:#111; padding:clamp(16px,3vw,22px);">
+        <span style="display:block; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(212,168,67,0.5); margin-bottom:10px;">Motion Tinkerers</span>
+        <p style="color:rgba(245,240,232,0.6); font-size:13px; margin:0; line-height:1.7;">Visual production powered by AI. The making layer — brand films, product renders, motion graphics, and data visualisation. Same client, different skill.</p>
+      </div>
+    </div>
+
+    <div style="border-left:3px solid rgba(212,168,67,0.4); background:rgba(212,168,67,0.05); padding:clamp(14px,2.5vw,20px);">
+      <p style="color:rgba(245,240,232,0.55); margin:0; line-height:1.8; font-size:13px;"><strong style="color:rgba(212,168,67,0.8);">Status:</strong> Motion Tinkerers is in active brand development — identity, name, and visual direction are being defined. Its own brand strategy document is in progress. The studio is led independently and operates as a creative partner to the parent, not a subsidiary.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<div class="doc-footer">
+  <span class="doc-footer-logo">The B2B <span>Tinkerers</span> — Brand Strategy v1.1</span>
+  <span class="doc-footer-copy">Confidential · 2025</span>
+</div>
+
+</body>
+</html>
