@@ -1,18 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
+<Base title="About" description="We're not an agency. We're not a consultancy. We're the person you wish you'd hired sooner.">
 
-<Base title="About" description="The B2B Tinkerers is a small group of senior B2B marketing strategists. We work quietly, think independently, and deliver real impact.">
-
-<!-- HERO -->
 <section class="about-hero">
   <div class="about-hero-inner">
     <div class="about-eyebrow">About us</div>
-    <h1 class="about-h1">We're not an agency.<br>We're not a consultancy.<br>We're the person you<br>wish you'd hired sooner.</h1>
+    <h1 class="about-h1">We're not an agency.<br/>We're not a consultancy.<br/>We're the person you<br/>wish you'd hired sooner.</h1>
   </div>
 </section>
 
-<!-- MANIFESTO -->
 <section class="about-manifesto">
   <div class="about-manifesto-inner">
     <div class="about-manifesto-left">
@@ -27,36 +24,16 @@ import Base from '../layouts/Base.astro';
   </div>
 </section>
 
-<!-- VALUES -->
 <section class="about-values">
-  <div class="about-values-inner">
-    <div class="section-eyebrow">How we think</div>
-    <div class="about-values-grid">
-      <div class="value-card">
-        <span class="value-num">01</span>
-        <div class="value-title">Strategy before tactics</div>
-        <div class="value-body">Most marketing problems are strategy problems wearing a tactics costume. We fix the strategy first — then the tactics follow.</div>
-      </div>
-      <div class="value-card">
-        <span class="value-num">02</span>
-        <div class="value-title">Honest over comfortable</div>
-        <div class="value-body">We'll tell you what we actually think, not what you want to hear. That's the only way the work produces real results.</div>
-      </div>
-      <div class="value-card">
-        <span class="value-num">03</span>
-        <div class="value-title">Business outcomes, not marketing metrics</div>
-        <div class="value-body">Impressions and MQLs are not the goal. Revenue, pipeline, and market position are. We keep score the way the business does.</div>
-      </div>
-      <div class="value-card">
-        <span class="value-num">04</span>
-        <div class="value-title">Small on purpose</div>
-        <div class="value-body">We don't want to be a 50-person agency. We want to do exceptional work for a small number of companies who take marketing seriously.</div>
-      </div>
-    </div>
+  <div class="section-eyebrow">How we think</div>
+  <div class="about-values-grid">
+    <div class="value-card"><span class="value-num">01</span><div class="value-title">Strategy before tactics</div><div class="value-body">Most marketing problems are strategy problems wearing a tactics costume. We fix the strategy first — then the tactics follow.</div></div>
+    <div class="value-card"><span class="value-num">02</span><div class="value-title">Honest over comfortable</div><div class="value-body">We'll tell you what we actually think, not what you want to hear. That's the only way the work produces real results.</div></div>
+    <div class="value-card"><span class="value-num">03</span><div class="value-title">Business outcomes, not marketing metrics</div><div class="value-body">Impressions and MQLs are not the goal. Revenue, pipeline, and market position are. We keep score the way the business does.</div></div>
+    <div class="value-card"><span class="value-num">04</span><div class="value-title">Small on purpose</div><div class="value-body">We don't want to be a 50-person agency. We want to do exceptional work for a small number of companies who take marketing seriously.</div></div>
   </div>
 </section>
 
-<!-- WHO WE WORK WITH -->
 <section class="about-who">
   <div class="about-who-inner">
     <div class="about-who-left">
@@ -80,7 +57,7 @@ import Base from '../layouts/Base.astro';
         <div class="fit-title">We're probably not the right fit if:</div>
         <ul class="fit-list">
           <li>You need someone to execute without strategic input</li>
-          <li>You're looking for the cheapest option</li>
+          <li>You're looking for the cheapest option — we're not the most expensive, but we're not competing on price either</li>
           <li>You want a large team with account managers and weekly status calls</li>
         </ul>
       </div>
@@ -88,72 +65,62 @@ import Base from '../layouts/Base.astro';
   </div>
 </section>
 
-<!-- CTA -->
 <section class="about-cta">
   <div class="about-cta-inner">
-    <h2 class="about-cta-h2">If this sounds like the kind of<br>thinking your business needs,<br>let's have a conversation.</h2>
-    <p class="about-cta-sub">No pitch deck. No proposal on the first call. Just an honest conversation about where you are and whether we can help.</p>
+    <h2 class="about-cta-h2">If this sounds like the kind of thinking your business needs, let's have a conversation.</h2>
+    <span class="about-cta-sub">No pitch deck. No proposal on the first call. Just an honest conversation about where you are and whether we can help.</span>
     <a class="btn-primary" href="mailto:hello@theb2btinkerers.com">Get in touch →</a>
-    <span class="about-cta-email">hello@theb2btinkerers.com</span>
+    <a class="about-cta-email" href="mailto:hello@theb2btinkerers.com">hello@theb2btinkerers.com</a>
   </div>
 </section>
 
 </Base>
 
 <style>
-.about-hero{padding:calc(56px + clamp(60px,8vw,100px)) var(--pad) clamp(60px,8vw,96px);background:var(--forest);position:relative;overflow:hidden}
+.about-hero{padding:calc(68px + clamp(60px,8vw,100px)) var(--pad) clamp(64px,8vw,96px);background:var(--forest);position:relative;overflow:hidden}
 .about-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(212,232,74,0.07) 0%,transparent 55%);pointer-events:none}
-.about-hero-inner{max-width:780px}
-.about-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.65;display:flex;align-items:center;gap:10px;margin-bottom:20px}
-.about-eyebrow::before{content:'';display:block;width:16px;height:1px;background:var(--lime)}
-.about-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(30px,5vw,62px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream)}
-
-.about-manifesto{padding:clamp(64px,9vw,108px) var(--pad);background:var(--cream)}
-.about-manifesto-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:start}
+.about-hero-inner{max-width:800px;position:relative;z-index:1}
+.about-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.65;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.about-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--lime)}
+.about-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(30px,5vw,64px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream)}
+.about-manifesto{padding:clamp(72px,9vw,112px) var(--pad);background:var(--cream)}
+.about-manifesto-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:start}
 @media(max-width:760px){.about-manifesto-inner{grid-template-columns:1fr}}
-.section-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--forest);opacity:.4;display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.section-eyebrow::before{content:'';display:block;width:14px;height:1px;background:currentColor}
-.about-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(22px,3vw,36px);font-weight:800;letter-spacing:-0.04em;line-height:1.02;color:var(--forest)}
-.about-manifesto-right p{font-size:clamp(14px,1.6vw,16px);line-height:1.85;color:rgba(26,26,26,.65);margin-bottom:20px}
+.about-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(22px,3vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.02;color:var(--forest)}
+.about-manifesto-right p{font-size:clamp(14px,1.6vw,16px);line-height:1.9;color:rgba(26,26,26,.65);margin-bottom:22px}
 .about-manifesto-right p:last-child{margin-bottom:0}
-
-.about-values{padding:clamp(64px,9vw,108px) var(--pad);background:var(--forest)}
-.about-values-inner{max-width:1080px}
-.about-values .section-eyebrow{color:var(--cream);opacity:.22;margin-bottom:32px}
-.about-values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:32px}
+.about-values{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest)}
+.about-values .section-eyebrow{color:var(--cream);opacity:.22;margin-bottom:36px}
+.about-values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 @media(max-width:900px){.about-values-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.about-values-grid{grid-template-columns:1fr}}
-.value-card{background:var(--mid);padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,26px)}
+.value-card{background:var(--mid);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,28px)}
 .value-card:nth-child(2){background:var(--lime)}
-.value-num{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;color:var(--forest);opacity:.1;display:block;line-height:1;margin-bottom:4px}
-.value-card:nth-child(2) .value-num{opacity:.15}
-.value-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.8vw,17px);font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.2}
+.value-num{font-family:'Bricolage Grotesque',sans-serif;font-size:40px;font-weight:800;color:var(--cream);opacity:.09;display:block;line-height:1;margin-bottom:6px}
+.value-card:nth-child(2) .value-num{color:var(--forest);opacity:.13}
+.value-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.8vw,17px);font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.25}
 .value-card:nth-child(2) .value-title{color:var(--forest)}
-.value-body{font-size:12px;line-height:1.65;color:rgba(245,240,232,.5)}
-.value-card:nth-child(2) .value-body{color:rgba(28,74,58,.6)}
-
-.about-who{padding:clamp(64px,9vw,108px) var(--pad);background:var(--linen)}
-.about-who-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:start}
+.value-body{font-size:12.5px;line-height:1.7;color:rgba(245,240,232,.58)}
+.value-card:nth-child(2) .value-body{color:rgba(28,74,58,.62)}
+.about-who{padding:clamp(72px,9vw,112px) var(--pad);background:var(--linen)}
+.about-who-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:start}
 @media(max-width:760px){.about-who-inner{grid-template-columns:1fr}}
-.about-who-body{font-size:clamp(13px,1.5vw,15px);line-height:1.85;color:var(--gray);margin-bottom:16px}
-.about-fit-card{background:var(--forest);padding:clamp(22px,3vw,32px);margin-bottom:2px}
-.about-notfit-card{background:var(--cream);padding:clamp(22px,3vw,32px);border:1px solid rgba(28,74,58,.1)}
-.fit-title{font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:700;margin-bottom:14px}
+.about-who-body{font-size:clamp(13px,1.5vw,15px);line-height:1.9;color:var(--gray);margin-bottom:18px}
+.about-fit-card{background:var(--forest);padding:clamp(24px,3vw,34px);margin-bottom:2px}
+.about-notfit-card{background:var(--cream);padding:clamp(24px,3vw,34px);border:1px solid rgba(28,74,58,.1)}
+.fit-title{font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:700;margin-bottom:16px}
 .about-fit-card .fit-title{color:var(--lime)}
 .about-notfit-card .fit-title{color:var(--forest)}
-.fit-list{list-style:none;display:flex;flex-direction:column;gap:8px}
-.fit-list li{font-size:13px;line-height:1.55;padding-left:16px;position:relative}
+.fit-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.fit-list li{font-size:13px;line-height:1.55;padding-left:18px;position:relative}
 .fit-list li::before{content:'→';position:absolute;left:0;font-size:11px}
-.about-fit-card .fit-list li{color:rgba(245,240,232,.65)}
+.about-fit-card .fit-list li{color:rgba(245,240,232,.68)}
 .about-fit-card .fit-list li::before{color:var(--lime)}
-.about-notfit-card .fit-list li{color:rgba(28,74,58,.55)}
-.about-notfit-card .fit-list li::before{color:rgba(28,74,58,.3)}
-
-.about-cta{padding:clamp(64px,9vw,108px) var(--pad);background:var(--forest)}
-.about-cta-inner{max-width:640px}
-.about-cta-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(26px,4vw,48px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream);margin-bottom:18px}
-.about-cta-sub{font-size:clamp(13px,1.5vw,15px);line-height:1.8;color:rgba(245,240,232,.45);margin-bottom:32px;max-width:480px;display:block}
-.btn-primary{background:var(--lime);color:var(--forest);font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:14px 28px;text-decoration:none;display:inline-block;transition:opacity .15s;margin-bottom:16px}
-.btn-primary:hover{opacity:.88}
-.about-cta-email{display:block;font-size:13px;color:rgba(245,240,232,.3);margin-top:4px}
+.about-notfit-card .fit-list li{color:rgba(28,74,58,.58)}
+.about-notfit-card .fit-list li::before{color:rgba(28,74,58,.32)}
+.about-cta{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest)}
+.about-cta-inner{max-width:660px}
+.about-cta-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(26px,4vw,52px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream);margin-bottom:20px}
+.about-cta-sub{font-size:clamp(13px,1.5vw,16px);line-height:1.8;color:rgba(245,240,232,.45);margin-bottom:36px;display:block}
+.about-cta-email{display:block;font-size:13px;color:rgba(245,240,232,.28);margin-top:12px;text-decoration:none}
 </style>

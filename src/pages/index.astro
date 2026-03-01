@@ -1,24 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
-
 <Base title="The B2B Tinkerers" description="We help B2B tech and industrial companies get more from marketing — without spending more. Not an agency. An insider.">
 
 <!-- HERO -->
 <section class="hero">
+  <canvas class="hero-grain" id="hero-grain" aria-hidden="true"></canvas>
   <div class="hero-content">
     <div class="hero-eyebrow">B2B Strategic Marketing</div>
-    <h1 class="hero-h1">Your marketing budget<br>isn't the problem.</h1>
+    <h1 class="hero-h1">Your marketing budget<br/>isn't the problem.</h1>
     <span class="hero-accent">How you use it is.</span>
     <p class="hero-body">We help B2B tech and industrial companies get more from marketing — without spending more. Not an agency. An insider.</p>
     <div class="hero-ctas">
       <a class="btn-primary" href="#contact">Book a discovery call →</a>
-      <a class="btn-ghost" href="#services">See how we work</a>
     </div>
   </div>
   <div class="hero-illo">
@@ -31,22 +29,23 @@ const posts = (await getCollection('blog'))
       </defs>
       <circle cx="240" cy="250" r="190" fill="rgba(42,107,84,0.15)"/>
       <circle cx="240" cy="250" r="130" fill="rgba(42,107,84,0.1)"/>
-      <circle cx="240" cy="248" r="56" stroke="rgba(212,232,74,0.2)" stroke-width="1.5" fill="none"/>
-      <line x1="120" y1="120" x2="200" y2="210" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" stroke-dasharray="6 4" class="illo-line"/>
-      <line x1="360" y1="120" x2="280" y2="210" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" stroke-dasharray="6 4" class="illo-line" style="animation-delay:.4s"/>
-      <line x1="100" y1="360" x2="196" y2="280" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" stroke-dasharray="6 4" class="illo-line" style="animation-delay:.8s"/>
-      <line x1="380" y1="360" x2="284" y2="280" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" stroke-dasharray="6 4" class="illo-line" style="animation-delay:1.2s"/>
+      <line x1="120" y1="120" x2="200" y2="210" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" class="illo-line"/>
+      <line x1="360" y1="120" x2="280" y2="210" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" class="illo-line" style="animation-delay:.4s"/>
+      <line x1="100" y1="360" x2="196" y2="280" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" class="illo-line" style="animation-delay:.8s"/>
+      <line x1="380" y1="360" x2="284" y2="280" stroke="rgba(212,232,74,0.35)" stroke-width="1.5" class="illo-line" style="animation-delay:1.2s"/>
       <g class="illo-card-a" filter="url(#shadow)">
         <rect x="34" y="60" width="152" height="90" rx="6" fill="url(#gCream)"/>
         <rect x="34" y="60" width="4" height="90" rx="2" fill="url(#gForest)"/>
         <text x="50" y="81" font-family="Inter,sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.5" fill="#1C4A3A" opacity="0.45">BUSINESS GOALS</text>
+        <rect x="50" y="100" width="10" height="24" rx="1.5" fill="rgba(28,74,58,0.2)"/>
+        <rect x="66" y="92" width="10" height="32" rx="1.5" fill="rgba(28,74,58,0.3)"/>
+        <rect x="82" y="86" width="10" height="38" rx="1.5" fill="#1C4A3A" opacity="0.5"/>
         <rect x="98" y="78" width="10" height="46" rx="1.5" fill="url(#gLime)"/>
-        <circle cx="144" cy="96" r="2.5" fill="#D4E84A"/>
       </g>
       <g class="illo-card-b" filter="url(#shadow)">
         <rect x="292" y="60" width="152" height="90" rx="6" fill="url(#gForest)"/>
-        <text x="308" y="81" font-family="Inter,sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.5" fill="#D4E84A" opacity="0.6">MARKETING</text>
-        <text x="394" y="128" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#D4E84A">94%</text>
+        <text x="308" y="81" font-family="Inter,sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.5" fill="#D4E84A" opacity="0.6">MARKETING PLAN</text>
+        <text x="394" y="122" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#D4E84A">94%</text>
       </g>
       <g filter="url(#shadow)">
         <circle cx="240" cy="248" r="52" fill="url(#gLime)"/>
@@ -57,13 +56,13 @@ const posts = (await getCollection('blog'))
       <g class="illo-card-b" filter="url(#shadow)" style="animation-delay:.3s">
         <rect x="28" y="330" width="148" height="88" rx="6" fill="url(#gForest)"/>
         <rect x="28" y="330" width="148" height="4" rx="2" fill="url(#gLime)"/>
-        <text x="44" y="376" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#F5F0E8" letter-spacing="-1">+27%</text>
+        <text x="44" y="380" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#F5F0E8" letter-spacing="-1.5">+27%</text>
       </g>
       <g class="illo-card-a" filter="url(#shadow)" style="animation-delay:.6s">
         <rect x="298" y="330" width="150" height="88" rx="6" fill="url(#gCream)"/>
         <rect x="298" y="330" width="150" height="4" rx="2" fill="url(#gForest)"/>
-        <rect x="314" y="403" width="80" height="14" rx="3" fill="#1C4A3A"/>
-        <text x="321" y="413" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#D4E84A" letter-spacing="1">ALIGNED</text>
+        <rect x="314" y="380" width="80" height="18" rx="3" fill="#1C4A3A"/>
+        <text x="322" y="392" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#D4E84A" letter-spacing="1">ALIGNED ✓</text>
       </g>
     </svg>
   </div>
@@ -79,6 +78,7 @@ const posts = (await getCollection('blog'))
     <span class="marquee-item">Demand Generation</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Brand Strategy</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Revenue Architecture</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Sales Enablement</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Marketing-Business Alignment</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Go-To-Market Strategy</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Fractional CMO</span><span class="marquee-sep">✦</span>
@@ -86,6 +86,7 @@ const posts = (await getCollection('blog'))
     <span class="marquee-item">Demand Generation</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Brand Strategy</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Revenue Architecture</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Sales Enablement</span><span class="marquee-sep">✦</span>
   </div>
 </div>
 
@@ -97,12 +98,72 @@ const posts = (await getCollection('blog'))
     <p class="section-body">Six ways we connect marketing to the business — and make it stick.</p>
   </div>
   <div class="services-grid">
-    <div class="service-card"><span class="service-num">01</span><div class="service-title">Marketing Audit</div><div class="service-body">Honest assessment of where you are: positioning, team, budget, and alignment with business goals.</div><span class="service-arrow">→</span></div>
-    <div class="service-card"><span class="service-num">02</span><div class="service-title">Brand Strategy & Positioning</div><div class="service-body">Define what you stand for, who you're for, and why someone should choose you. The foundation.</div><span class="service-arrow">→</span></div>
-    <div class="service-card"><span class="service-num">03</span><div class="service-title">Go-To-Market Strategy</div><div class="service-body">A clear GTM motion that connects your positioning to pipeline. Channels, messages, timing — aligned.</div><span class="service-arrow">→</span></div>
-    <div class="service-card"><span class="service-num">04</span><div class="service-title">Marketing Plan & Business Alignment</div><div class="service-body">A marketing plan that reflects real business objectives — and that your team will actually follow.</div><span class="service-arrow">→</span></div>
-    <div class="service-card"><span class="service-num">05</span><div class="service-title">AI & Hybrid Marketing Strategy</div><div class="service-body">The future marketing team is not fully human — nor fully automated. We help you define the hybrid model.</div><span class="service-arrow">→</span></div>
-    <div class="service-card"><span class="service-num">06</span><div class="service-title">Fractional CMO</div><div class="service-body">Senior marketing leadership without the full-time cost. We lead your team and maintain direction.</div><span class="service-arrow">→</span></div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">01</span>
+      <div class="service-title">Marketing Audit</div>
+      <div class="service-body">Honest assessment of where you are: positioning, team, budget, and alignment with business goals.</div>
+      <div class="service-expand">
+        <p>We go deep into your current marketing operation — talking to your team, reviewing your spend, analysing your positioning and competitor landscape. What comes out is a clear picture of what's working, what's wasted, and what needs to change first.</p>
+        <ul><li>Positioning & messaging review</li><li>Channel & budget audit</li><li>Sales-marketing alignment assessment</li><li>Prioritised recommendations with business impact</li></ul>
+        <a class="service-cta" href="#contact">Talk to us about an audit →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">02</span>
+      <div class="service-title">Brand Strategy & Positioning</div>
+      <div class="service-body">Define what you stand for, who you're for, and why someone should choose you. The foundation.</div>
+      <div class="service-expand">
+        <p>Most B2B brands are built by accident — a sales pitch that stuck, a founder's instinct, a tagline nobody hates. We build it on purpose. A sharp positioning statement, a clear value proposition, and a messaging framework your whole team can actually use.</p>
+        <ul><li>Market & competitor positioning map</li><li>ICP definition and buyer journey</li><li>Core messaging architecture</li><li>Brand voice and tone guidelines</li></ul>
+        <a class="service-cta" href="#contact">Discuss your positioning →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">03</span>
+      <div class="service-title">Go-To-Market Strategy</div>
+      <div class="service-body">A clear GTM motion that connects your positioning to pipeline. Channels, messages, timing — aligned.</div>
+      <div class="service-expand">
+        <p>A GTM strategy is more than a launch plan. It's the answer to: who are we selling to, what do we say, where do we show up, and how do sales and marketing move together. We build it from scratch or fix what's broken — with a bias for things that generate pipeline, not just awareness.</p>
+        <ul><li>Market entry or expansion planning</li><li>Channel mix and prioritisation</li><li>Demand generation architecture</li><li>Sales and marketing playbook</li></ul>
+        <a class="service-cta" href="#contact">Plan your GTM →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">04</span>
+      <div class="service-title">Marketing Plan & Business Alignment</div>
+      <div class="service-body">A marketing plan that reflects real business objectives — and that your team will actually follow.</div>
+      <div class="service-expand">
+        <p>Most marketing plans are written for board decks, not for execution. We build plans that start from the business — revenue targets, growth priorities, team capacity — and work backwards to a quarterly roadmap your team can own and your leadership can trust.</p>
+        <ul><li>Annual and quarterly marketing roadmaps</li><li>OKR and KPI framework aligned to business goals</li><li>Budget allocation and ROI model</li><li>Cross-functional alignment workshops</li></ul>
+        <a class="service-cta" href="#contact">Build a plan that works →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">05</span>
+      <div class="service-title">AI & Hybrid Marketing Strategy</div>
+      <div class="service-body">The future marketing team is not fully human — nor fully automated. We help you define the hybrid model.</div>
+      <div class="service-expand">
+        <p>AI won't replace your marketing team. But teams that use AI well will outcompete those that don't. We help B2B companies understand where AI genuinely adds value in their marketing operation — and build the workflows, tools, and processes to make it stick.</p>
+        <ul><li>AI readiness assessment</li><li>Content and campaign automation strategy</li><li>Tool selection and stack integration</li><li>Team capability building</li></ul>
+        <a class="service-cta" href="#contact">Explore AI strategy →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <span class="service-num">06</span>
+      <div class="service-title">Fractional CMO</div>
+      <div class="service-body">Senior marketing leadership without the full-time cost. We lead your team and maintain direction.</div>
+      <div class="service-expand">
+        <p>As fractional CMO, we embed into your leadership team: attending key meetings, setting marketing strategy, coaching your team, and making sure marketing stays connected to what the business actually needs. Not a consultant who sends a report and disappears.</p>
+        <ul><li>Weekly leadership involvement</li><li>Strategy ownership and team direction</li><li>Board and investor-level marketing narrative</li><li>Hiring and team structure guidance</li></ul>
+        <a class="service-cta" href="#contact">Ask about Fractional CMO →</a>
+      </div>
+      <span class="service-arrow">→</span>
+    </div>
   </div>
 </section>
 
@@ -113,9 +174,9 @@ const posts = (await getCollection('blog'))
     <h2 class="section-h2">We don't arrive with answers. We arrive with the right questions.</h2>
   </div>
   <div class="method-steps">
-    <div class="method-step"><span class="step-num">01</span><div class="step-title">Diagnose</div><div class="step-body">We audit your current state: positioning, brand, marketing activities, team, and business objectives.</div><span class="step-tag">Week 1–2</span></div>
-    <div class="method-step"><span class="step-num">02</span><div class="step-title">Design</div><div class="step-body">We build the strategy from the ground up. Designed for your team, your budget, your reality.</div><span class="step-tag">Week 3–5</span></div>
-    <div class="method-step"><span class="step-num">03</span><div class="step-title">Execute</div><div class="step-body">We work alongside your team to bring it to life. Fast and lean — built to last, not to impress.</div><span class="step-tag">Week 6–10</span></div>
+    <div class="method-step"><span class="step-num">01</span><div class="step-title">Diagnose</div><div class="step-body">We audit your current state: positioning, brand, marketing activities, team, and business objectives.</div><span class="step-tag">Phase 1</span></div>
+    <div class="method-step"><span class="step-num">02</span><div class="step-title">Design</div><div class="step-body">We build the strategy from the ground up. Designed for your team, your budget, your reality.</div><span class="step-tag">Phase 2</span></div>
+    <div class="method-step"><span class="step-num">03</span><div class="step-title">Execute</div><div class="step-body">We work alongside your team to bring it to life. Fast and lean — built to last, not to impress.</div><span class="step-tag">Phase 3</span></div>
     <div class="method-step"><span class="step-num">04</span><div class="step-title">Advise</div><div class="step-body">We stay as your strategic partner. A senior voice when you need one — without the full-time cost.</div><span class="step-tag">Ongoing</span></div>
   </div>
 </section>
@@ -126,7 +187,7 @@ const posts = (await getCollection('blog'))
     <div class="section-eyebrow">The numbers</div>
     <h2 class="section-h2">This is what misaligned marketing costs.</h2>
     <p class="section-body">Not our numbers. Industry data from Forrester, Marketo, and ZoomInfo.</p>
-    <a class="btn-primary" href="#contact" style="margin-top:28px;display:inline-block">Book a discovery call →</a>
+    <a class="btn-primary" href="#contact" style="margin-top:32px;display:inline-block">Book a discovery call →</a>
   </div>
   <div class="results-nums">
     <div class="result-card r1"><span class="result-num">65%</span><span class="result-label">of B2B professionals say marketing and sales are not aligned</span><span class="result-source">Forrester Q2 2024</span></div>
@@ -145,135 +206,230 @@ const posts = (await getCollection('blog'))
     </div>
     <a class="blog-all-link" href="/insights">All articles →</a>
   </div>
-  <div class="blog-teaser-grid">
-    {posts.map((post) => (
-      <a class="blog-card" href={`/insights/${post.slug}`}>
-        <div class="blog-card-body">
-          <span class="blog-card-tag">{post.data.tag}</span>
-          <div class="blog-card-title">{post.data.title}</div>
-          <div class="blog-card-excerpt">{post.data.excerpt}</div>
-          <div class="blog-card-meta">
-            <span class="blog-card-date">{post.data.date.toLocaleDateString('en-GB', {month:'short', year:'numeric'})} · {post.data.readTime ?? '5 min read'}</span>
-            <span class="blog-card-arrow">→</span>
+  {posts.length > 0 ? (
+    <div class="blog-teaser-grid">
+      <a class="blog-card-featured" href={`/insights/${posts[0].slug}`}>
+        <div class="blog-card-illo">
+          <svg viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <rect width="400" height="180" fill="#1C4A3A"/>
+            <circle cx="200" cy="90" r="160" fill="rgba(42,107,84,0.25)"/>
+            <rect x="80" y="110" width="22" height="40" rx="2" fill="rgba(245,240,232,0.12)"/>
+            <rect x="108" y="90" width="22" height="60" rx="2" fill="rgba(245,240,232,0.18)"/>
+            <rect x="136" y="70" width="22" height="80" rx="2" fill="rgba(245,240,232,0.25)"/>
+            <rect x="164" y="50" width="22" height="100" rx="2" fill="#D4E84A"/>
+            <text x="222" y="105" font-family="Bricolage Grotesque,sans-serif" font-size="38" font-weight="800" fill="rgba(212,232,74,0.9)" letter-spacing="-2">{posts[0].data.tag}</text>
+          </svg>
+        </div>
+        <div class="blog-card-featured-body">
+          <span class="bcard-tag">{posts[0].data.tag}</span>
+          <div class="bcard-title">{posts[0].data.title}</div>
+          <div class="bcard-excerpt">{posts[0].data.excerpt}</div>
+          <div class="bcard-meta">
+            <span class="bcard-date">{posts[0].data.date.toLocaleDateString('en-GB',{month:'short',year:'numeric'})} · {posts[0].data.readTime}</span>
+            <span class="bcard-arrow">→</span>
           </div>
         </div>
       </a>
-    ))}
-  </div>
+      {posts.slice(1).map((post) => (
+        <a class="blog-card-secondary" href={`/insights/${post.slug}`}>
+          <div class="blog-card-illo-sm">
+            <svg viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+              <rect width="360" height="140" fill="#2A6B54"/>
+              <circle cx="180" cy="70" r="120" fill="rgba(28,74,58,0.4)"/>
+              <text x="180" y="80" font-family="Bricolage Grotesque,sans-serif" font-size="28" font-weight="800" fill="rgba(212,232,74,0.2)" text-anchor="middle" letter-spacing="-1">{post.data.tag}</text>
+            </svg>
+          </div>
+          <div class="blog-card-secondary-body">
+            <span class="bcard-tag bcard-tag-light">{post.data.tag}</span>
+            <div class="bcard-title bcard-title-dark">{post.data.title}</div>
+            <div class="bcard-meta bcard-meta-dark">
+              <span class="bcard-date bcard-date-dark">{post.data.date.toLocaleDateString('en-GB',{month:'short',year:'numeric'})} · {post.data.readTime}</span>
+              <span class="bcard-arrow bcard-arrow-dark">→</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <div class="blog-empty-home">Articles coming soon.</div>
+  )}
 </section>
-
 
 </Base>
 
 <style>
-.hero{min-height:100vh;background:var(--forest);padding:calc(56px + clamp(48px,7vw,96px)) var(--pad) clamp(60px,8vw,100px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 20%,rgba(212,232,74,0.07) 0%,transparent 55%);pointer-events:none}
-@media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:calc(56px + 44px);gap:40px}}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);margin-bottom:22px;opacity:.75}
-.hero-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--lime)}
-.hero-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(32px,5vw,66px);font-weight:800;letter-spacing:-0.04em;line-height:.96;color:var(--cream);margin-bottom:4px}
-.hero-accent{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(32px,5vw,66px);font-weight:800;letter-spacing:-0.04em;line-height:.96;color:var(--lime);display:block;margin-bottom:24px}
-.hero-body{font-size:clamp(14px,1.7vw,16px);line-height:1.75;color:rgba(245,240,232,0.5);max-width:400px;margin-bottom:32px}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.btn-primary{background:var(--lime);color:var(--forest);font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:13px 26px;transition:opacity .15s;text-decoration:none;display:inline-block}
-.btn-primary:hover{opacity:.88}
-.btn-ghost{background:transparent;color:rgba(245,240,232,0.45);font-family:'Inter',sans-serif;font-size:12px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(245,240,232,.18);text-decoration:none}
+/* HERO */
+.hero{min-height:100vh;background:var(--forest);padding:calc(68px + clamp(48px,7vw,96px)) var(--pad) clamp(64px,8vw,100px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 20%,rgba(212,232,74,0.07) 0%,transparent 55%),radial-gradient(ellipse at 5% 85%,rgba(42,107,84,0.4) 0%,transparent 45%);pointer-events:none}
+.hero-grain{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.55}
+.hero-content,.hero-illo{position:relative;z-index:1}
+@media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:calc(68px + 44px);gap:48px}}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.7;margin-bottom:24px}
+.hero-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--lime)}
+.hero-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(34px,5.5vw,70px);font-weight:800;letter-spacing:-0.04em;line-height:.95;color:var(--cream);margin-bottom:6px}
+.hero-accent{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(34px,5.5vw,70px);font-weight:800;letter-spacing:-0.04em;line-height:.95;color:var(--lime);display:block;margin-bottom:28px}
+.hero-body{font-size:clamp(14px,1.8vw,17px);line-height:1.8;color:rgba(245,240,232,0.55);max-width:420px;margin-bottom:36px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-illo{display:flex;align-items:center;justify-content:center}
 .hero-illo svg{width:100%;max-width:480px;height:auto}
-@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
 @keyframes dash{to{stroke-dashoffset:-40}}
 .illo-card-a{animation:floatA 5s ease-in-out infinite}
 .illo-card-b{animation:floatB 6s ease-in-out infinite .5s}
 .illo-line{animation:dash 2s linear infinite;stroke-dasharray:6 4}
-.marquee-wrap{background:var(--lime);padding:11px 0;overflow:hidden}
+
+/* MARQUEE */
+.marquee-wrap{background:var(--lime);padding:12px 0;overflow:hidden}
 .marquee-track{display:inline-flex;white-space:nowrap;animation:marquee 32s linear infinite}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.marquee-item{font-family:'Bricolage Grotesque',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--forest);padding:0 24px}
-.marquee-sep{color:var(--forest);opacity:.3;font-size:9px}
-.section-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--forest);opacity:.4;display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.section-eyebrow::before{content:'';display:block;width:14px;height:1px;background:currentColor}
-.section-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(24px,3.2vw,42px);font-weight:800;letter-spacing:-0.04em;line-height:1.02;color:var(--forest);margin-bottom:16px}
-.section-body{font-size:clamp(13px,1.5vw,15px);line-height:1.8;color:var(--gray)}
-.services{background:var(--forest);padding:clamp(64px,9vw,108px) var(--pad)}
-.services-header{margin-bottom:clamp(32px,5vw,52px);max-width:560px}
-.services-header .section-eyebrow{color:var(--cream);opacity:.22}
+.marquee-item{font-family:'Bricolage Grotesque',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--forest);padding:0 28px}
+.marquee-sep{color:var(--forest);opacity:.25;font-size:9px}
+
+/* SERVICES */
+.services{background:var(--forest);padding:clamp(72px,9vw,112px) var(--pad)}
+.services-header{margin-bottom:clamp(36px,5vw,56px);max-width:580px}
+.services-header .section-eyebrow{color:var(--cream);opacity:.25}
 .services-header .section-h2{color:var(--cream)}
-.services-header .section-body{color:rgba(245,240,232,.4)}
+.services-header .section-body{color:rgba(245,240,232,.5)}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 @media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.services-grid{grid-template-columns:1fr}}
-.service-card{background:var(--mid);padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,30px);position:relative;transition:background .2s,transform .2s;cursor:default}
-.service-card:hover{background:var(--lime)}
-.service-num{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;color:var(--cream);opacity:.1;display:block;line-height:1;margin-bottom:4px;transition:color .2s,opacity .2s}
-.service-card:hover .service-num{color:var(--forest);opacity:.15}
-.service-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.8vw,16px);font-weight:700;color:var(--cream);margin-bottom:8px;line-height:1.3;transition:color .2s}
-.service-card:hover .service-title{color:var(--forest)}
-.service-body{font-size:12px;line-height:1.65;color:rgba(245,240,232,.65);transition:color .2s}
-.service-card:hover .service-body{color:rgba(28,74,58,.65)}
-.service-arrow{position:absolute;bottom:18px;right:18px;font-size:14px;color:var(--lime);opacity:.4;transition:color .2s,opacity .2s}
-.service-card:hover .service-arrow{color:var(--forest);opacity:.5}
-.method{padding:clamp(64px,9vw,108px) var(--pad);background:var(--linen)}
-.method-header{margin-bottom:clamp(32px,5vw,52px);max-width:500px}
+.service-card{background:var(--mid);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,32px);position:relative;transition:background .2s;cursor:pointer}
+.service-card:hover{background:rgba(42,107,84,0.8)}
+.service-card.open{background:var(--lime)}
+.service-num{font-family:'Bricolage Grotesque',sans-serif;font-size:40px;font-weight:800;color:var(--cream);opacity:.22;display:block;line-height:1;margin-bottom:6px;transition:color .2s,opacity .2s}
+.service-card.open .service-num{color:var(--forest);opacity:.25}
+.service-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.8vw,16px);font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.3;transition:color .2s}
+.service-card.open .service-title{color:var(--forest)}
+.service-body{font-size:12.5px;line-height:1.7;color:rgba(245,240,232,.7);transition:color .2s;padding-bottom:28px}
+.service-card.open .service-body{color:rgba(28,74,58,.65)}
+.service-arrow{position:absolute;bottom:20px;right:20px;font-size:16px;color:var(--lime);opacity:.35;transition:color .2s,opacity .2s,transform .2s}
+.service-card.open .service-arrow{transform:rotate(90deg);color:var(--forest);opacity:.5}
+.service-expand{display:none;margin-top:18px;padding-top:18px;border-top:1px solid rgba(28,74,58,.15)}
+.service-card.open .service-expand{display:block}
+.service-expand p{font-size:13px;line-height:1.75;color:rgba(28,74,58,.7);margin-bottom:14px}
+.service-expand ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+.service-expand ul li{font-size:12px;color:rgba(28,74,58,.65);padding-left:14px;position:relative}
+.service-expand ul li::before{content:'→';position:absolute;left:0;font-size:10px;color:rgba(28,74,58,.4)}
+.service-cta{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--forest);border-bottom:2px solid rgba(28,74,58,.3);padding-bottom:2px;text-decoration:none;transition:border-color .15s}
+.service-cta:hover{border-color:var(--forest)}
+
+/* METHOD */
+.method{padding:clamp(72px,9vw,112px) var(--pad);background:var(--linen)}
+.method-header{margin-bottom:clamp(36px,5vw,56px);max-width:520px}
 .method-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 @media(max-width:900px){.method-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.method-steps{grid-template-columns:1fr}}
-.method-step{background:var(--cream);padding:clamp(20px,3vw,32px) clamp(16px,2.5vw,26px);transition:background .2s}
+.method-step{background:var(--cream);padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,28px);transition:background .2s}
 .method-step:hover{background:var(--forest)}
-.step-num{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;font-weight:800;color:var(--forest);opacity:.07;display:block;line-height:1;margin-bottom:2px;transition:color .2s,opacity .2s}
-.method-step:hover .step-num{color:var(--cream);opacity:.1}
-.step-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.9vw,17px);font-weight:700;color:var(--forest);margin-bottom:8px;transition:color .2s}
+.step-num{font-family:'Bricolage Grotesque',sans-serif;font-size:46px;font-weight:800;color:var(--forest);opacity:.07;display:block;line-height:1;margin-bottom:4px;transition:color .2s,opacity .2s}
+.method-step:hover .step-num{color:var(--cream);opacity:.09}
+.step-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(15px,2vw,18px);font-weight:700;color:var(--forest);margin-bottom:10px;transition:color .2s}
 .method-step:hover .step-title{color:var(--cream)}
-.step-body{font-size:12px;line-height:1.65;color:rgba(26,26,26,.55);transition:color .2s}
-.method-step:hover .step-body{color:rgba(245,240,232,.55)}
-.step-tag{display:inline-block;margin-top:14px;background:var(--lime);color:var(--forest);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px}
-.results{padding:clamp(64px,9vw,108px) var(--pad);background:var(--forest);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.step-body{font-size:12.5px;line-height:1.7;color:rgba(26,26,26,.58);transition:color .2s}
+.method-step:hover .step-body{color:rgba(245,240,232,.58)}
+.step-tag{display:inline-block;margin-top:16px;background:var(--lime);color:var(--forest);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px}
+
+/* RESULTS */
+.results{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest);display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:center}
 @media(max-width:768px){.results{grid-template-columns:1fr}}
-.results-left .section-eyebrow{color:var(--cream);opacity:.22}
+.results-left .section-eyebrow{color:var(--cream);opacity:.25}
 .results-left .section-h2{color:var(--cream)}
-.results-left .section-body{color:rgba(245,240,232,.4);margin-top:12px}
+.results-left .section-body{color:rgba(245,240,232,.45);margin-top:14px}
 .results-nums{display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.result-card{padding:clamp(18px,3vw,30px) clamp(14px,2.5vw,26px)}
+.result-card{padding:clamp(20px,3vw,32px) clamp(16px,2.5vw,28px)}
 .result-card.r1,.result-card.r4{background:var(--lime)}
 .result-card.r2,.result-card.r3{background:var(--mid)}
-.result-num{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(32px,4vw,46px);font-weight:800;line-height:1;display:block;margin-bottom:6px}
+.result-num{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(32px,4vw,50px);font-weight:800;line-height:1;display:block;margin-bottom:8px}
 .r1 .result-num,.r4 .result-num{color:var(--forest)}
 .r2 .result-num,.r3 .result-num{color:var(--lime)}
-.result-label{font-size:11px;line-height:1.55}
-.r1 .result-label,.r4 .result-label{color:rgba(28,74,58,.6)}
-.r2 .result-label,.r3 .result-label{color:rgba(245,240,232,.45)}
-.result-source{display:block;margin-top:8px;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.result-label{font-size:11.5px;line-height:1.55}
+.r1 .result-label,.r4 .result-label{color:rgba(28,74,58,.65)}
+.r2 .result-label,.r3 .result-label{color:rgba(245,240,232,.55)}
+.result-source{display:block;margin-top:10px;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .r1 .result-source,.r4 .result-source{color:rgba(28,74,58,.3)}
-.r2 .result-source,.r3 .result-source{color:rgba(245,240,232,.2)}
-.blog-teaser{padding:clamp(64px,9vw,108px) var(--pad);background:var(--cream)}
-.blog-teaser-header{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:clamp(32px,5vw,48px)}
+.r2 .result-source,.r3 .result-source{color:rgba(245,240,232,.22)}
+
+/* BLOG TEASER */
+.blog-teaser{padding:clamp(72px,9vw,112px) var(--pad);background:var(--cream)}
+.blog-teaser-header{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:clamp(32px,5vw,52px)}
 .blog-teaser-header .section-h2{margin-bottom:0}
-.blog-all-link{font-size:12px;font-weight:600;color:var(--forest);border-bottom:1px solid rgba(28,74,58,0.25);padding-bottom:2px;text-decoration:none;white-space:nowrap}
-.blog-teaser-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px}
-@media(max-width:900px){.blog-teaser-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.blog-teaser-grid{grid-template-columns:1fr}}
-.blog-card{background:var(--linen);text-decoration:none;display:flex;flex-direction:column;transition:background .18s}
-.blog-card:hover{background:#ddd8ce}
-.blog-card:first-child{background:var(--forest)}
-.blog-card-body{padding:clamp(18px,2.5vw,24px);flex:1;display:flex;flex-direction:column}
-.blog-card-tag{font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--lime);margin-bottom:10px;display:block}
-.blog-card:not(:first-child) .blog-card-tag{color:var(--mid)}
-.blog-card-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,2vw,17px);font-weight:700;line-height:1.25;color:var(--cream);margin-bottom:10px}
-.blog-card:not(:first-child) .blog-card-title{color:var(--forest)}
-.blog-card-excerpt{font-size:12px;line-height:1.65;color:rgba(245,240,232,.45);flex:1}
-.blog-card:not(:first-child) .blog-card-excerpt{color:rgba(28,74,58,.55)}
-.blog-card-meta{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid rgba(245,240,232,.08)}
-.blog-card:not(:first-child) .blog-card-meta{border-top-color:rgba(28,74,58,.1)}
-.blog-card-date{font-size:10px;color:rgba(245,240,232,.28)}
-.blog-card:not(:first-child) .blog-card-date{color:rgba(28,74,58,.35)}
-.blog-card-arrow{font-size:13px;color:var(--lime)}
-.blog-card:not(:first-child) .blog-card-arrow{color:var(--forest)}
-.cta-section{padding:clamp(64px,9vw,108px) var(--pad);background:var(--linen);display:grid;grid-template-columns:1fr auto;gap:clamp(32px,5vw,64px);align-items:center}
-@media(max-width:640px){.cta-section{grid-template-columns:1fr}.cta-right{align-items:flex-start}}
-.cta-h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(26px,4vw,52px);font-weight:800;line-height:.97;color:var(--forest);margin-bottom:14px}
-.cta-sub{font-size:clamp(13px,1.5vw,15px);line-height:1.75;color:var(--gray);max-width:440px}
-.cta-right{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-.btn-dark{background:var(--forest);color:var(--cream);font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:15px 28px;text-decoration:none;display:inline-block;white-space:nowrap;transition:opacity .15s}
-.btn-dark:hover{opacity:.85}
-.cta-micro{font-size:11px;color:rgba(28,74,58,.35)}
+.blog-all-link{font-size:12px;font-weight:600;color:var(--forest);border-bottom:1px solid rgba(28,74,58,0.3);padding-bottom:2px;text-decoration:none;transition:border-color .15s}
+.blog-all-link:hover{border-color:var(--forest)}
+.blog-teaser-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:2px}
+@media(max-width:700px){.blog-teaser-grid{grid-template-columns:1fr}}
+.blog-card-featured{grid-column:1;grid-row:1/3;background:var(--forest);text-decoration:none;display:flex;flex-direction:column;transition:opacity .2s}
+.blog-card-featured:hover{opacity:.92}
+.blog-card-illo{width:100%;aspect-ratio:16/7;overflow:hidden;flex-shrink:0;max-height:220px}
+.blog-card-featured-body{padding:clamp(22px,3vw,32px);flex:1;display:flex;flex-direction:column}
+.bcard-tag{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin-bottom:12px;display:block}
+.bcard-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(16px,2.2vw,22px);font-weight:700;line-height:1.2;color:var(--cream);margin-bottom:12px}
+.bcard-excerpt{font-size:13px;line-height:1.7;color:rgba(245,240,232,.45);margin-bottom:20px;flex:1}
+.bcard-meta{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(245,240,232,.08)}
+.bcard-date{font-size:10px;color:rgba(245,240,232,.3)}
+.bcard-arrow{font-size:16px;color:var(--lime);transition:transform .2s}
+.blog-card-featured:hover .bcard-arrow{transform:translateX(4px)}
+.blog-card-secondary{background:var(--linen);text-decoration:none;display:flex;flex-direction:column;transition:background .2s}
+.blog-card-secondary:hover{background:#ddd8ce}
+.blog-card-secondary:last-child{background:var(--forest)}
+.blog-card-secondary:last-child:hover{background:#235e48}
+.blog-card-dark .bcard-tag-light{color:var(--lime)}
+.blog-card-dark .bcard-title-dark{color:var(--cream)}
+.blog-card-dark .bcard-meta-dark{border-top-color:rgba(245,240,232,.1)}
+.blog-card-dark .bcard-date-dark{color:rgba(245,240,232,.35)}
+.blog-card-dark .bcard-arrow-dark{color:var(--lime);opacity:.7}
+.blog-card-illo-sm{width:100%;aspect-ratio:16/6;overflow:hidden;flex-shrink:0}
+.blog-card-secondary-body{padding:clamp(18px,2.5vw,26px);flex:1;display:flex;flex-direction:column}
+.bcard-tag-light{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);margin-bottom:10px;display:block}
+.bcard-title-dark{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.8vw,17px);font-weight:700;line-height:1.25;color:var(--forest);margin-bottom:auto;padding-bottom:16px;flex:1}
+.bcard-meta-dark{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(28,74,58,.1)}
+.bcard-date-dark{font-size:10px;color:rgba(28,74,58,.35)}
+.bcard-arrow-dark{font-size:14px;color:var(--forest);opacity:.4;transition:transform .2s}
+.blog-card-secondary:hover .bcard-arrow-dark{transform:translateX(4px)}
+.blog-empty-home{padding:48px;text-align:center;font-size:14px;color:var(--gray);background:var(--linen)}
 </style>
+
+<script>
+// Grain effect
+(function(){
+  const canvas = document.getElementById('hero-grain');
+  if(!canvas) return;
+  const hero = canvas.closest('.hero');
+  function resize(){
+    canvas.width = hero.offsetWidth;
+    canvas.height = hero.offsetHeight;
+    render();
+  }
+  function render(){
+    const w=canvas.width,h=canvas.height;
+    const ctx=canvas.getContext('2d');
+    const base=ctx.createRadialGradient(w*.65,h*.2,0,w*.65,h*.2,w*.7);
+    base.addColorStop(0,'rgba(42,107,84,0.45)');
+    base.addColorStop(.5,'rgba(28,74,58,0.15)');
+    base.addColorStop(1,'rgba(8,22,16,0.0)');
+    ctx.fillStyle=base;ctx.fillRect(0,0,w,h);
+    const glow2=ctx.createRadialGradient(w*.05,h*.85,0,w*.05,h*.85,w*.5);
+    glow2.addColorStop(0,'rgba(212,232,74,0.06)');
+    glow2.addColorStop(1,'rgba(212,232,74,0)');
+    ctx.fillStyle=glow2;ctx.fillRect(0,0,w,h);
+    const imageData=ctx.createImageData(w,h);
+    const data=imageData.data;
+    for(let i=0;i<data.length;i+=4){const v=(Math.random()*255)|0;data[i]=data[i+1]=data[i+2]=v;data[i+3]=18;}
+    ctx.putImageData(imageData,0,0);
+    const vignette=ctx.createRadialGradient(w/2,h/2,h*.2,w/2,h/2,w*.8);
+    vignette.addColorStop(0,'rgba(0,0,0,0)');
+    vignette.addColorStop(1,'rgba(0,0,0,0.45)');
+    ctx.fillStyle=vignette;ctx.fillRect(0,0,w,h);
+  }
+  window.addEventListener('resize',resize);
+  resize();
+})();
+
+// Service accordion
+function toggleService(card) {
+  const isOpen = card.classList.contains('open');
+  document.querySelectorAll('.service-card').forEach(c => c.classList.remove('open'));
+  if(!isOpen) card.classList.add('open');
+}
+</script>

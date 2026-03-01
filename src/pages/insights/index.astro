@@ -1,133 +1,76 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-
-const featured = posts.find(p => p.data.featured) ?? posts[0];
-const rest = posts.filter(p => p.slug !== featured.slug);
 ---
-
 <Base title="Insights" description="Strategy, alignment, GTM, AI, and the things most B2B consultancies won't admit out loud.">
 
-<div class="blog-hero">
+<section class="blog-hero">
   <div class="blog-hero-inner">
     <div class="blog-hero-eyebrow">Insights & thinking</div>
-    <h1 class="blog-hero-h1">What we know.<br>What we've learned.<br>What we won't say<br>in a sales pitch.</h1>
+    <h1 class="blog-hero-h1">What we know.<br/>What we've learned.<br/>What we won't say<br/>in a sales pitch.</h1>
     <p class="blog-hero-sub">Strategy, alignment, GTM, AI, and the things most B2B consultancies won't admit out loud.</p>
   </div>
-</div>
+</section>
 
-<div class="blog-grid-section">
-  <div class="blog-index-grid">
-
-    <!-- FEATURED -->
-    <a class="blog-featured" href={`/insights/${featured.slug}`}>
-      <div class="blog-featured-img">
-        <svg viewBox="0 0 400 280" fill="none" width="100%" height="100%">
-          <rect width="400" height="280" fill="#1C4A3A"/>
-          <circle cx="200" cy="140" r="70" stroke="rgba(212,232,74,0.15)" stroke-width="1.5" fill="none"/>
-          <circle cx="200" cy="140" r="20" fill="#D4E84A" opacity="0.9"/>
-          <circle cx="200" cy="70" r="8" fill="rgba(245,240,232,0.7)"/>
-          <circle cx="261" cy="175" r="8" fill="rgba(245,240,232,0.5)"/>
-          <circle cx="139" cy="175" r="8" fill="rgba(245,240,232,0.5)"/>
-        </svg>
-      </div>
-      <div class="blog-featured-body">
-        <span class="featured-tag">Featured · {featured.data.tag}</span>
-        <div class="featured-title">{featured.data.title}</div>
-        <div class="featured-excerpt">{featured.data.excerpt}</div>
-        <div class="featured-meta">
-          <div class="featured-author">
-            <div class="author-avatar">T</div>
-            <div>
-              <div class="author-name">{featured.data.author}</div>
-              <div class="author-date">{featured.data.date.toLocaleDateString('en-GB', {month:'long', year:'numeric'})} · {featured.data.readTime ?? '5 min read'}</div>
-            </div>
+{posts.length > 0 ? (
+  <section class="blog-grid-section">
+    <div class="blog-grid">
+      {posts.map((post) => (
+        <a class="blog-list-card" href={`/insights/${post.slug}`}>
+          <span class="blc-tag">{post.data.tag}</span>
+          <div class="blc-title">{post.data.title}</div>
+          <div class="blc-excerpt">{post.data.excerpt}</div>
+          <div class="blc-meta">
+            <span class="blc-date">{post.data.date.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})} · {post.data.readTime}</span>
+            <span class="blc-arrow">→</span>
           </div>
-          <span class="featured-cta">Read →</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- REST -->
-    {rest.map(post => (
-      <a class="idx-card" href={`/insights/${post.slug}`}>
-        <div class="idx-card-body">
-          <span class="idx-tag">{post.data.tag}</span>
-          <div class="idx-title">{post.data.title}</div>
-          <div class="idx-excerpt">{post.data.excerpt}</div>
-          <div class="idx-footer">
-            <span class="idx-date">{post.data.date.toLocaleDateString('en-GB', {month:'short', year:'numeric'})} · {post.data.readTime ?? '5 min'}</span>
-            <span class="idx-read">→</span>
-          </div>
-        </div>
-      </a>
-    ))}
-
+        </a>
+      ))}
+    </div>
+  </section>
+) : (
+  <div class="blog-empty">
+    <div class="blog-empty-icon">✍️</div>
+    <h2 class="blog-empty-h">Articles coming soon.</h2>
+    <p class="blog-empty-body">We're writing the first batch of articles now. No filler, no SEO fluff — just the honest thinking we wish we'd read earlier in our careers.</p>
   </div>
-</div>
-
-<!-- Newsletter -->
-<div class="blog-newsletter">
-  <div>
-    <div class="newsletter-h">One insight.<br>Every two weeks.<br>No filler.</div>
-    <p class="newsletter-sub">The B2B Tinkerers newsletter. Strategic thinking without the agency spin.</p>
-  </div>
-  <div>
-    <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input class="newsletter-input" type="email" name="email" placeholder="your@company.com" required />
-      <button class="newsletter-submit" type="submit">Subscribe →</button>
-    </form>
-    <p class="newsletter-disclaimer">No spam. Unsubscribe any time.</p>
-  </div>
-</div>
+)}
 
 </Base>
 
 <style>
-.blog-hero{padding:calc(56px + clamp(44px,6vw,72px)) var(--pad) clamp(44px,6vw,64px);background:var(--forest);position:relative;overflow:hidden}
+.blog-hero{padding:calc(68px + clamp(44px,6vw,72px)) var(--pad) clamp(44px,6vw,64px);background:var(--forest);position:relative;overflow:hidden}
 .blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(212,232,74,0.06) 0%,transparent 55%);pointer-events:none}
-.blog-hero-inner{max-width:640px}
-.blog-hero-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.6;display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.blog-hero-eyebrow::before{content:'';display:block;width:16px;height:1px;background:var(--lime)}
-.blog-hero-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(28px,4.5vw,52px);font-weight:800;letter-spacing:-0.04em;line-height:.96;color:var(--cream);margin-bottom:14px}
-.blog-hero-sub{font-size:clamp(13px,1.6vw,15px);color:rgba(245,240,232,.45);line-height:1.75;max-width:480px}
+.blog-hero-inner{max-width:660px;position:relative;z-index:1}
+.blog-hero-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.6;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.blog-hero-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--lime)}
+.blog-hero-h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(28px,4.5vw,56px);font-weight:800;letter-spacing:-0.04em;line-height:.96;color:var(--cream);margin-bottom:16px}
+.blog-hero-sub{font-size:clamp(13px,1.6vw,16px);color:rgba(245,240,232,.45);line-height:1.8;max-width:500px}
 .blog-grid-section{padding:clamp(44px,6vw,72px) var(--pad);background:var(--cream)}
-.blog-index-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-@media(max-width:960px){.blog-index-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.blog-index-grid{grid-template-columns:1fr}}
-.blog-featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;background:var(--forest);text-decoration:none;transition:opacity .18s}
-.blog-featured:hover{opacity:.92}
-@media(max-width:700px){.blog-featured{grid-template-columns:1fr}}
-.blog-featured-img{background:var(--mid);min-height:280px;position:relative;overflow:hidden}
-.blog-featured-body{padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:space-between}
-.featured-tag{font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--lime);display:block;margin-bottom:14px}
-.featured-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(20px,3vw,32px);font-weight:800;letter-spacing:-0.04em;line-height:1.05;color:var(--cream);margin-bottom:14px}
-.featured-excerpt{font-size:13px;line-height:1.75;color:rgba(245,240,232,.5);margin-bottom:24px}
-.featured-meta{display:flex;align-items:center;justify-content:space-between}
-.featured-author{display:flex;align-items:center;gap:10px}
-.author-avatar{width:28px;height:28px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:var(--forest);flex-shrink:0}
-.author-name{font-size:11px;color:rgba(245,240,232,.5);font-weight:500}
-.author-date{font-size:10px;color:rgba(245,240,232,.25)}
-.featured-cta{font-size:11px;font-weight:700;color:var(--lime)}
-.idx-card{background:var(--linen);text-decoration:none;display:flex;flex-direction:column;transition:background .18s}
-.idx-card:hover{background:#ddd8ce}
-.idx-card-body{padding:clamp(18px,2.5vw,24px);flex:1;display:flex;flex-direction:column}
-.idx-tag{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:8px;display:block}
-.idx-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.9vw,17px);font-weight:700;line-height:1.22;color:var(--forest);margin-bottom:8px}
-.idx-excerpt{font-size:12px;line-height:1.65;color:rgba(28,74,58,.5);flex:1;margin-bottom:16px}
-.idx-footer{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(28,74,58,.08)}
-.idx-date{font-size:10px;color:rgba(28,74,58,.35)}
-.idx-read{font-size:10px;color:rgba(28,74,58,.35)}
-.blog-newsletter{background:var(--forest);padding:clamp(44px,6vw,72px) var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
-@media(max-width:640px){.blog-newsletter{grid-template-columns:1fr}}
-.newsletter-h{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:800;letter-spacing:-0.04em;line-height:1.02;color:var(--cream);margin-bottom:10px}
-.newsletter-sub{font-size:13px;color:rgba(245,240,232,.4);line-height:1.7}
-.newsletter-form{display:flex}
-.newsletter-input{flex:1;min-width:0;padding:13px 16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-right:none;color:var(--cream);font-family:'Inter',sans-serif;font-size:13px;outline:none}
-.newsletter-input::placeholder{color:rgba(245,240,232,.25)}
-.newsletter-submit{background:var(--lime);color:var(--forest);font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:13px 22px;border:none;cursor:pointer;white-space:nowrap}
-.newsletter-disclaimer{font-size:10px;color:rgba(245,240,232,.2);margin-top:10px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+@media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.blog-grid{grid-template-columns:1fr}}
+.blog-list-card{background:var(--linen);text-decoration:none;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:10px;transition:background .2s}
+.blog-list-card:hover{background:#ddd8ce}
+.blog-list-card:first-child{background:var(--forest)}
+.blog-list-card:first-child:hover{background:#235e48}
+.blc-tag{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+.blog-list-card:not(:first-child) .blc-tag{color:var(--mid)}
+.blc-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(15px,2vw,20px);font-weight:700;line-height:1.2;color:var(--cream);flex:1}
+.blog-list-card:not(:first-child) .blc-title{color:var(--forest)}
+.blc-excerpt{font-size:12.5px;line-height:1.7;color:rgba(245,240,232,.45)}
+.blog-list-card:not(:first-child) .blc-excerpt{color:rgba(28,74,58,.55)}
+.blc-meta{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(245,240,232,.08);margin-top:auto}
+.blog-list-card:not(:first-child) .blc-meta{border-top-color:rgba(28,74,58,.1)}
+.blc-date{font-size:10px;color:rgba(245,240,232,.3)}
+.blog-list-card:not(:first-child) .blc-date{color:rgba(28,74,58,.35)}
+.blc-arrow{font-size:14px;color:var(--lime);transition:transform .2s}
+.blog-list-card:not(:first-child) .blc-arrow{color:var(--forest);opacity:.5}
+.blog-list-card:hover .blc-arrow{transform:translateX(4px)}
+.blog-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(64px,8vw,96px) var(--pad);text-align:center;background:var(--linen)}
+.blog-empty-icon{font-size:48px;margin-bottom:24px;opacity:.4}
+.blog-empty-h{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:800;color:var(--forest);margin-bottom:12px}
+.blog-empty-body{font-size:14px;color:var(--gray);max-width:400px;line-height:1.7}
 </style>
