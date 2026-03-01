@@ -98,7 +98,7 @@ const posts = (await getCollection('blog'))
   </div>
   <div class="services-grid">
     <div class="service-card"><span class="service-num">01</span><div class="service-title">Marketing Audit</div><div class="service-body">Honest assessment of where you are: positioning, team, budget, and alignment with business goals.</div><span class="service-arrow">→</span></div>
-    <div class="service-card featured"><span class="service-num">02</span><div class="service-title">Brand Strategy & Positioning</div><div class="service-body">Define what you stand for, who you're for, and why someone should choose you. The foundation.</div><span class="service-arrow">→</span></div>
+    <div class="service-card"><span class="service-num">02</span><div class="service-title">Brand Strategy & Positioning</div><div class="service-body">Define what you stand for, who you're for, and why someone should choose you. The foundation.</div><span class="service-arrow">→</span></div>
     <div class="service-card"><span class="service-num">03</span><div class="service-title">Go-To-Market Strategy</div><div class="service-body">A clear GTM motion that connects your positioning to pipeline. Channels, messages, timing — aligned.</div><span class="service-arrow">→</span></div>
     <div class="service-card"><span class="service-num">04</span><div class="service-title">Marketing Plan & Business Alignment</div><div class="service-body">A marketing plan that reflects real business objectives — and that your team will actually follow.</div><span class="service-arrow">→</span></div>
     <div class="service-card"><span class="service-num">05</span><div class="service-title">AI & Hybrid Marketing Strategy</div><div class="service-body">The future marketing team is not fully human — nor fully automated. We help you define the hybrid model.</div><span class="service-arrow">→</span></div>
@@ -116,7 +116,7 @@ const posts = (await getCollection('blog'))
     <div class="method-step"><span class="step-num">01</span><div class="step-title">Diagnose</div><div class="step-body">We audit your current state: positioning, brand, marketing activities, team, and business objectives.</div><span class="step-tag">Week 1–2</span></div>
     <div class="method-step"><span class="step-num">02</span><div class="step-title">Design</div><div class="step-body">We build the strategy from the ground up. Designed for your team, your budget, your reality.</div><span class="step-tag">Week 3–5</span></div>
     <div class="method-step"><span class="step-num">03</span><div class="step-title">Execute</div><div class="step-body">We work alongside your team to bring it to life. Fast and lean — built to last, not to impress.</div><span class="step-tag">Week 6–10</span></div>
-    <div class="method-step dark"><span class="step-num">04</span><div class="step-title">Advise</div><div class="step-body">We stay as your strategic partner. A senior voice when you need one — without the full-time cost.</div><span class="step-tag">Ongoing</span></div>
+    <div class="method-step"><span class="step-num">04</span><div class="step-title">Advise</div><div class="step-body">We stay as your strategic partner. A senior voice when you need one — without the full-time cost.</div><span class="step-tag">Ongoing</span></div>
   </div>
 </section>
 
@@ -162,18 +162,6 @@ const posts = (await getCollection('blog'))
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-section" id="contact">
-  <div>
-    <div class="section-eyebrow">Work with us</div>
-    <h2 class="cta-h2">Your team is ready.<br>What's missing<br>is the direction.</h2>
-    <p class="cta-sub">Senior marketing leadership — without the full-time cost. Let's start with an honest conversation.</p>
-  </div>
-  <div class="cta-right">
-    <a class="btn-dark" href="mailto:hello@theb2btinkerers.com">Book a discovery call →</a>
-    <span class="cta-micro">30 minutes. No pitch. Just an honest conversation.</span>
-  </div>
-</section>
 
 </Base>
 
@@ -215,29 +203,29 @@ const posts = (await getCollection('blog'))
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 @media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.services-grid{grid-template-columns:1fr}}
-.service-card{background:var(--mid);padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,30px);position:relative;transition:background .18s}
-.service-card:hover{background:#235e48}
-.service-card.featured{background:var(--lime)}
-.service-num{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;color:var(--forest);opacity:.1;display:block;line-height:1;margin-bottom:4px}
-.service-card.featured .service-num{opacity:.15}
-.service-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.8vw,16px);font-weight:700;color:var(--cream);margin-bottom:8px;line-height:1.3}
-.service-card.featured .service-title{color:var(--forest)}
-.service-body{font-size:12px;line-height:1.65;color:rgba(245,240,232,.43)}
-.service-card.featured .service-body{color:rgba(28,74,58,.6)}
-.service-arrow{position:absolute;bottom:18px;right:18px;font-size:14px;color:var(--lime);opacity:.35}
+.service-card{background:var(--mid);padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,30px);position:relative;transition:background .2s,transform .2s;cursor:default}
+.service-card:hover{background:var(--lime)}
+.service-num{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;color:var(--cream);opacity:.1;display:block;line-height:1;margin-bottom:4px;transition:color .2s,opacity .2s}
+.service-card:hover .service-num{color:var(--forest);opacity:.15}
+.service-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.8vw,16px);font-weight:700;color:var(--cream);margin-bottom:8px;line-height:1.3;transition:color .2s}
+.service-card:hover .service-title{color:var(--forest)}
+.service-body{font-size:12px;line-height:1.65;color:rgba(245,240,232,.65);transition:color .2s}
+.service-card:hover .service-body{color:rgba(28,74,58,.65)}
+.service-arrow{position:absolute;bottom:18px;right:18px;font-size:14px;color:var(--lime);opacity:.4;transition:color .2s,opacity .2s}
+.service-card:hover .service-arrow{color:var(--forest);opacity:.5}
 .method{padding:clamp(64px,9vw,108px) var(--pad);background:var(--linen)}
 .method-header{margin-bottom:clamp(32px,5vw,52px);max-width:500px}
 .method-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 @media(max-width:900px){.method-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.method-steps{grid-template-columns:1fr}}
-.method-step{background:var(--cream);padding:clamp(20px,3vw,32px) clamp(16px,2.5vw,26px)}
-.method-step.dark{background:var(--forest)}
-.step-num{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;font-weight:800;color:var(--forest);opacity:.07;display:block;line-height:1;margin-bottom:2px}
-.method-step.dark .step-num{color:var(--cream)}
-.step-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.9vw,17px);font-weight:700;color:var(--forest);margin-bottom:8px}
-.method-step.dark .step-title{color:var(--cream)}
-.step-body{font-size:12px;line-height:1.65;color:var(--gray)}
-.method-step.dark .step-body{color:rgba(245,240,232,.45)}
+.method-step{background:var(--cream);padding:clamp(20px,3vw,32px) clamp(16px,2.5vw,26px);transition:background .2s}
+.method-step:hover{background:var(--forest)}
+.step-num{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;font-weight:800;color:var(--forest);opacity:.07;display:block;line-height:1;margin-bottom:2px;transition:color .2s,opacity .2s}
+.method-step:hover .step-num{color:var(--cream);opacity:.1}
+.step-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(14px,1.9vw,17px);font-weight:700;color:var(--forest);margin-bottom:8px;transition:color .2s}
+.method-step:hover .step-title{color:var(--cream)}
+.step-body{font-size:12px;line-height:1.65;color:rgba(26,26,26,.55);transition:color .2s}
+.method-step:hover .step-body{color:rgba(245,240,232,.55)}
 .step-tag{display:inline-block;margin-top:14px;background:var(--lime);color:var(--forest);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px}
 .results{padding:clamp(64px,9vw,108px) var(--pad);background:var(--forest);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
 @media(max-width:768px){.results{grid-template-columns:1fr}}
