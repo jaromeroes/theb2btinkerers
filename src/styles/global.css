@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap');
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --forest:#1C4A3A;
+  --cream:#F5F0E8;
+  --lime:#D4E84A;
+  --mid:#2A6B54;
+  --linen:#E8E3D8;
+  --ink:#1A1A1A;
+  --gray:#6B6B6B;
+  --pad:clamp(20px,5vw,64px);
+}
+
+html{scroll-behavior:smooth;color-scheme:light only}
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
