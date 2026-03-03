@@ -3,7 +3,7 @@ title: "Your B2B Website Doesn't Need an Expensive Experience Management System.
 date: 2026-03-03
 excerpt: "Thousands of B2B companies are spending between €200,000 and over €1 million implementing web platforms their marketing teams can barely touch without calling an agency. In 2026, there is no longer any excuse for this."
 tag: "strategy"
-image: "/blog/your-b2b-website-doesnt-need-expensive-cms.webp"
+image: "/blog/your-b2b-website-doesnt-need-expensive-cms.jpg"
 author: "The B2B Tinkerers"
 ---
 
@@ -16,6 +16,8 @@ The problem isn't that these platforms are bad. The problem is that for most B2B
 ---
 
 ## The Real Cost Nobody Puts on the Table
+
+![The hidden cost iceberg of enterprise CMS platforms](/blog/cms-hidden-costs-iceberg.webp)
 
 When a company decides to implement Sitecore, the initial budgets circulating in internal presentations rarely tell the full story.
 
@@ -30,6 +32,8 @@ The question nobody asks in the meeting room is this: what specific business obj
 ---
 
 ## The Scalability Argument No Longer Works as an Excuse
+
+![The bureaucratic pipeline: from idea to published page, many weeks later](/blog/cms-bureaucratic-pipeline.webp)
 
 For years, the answer to that question was "scalability" and "integrations." Sitecore could manage 50 sites across multiple languages. It could personalise experiences in real time. It could integrate with any CRM on the market.
 
@@ -68,6 +72,8 @@ The market has matured considerably. There are now platforms that address the re
 ---
 
 ## The AI Agent Argument Changes the Calculation Entirely
+
+![One person, multiple AI agents working in orbit](/blog/cms-ai-agents-orbit.webp)
 
 There is one variable that platform evaluations from three years ago could not factor in, and that in 2026 can no longer be ignored: AI agents have fundamentally changed the relationship between team capacity and marketing output.
 
