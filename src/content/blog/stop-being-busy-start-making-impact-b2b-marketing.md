@@ -4,7 +4,7 @@ description: "Your B2B marketing team is working harder than ever — but is it 
 excerpt: "Your team is busier than ever — more content, more campaigns, more channels. But is any of it actually driving revenue? Here's how to break free from the activity trap and focus on B2B marketing that truly moves the needle."
 slug: "stop-being-busy-start-making-impact-b2b-marketing"
 author: "The B2B Tinkerers"
-date: 2026-03-02
+date: 2026-01-13
 tag: "B2B marketing strategy"
 image: "/blog/b2b-marketing-busy-trap-cover.jpg"
 ---
