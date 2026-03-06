@@ -1,7 +1,7 @@
 ---
 title: "AI in B2B marketing: what works, what's hype, what to do next quarter"
 excerpt: "Every B2B marketing team is somewhere on the AI adoption curve. Most are further behind than they think — but not in the way they assume."
-date: 2026-03-01
+date: 2025-12-30
 tag: "AI & Marketing"
 image: "/blog/ai-b2b-marketing-what-works.svg"
 readTime: "10 min read"
