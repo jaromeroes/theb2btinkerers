@@ -3,7 +3,7 @@ title: "AI in B2B marketing: what works, what's hype, what to do next quarter"
 excerpt: "Every B2B marketing team is somewhere on the AI adoption curve. Most are further behind than they think — but not in the way they assume."
 date: 2025-12-30
 tag: "AI & Marketing"
-image: "/blog/ai-b2b-marketing-what-works.svg"
+image: "/blog/ai-b2b-marketing-cover.webp"
 readTime: "10 min read"
 ---
 
@@ -17,6 +17,8 @@ AI is not replacing B2B marketing teams. But it is already separating teams that
 
 ## What's actually working right now
 
+![The filter that works — synthesis and guardrails](/blog/ai-b2b-marketing-what-works.webp)
+
 Let's be specific. The AI use cases generating real, measurable value in B2B marketing today are not the flashy ones.
 
 **Research and synthesis.** The ability to process large volumes of information — competitor analysis, customer interview transcripts, market reports, sales call recordings — and extract structured insight is genuinely transformative. Work that took a week now takes an afternoon. The output isn't perfect. But it's a good first draft of something that would have been a blank page.
@@ -29,6 +31,8 @@ Let's be specific. The AI use cases generating real, measurable value in B2B mar
 
 ## What isn't working
 
+![The autonomous machine producing noise with no human in the loop](/blog/ai-b2b-marketing-what-doesnt-work.webp)
+
 **Autonomous content production.** The dream of "set it and run" AI content is not here yet for B2B. The output lacks the specific expertise, the industry nuance, the honest opinion that makes B2B content credible with a senior buyer. You can use AI to produce content faster. You cannot yet use it to produce content without a knowledgeable human in the loop.
 
 **Lead scoring and intent data.** There's a lot of money being spent on AI-powered intent platforms. Some of it is well spent. Most of it is not — because the signal quality is poor, the integration with sales workflows is weak, and the teams using it don't have the operational discipline to act on signals quickly enough to make the data meaningful.
@@ -36,6 +40,8 @@ Let's be specific. The AI use cases generating real, measurable value in B2B mar
 **AI-generated personalisation without strategy.** Personalisation at scale is only valuable if you have something worth personalising. Teams that have jumped to AI-powered personalisation without a clear segmentation strategy and differentiated messaging for each segment are just automating noise.
 
 ## The hybrid model
+
+![The deliberate craftsman — human judgment amplified by AI](/blog/ai-b2b-marketing-hybrid-model.webp)
 
 The frame we find most useful is this: AI is not a replacement for human judgment in B2B marketing. It's an amplifier of it.
 
