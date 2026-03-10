@@ -3,7 +3,7 @@ title: "Why 65% of B2B marketing budgets don't generate measurable impact"
 excerpt: "The alignment problem isn't new. But it's getting more expensive — and most companies are still solving it wrong."
 date: 2025-12-02
 tag: "Strategy"
-image: "../../assets/blog/65-percent-b2b-marketing-budgets.svg"
+image: "../../assets/blog/65-percent-b2b-marketing-budgets-cover.webp"
 readTime: "8 min read"
 ---
 
@@ -23,6 +23,8 @@ This is structural. And it starts with how marketing strategy gets built — usu
 
 When we audit a B2B marketing operation, the most common finding is not that the marketing is bad. It's that the marketing is optimised for the wrong objective. Good content, good campaigns, reasonable spend — all pointed in a direction that doesn't connect to pipeline.
 
+![Revenue charts and marketing funnels — two reports that rarely tell the same story](../../assets/blog/65-percent-b2b-marketing-revenue-vs-marketing.webp)
+
 ## What misalignment actually costs
 
 The $1 trillion figure that circulates around sales-marketing misalignment is almost certainly inflated. But the real number doesn't need to be precise to be useful.
@@ -31,6 +33,8 @@ Think about it this way: if your marketing team is generating 200 MQLs a month t
 
 The direct cost is easy to calculate. The indirect cost — the drag on the whole commercial operation — is usually much larger.
 
+![Two professionals at the same table with an untouched red folder between them — aligned in theory, disconnected in practice](../../assets/blog/65-percent-b2b-marketing-misalignment-cost.webp)
+
 ## Why most fixes don't work
 
 The typical response to misalignment is process. Define a shared lead definition. Build an SLA. Create a joint dashboard. Review it monthly.
@@ -38,6 +42,8 @@ The typical response to misalignment is process. Define a shared lead definition
 These things help at the margin. They almost never fix the underlying problem.
 
 The underlying problem is that marketing doesn't understand what sales needs, and sales doesn't trust what marketing produces. That gap doesn't close with a spreadsheet. It closes when marketing starts building strategy from the revenue backwards — when the question isn't "what content should we produce this quarter" but "what does the business need to achieve, and what does marketing need to do to make that more likely."
+
+![A hand pulling documents from the table — building strategy from revenue backwards](../../assets/blog/65-percent-b2b-marketing-fixes-dont-work.webp)
 
 That's a different kind of conversation. It requires marketing leadership that is comfortable in a commercial context, not just a creative or digital one. It requires sales leadership that is willing to give marketing the information it needs to be useful — not just complain that the leads are bad.
 
