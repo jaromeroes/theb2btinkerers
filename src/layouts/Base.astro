@@ -28,6 +28,8 @@ const currentPath = Astro.url.pathname;
   <meta property="og:description" content={description}/>
   <meta property="og:site_name" content={siteName}/>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <!-- Umami Analytics — cookieless, GDPR-friendly -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4b7eeb1c-03ad-4347-ab65-9bcbc445e068"></script>
 </head>
 <body>
 
@@ -71,7 +73,7 @@ const currentPath = Astro.url.pathname;
       </div>
     </div>
     <div class="contact-right">
-      <form class="contact-form" action="https://formspree.io/f/xjgedjdv" method="POST">
+      <form class="contact-form" id="contact-form">
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="name">Your name</label>
@@ -90,8 +92,17 @@ const currentPath = Astro.url.pathname;
           <label class="form-label" for="message">What are you trying to solve?</label>
           <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your current situation and what you're looking for..." rows="4" required></textarea>
         </div>
+        <!-- Hidden fields: journey + UTM params -->
+        <input type="hidden" name="_journey" id="field-journey"/>
+        <input type="hidden" name="_utm_source" id="field-utm-source"/>
+        <input type="hidden" name="_utm_medium" id="field-utm-medium"/>
+        <input type="hidden" name="_utm_campaign" id="field-utm-campaign"/>
+        <input type="hidden" name="_utm_content" id="field-utm-content"/>
+        <input type="hidden" name="_utm_term" id="field-utm-term"/>
         <button class="form-submit" type="submit">Send message →</button>
         <p class="form-disclaimer">We'll respond within 24 hours. No spam, no pitch decks.</p>
+        <p class="form-success" id="form-success" style="display:none;">Message sent. We'll be in touch shortly.</p>
+        <p class="form-error" id="form-error" style="display:none;">Something went wrong. Please try emailing us directly.</p>
       </form>
     </div>
   </div>
@@ -132,6 +143,7 @@ const currentPath = Astro.url.pathname;
 </html>
 
 <script>
+/* ── Nav ── */
 const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => {
   nav?.classList.toggle('scrolled', window.scrollY > 20);
@@ -140,4 +152,86 @@ document.getElementById('nav-burger')?.addEventListener('click', function() {
   this.classList.toggle('open');
   document.getElementById('nav-mobile')?.classList.toggle('open');
 });
+
+/* ── Session journey tracking ── */
+(function() {
+  const key = 'tb2bt_journey';
+  const pages = JSON.parse(sessionStorage.getItem(key) || '[]');
+  const current = window.location.pathname;
+  if (pages[pages.length - 1] !== current) {
+    pages.push(current);
+    sessionStorage.setItem(key, JSON.stringify(pages));
+  }
+})();
+
+/* ── UTM capture (persist for the session) ── */
+(function() {
+  const utmKey = 'tb2bt_utm';
+  const params = new URLSearchParams(window.location.search);
+  const utmFields = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  const hasUtm = utmFields.some(f => params.has(f));
+  if (hasUtm) {
+    const utmData = {};
+    utmFields.forEach(f => { if (params.get(f)) utmData[f] = params.get(f); });
+    sessionStorage.setItem(utmKey, JSON.stringify(utmData));
+  }
+})();
+
+/* ── Async form submission + Umami event ── */
+(function() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const btn = form.querySelector('.form-submit');
+    const successEl = document.getElementById('form-success');
+    const errorEl = document.getElementById('form-error');
+
+    /* Inject journey and UTM data into hidden fields */
+    const journey = JSON.parse(sessionStorage.getItem('tb2bt_journey') || '[]');
+    document.getElementById('field-journey').value = journey.join(' → ');
+
+    const utmData = JSON.parse(sessionStorage.getItem('tb2bt_utm') || '{}');
+    document.getElementById('field-utm-source').value = utmData.utm_source || '';
+    document.getElementById('field-utm-medium').value = utmData.utm_medium || '';
+    document.getElementById('field-utm-campaign').value = utmData.utm_campaign || '';
+    document.getElementById('field-utm-content').value = utmData.utm_content || '';
+    document.getElementById('field-utm-term').value = utmData.utm_term || '';
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    successEl.style.display = 'none';
+    errorEl.style.display = 'none';
+
+    try {
+      const res = await fetch('https://formspree.io/f/xjgedjdv', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+
+      if (res.ok) {
+        form.reset();
+        successEl.style.display = 'block';
+        btn.textContent = 'Sent ✓';
+
+        /* Fire Umami conversion event */
+        if (typeof umami !== 'undefined') {
+          umami.track('contact-form-submitted', {
+            source: utmData.utm_source || 'direct',
+            journey_length: journey.length
+          });
+        }
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (err) {
+      errorEl.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Send message →';
+    }
+  });
+})();
 </script>
