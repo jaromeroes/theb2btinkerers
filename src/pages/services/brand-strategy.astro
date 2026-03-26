@@ -1,0 +1,209 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const relatedTags = ['strategy', 'b2b marketing strategy'];
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(post => relatedTags.includes(post.data.tag.toLowerCase()))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+---
+<Base title="B2B Brand Strategy & Positioning" description="Most B2B brands are built by accident. We build them on purpose. Positioning, messaging, and brand strategy for mid-market B2B companies.">
+
+<!-- HERO -->
+<section class="sv-hero">
+  <div class="sv-hero-inner">
+    <div class="sv-eyebrow">Service 02</div>
+    <h1 class="sv-h1">Brand Strategy<br/>& Positioning</h1>
+    <p class="sv-subtitle">Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters.<br/><br/>That clarity doesn't happen by accident. It's built.</p>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="sv-problem">
+  <div class="sv-problem-inner">
+    <div class="sv-problem-left">
+      <div class="section-eyebrow">The challenge</div>
+    </div>
+    <div class="sv-problem-right">
+      <p>Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.</p>
+      <p>The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn't as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.</p>
+      <p>Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don't have the patience to figure out your value for you. That's your job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="sv-deliver">
+  <div class="sv-deliver-inner">
+    <div class="sv-deliver-header">
+      <div class="section-eyebrow">What we deliver</div>
+      <h2 class="sv-h2">A positioning and messaging system your whole company can use.</h2>
+      <p class="sv-deliver-intro">Not a brand book that sits on a shelf. A practical framework that gives your sales team, your marketers, and your leadership a shared language for what you do, who you do it for, and why it matters.</p>
+    </div>
+    <div class="sv-deliver-grid">
+      <div class="sv-deliver-card">
+        <span class="sv-deliver-num">01</span>
+        <div class="sv-deliver-label">Market & competitor positioning map</div>
+        <div class="sv-deliver-desc">Where you sit relative to alternatives. How buyers perceive you versus competitors. And the gaps in the market you can realistically own. Not theory. A clear picture based on real market signals.</div>
+      </div>
+      <div class="sv-deliver-card">
+        <span class="sv-deliver-num">02</span>
+        <div class="sv-deliver-label">ICP definition and buyer journey</div>
+        <div class="sv-deliver-desc">Who you're really selling to, what they care about at each stage, and what makes them choose. Not a persona exercise. A practical map of how your best customers actually buy.</div>
+      </div>
+      <div class="sv-deliver-card">
+        <span class="sv-deliver-num">03</span>
+        <div class="sv-deliver-label">Core messaging architecture</div>
+        <div class="sv-deliver-desc">Value proposition, key messages by audience, proof points. A framework that works across your website, sales decks, campaigns, and conversations. One source of truth for how you talk about what you do.</div>
+      </div>
+      <div class="sv-deliver-card">
+        <span class="sv-deliver-num">04</span>
+        <div class="sv-deliver-label">Brand voice and tone guidelines</div>
+        <div class="sv-deliver-desc">How you sound, how you write, what language you use and what you avoid. Practical enough for your team to apply without a brand police. Because guidelines only work if people actually use them.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="sv-stats">
+  <div class="sv-stats-inner">
+    <div class="section-eyebrow sv-stats-eyebrow">The data</div>
+    <div class="sv-stats-grid">
+      <div class="sv-stat-card sv-stat-1">
+        <span class="sv-stat-num">64%</span>
+        <span class="sv-stat-label">of B2B buyers say they chose a provider because they clearly understood the value proposition</span>
+        <span class="sv-stat-source">CEB / Gartner 2023</span>
+      </div>
+      <div class="sv-stat-card sv-stat-2">
+        <span class="sv-stat-num">33%</span>
+        <span class="sv-stat-label">higher win rates for companies with a documented and differentiated positioning</span>
+        <span class="sv-stat-source">Forrester 2024</span>
+      </div>
+      <div class="sv-stat-card sv-stat-3">
+        <span class="sv-stat-num">71%</span>
+        <span class="sv-stat-label">of B2B companies lack a formal messaging framework</span>
+        <span class="sv-stat-source">Content Marketing Institute 2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED INSIGHTS -->
+{relatedPosts.length > 0 && (
+<section class="sv-insights">
+  <div class="sv-insights-inner">
+    <div class="sv-insights-header">
+      <div>
+        <div class="section-eyebrow">Related insights</div>
+        <h2 class="sv-h2">What we're writing about brand and strategy.</h2>
+      </div>
+      <a class="sv-insights-all" href="/insights">All articles →</a>
+    </div>
+    <div class="sv-insights-grid">
+      {relatedPosts.map(post => (
+        <a class="sv-insight-card" href={`/insights/${post.slug}`}>
+          <span class="sv-insight-tag">{post.data.tag}</span>
+          <div class="sv-insight-title">{post.data.title}</div>
+          <div class="sv-insight-meta">
+            <span class="sv-insight-date">{post.data.date.toLocaleDateString('en-GB',{month:'short',year:'numeric'})}</span>
+            <span class="sv-insight-arrow">Read more →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+)}
+
+<!-- CTA -->
+<section class="sv-cta">
+  <div class="sv-cta-inner">
+    <h2 class="sv-cta-h2">Ready to build a brand your market actually remembers?</h2>
+    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your brand stands and what it could become.</p>
+    <a class="btn-primary" href="/#contact">Let's talk →</a>
+  </div>
+</section>
+
+</Base>
+
+<style>
+/* HERO */
+.sv-hero{padding:calc(68px + clamp(60px,8vw,100px)) var(--pad) clamp(64px,8vw,96px);background:var(--forest);position:relative;overflow:hidden}
+.sv-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(212,232,74,0.07) 0%,transparent 55%);pointer-events:none}
+.sv-hero-inner{max-width:800px;position:relative;z-index:1}
+.sv-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.65;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.sv-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--lime)}
+.sv-h1{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(30px,5vw,64px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream);margin-bottom:24px}
+.sv-subtitle{font-size:clamp(14px,1.8vw,17px);line-height:1.85;color:rgba(245,240,232,0.62);max-width:600px}
+
+/* PROBLEM */
+.sv-problem{padding:clamp(72px,9vw,112px) var(--pad);background:var(--cream)}
+.sv-problem-inner{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(36px,6vw,88px);align-items:start}
+@media(max-width:760px){.sv-problem-inner{grid-template-columns:1fr}}
+.sv-problem-right p{font-size:clamp(14px,1.6vw,16px);line-height:1.9;color:rgba(26,26,26,.65);margin-bottom:22px}
+.sv-problem-right p:last-child{margin-bottom:0}
+
+/* DELIVER */
+.sv-deliver{padding:clamp(72px,9vw,112px) var(--pad);background:var(--linen)}
+.sv-deliver-inner{max-width:1100px}
+.sv-deliver-header{max-width:640px;margin-bottom:clamp(36px,5vw,56px)}
+.sv-h2{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(22px,3vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.05;color:var(--forest);margin-bottom:16px}
+.sv-deliver-intro{font-size:clamp(13px,1.5vw,15px);line-height:1.85;color:var(--gray)}
+.sv-deliver-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+@media(max-width:900px){.sv-deliver-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.sv-deliver-grid{grid-template-columns:1fr}}
+.sv-deliver-card{background:var(--cream);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,28px);transition:background .2s}
+.sv-deliver-card:hover{background:var(--forest)}
+.sv-deliver-num{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:40px;font-weight:800;color:var(--forest);opacity:.2;display:block;line-height:1;margin-bottom:8px;transition:color .2s,opacity .2s}
+.sv-deliver-card:hover .sv-deliver-num{color:var(--cream);opacity:.09}
+.sv-deliver-label{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(14px,1.8vw,17px);font-weight:700;color:var(--forest);margin-bottom:10px;line-height:1.25;transition:color .2s}
+.sv-deliver-card:hover .sv-deliver-label{color:var(--cream)}
+.sv-deliver-desc{font-size:12.5px;line-height:1.7;color:rgba(26,26,26,.6);transition:color .2s}
+.sv-deliver-card:hover .sv-deliver-desc{color:rgba(245,240,232,.58)}
+
+/* STATS */
+.sv-stats{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest)}
+.sv-stats-inner{max-width:1100px}
+.sv-stats-eyebrow{color:var(--cream);opacity:.22;margin-bottom:36px}
+.sv-stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+@media(max-width:700px){.sv-stats-grid{grid-template-columns:1fr}}
+.sv-stat-card{padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,28px)}
+.sv-stat-1,.sv-stat-3{background:var(--lime)}
+.sv-stat-2{background:var(--mid)}
+.sv-stat-num{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:800;line-height:1;display:block;margin-bottom:10px}
+.sv-stat-1 .sv-stat-num,.sv-stat-3 .sv-stat-num{color:var(--forest)}
+.sv-stat-2 .sv-stat-num{color:var(--lime)}
+.sv-stat-label{font-size:12px;line-height:1.6;display:block}
+.sv-stat-1 .sv-stat-label,.sv-stat-3 .sv-stat-label{color:var(--forest)}
+.sv-stat-2 .sv-stat-label{color:rgba(245,240,232,.92)}
+.sv-stat-source{display:block;margin-top:14px;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.sv-stat-1 .sv-stat-source,.sv-stat-3 .sv-stat-source{color:rgba(28,74,58,.7)}
+.sv-stat-2 .sv-stat-source{color:rgba(245,240,232,.65)}
+
+/* RELATED INSIGHTS */
+.sv-insights{padding:clamp(72px,9vw,112px) var(--pad);background:var(--cream)}
+.sv-insights-inner{max-width:1100px}
+.sv-insights-header{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:clamp(32px,5vw,48px)}
+.sv-insights-header .sv-h2{margin-bottom:0}
+.sv-insights-all{font-size:12px;font-weight:600;color:var(--forest);border-bottom:1px solid rgba(28,74,58,0.3);padding-bottom:2px;text-decoration:none;transition:border-color .15s}
+.sv-insights-all:hover{border-color:var(--forest)}
+.sv-insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+@media(max-width:700px){.sv-insights-grid{grid-template-columns:1fr}}
+.sv-insight-card{background:var(--linen);padding:clamp(24px,3vw,34px);text-decoration:none;display:flex;flex-direction:column;transition:background .2s}
+.sv-insight-card:hover{background:#ddd8ce}
+.sv-insight-tag{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);margin-bottom:12px;display:block}
+.sv-insight-title{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(14px,1.8vw,18px);font-weight:700;line-height:1.25;color:var(--forest);margin-bottom:auto;padding-bottom:20px;flex:1}
+.sv-insight-meta{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(28,74,58,.1)}
+.sv-insight-date{font-size:10px;color:rgba(28,74,58,.55)}
+.sv-insight-arrow{font-size:11px;font-weight:600;color:var(--forest);opacity:.5;transition:opacity .2s}
+.sv-insight-card:hover .sv-insight-arrow{opacity:1}
+
+/* CTA */
+.sv-cta{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest)}
+.sv-cta-inner{max-width:660px}
+.sv-cta-h2{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(26px,4vw,52px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream);margin-bottom:20px}
+.sv-cta-sub{font-size:clamp(13px,1.5vw,16px);line-height:1.8;color:rgba(245,240,232,.45);margin-bottom:36px;display:block}
+</style>
