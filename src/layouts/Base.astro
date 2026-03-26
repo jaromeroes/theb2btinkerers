@@ -28,6 +28,11 @@ const currentPath = Astro.url.pathname;
   <meta property="og:description" content={description}/>
   <meta property="og:site_name" content={siteName}/>
   <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <!-- Preconnect to external origins -->
+  <link rel="preconnect" href="https://cloud.umami.is" crossorigin/>
+  <!-- Preload critical fonts to break the CSS→font chain -->
+  <link rel="preload" href="/_astro/inter-latin-wght-normal.Dx4kXJAl.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="/_astro/bricolage-grotesque-latin-wght-normal.DLoelf7F.woff2" as="font" type="font/woff2" crossorigin/>
   <!-- Umami Analytics — cookieless, GDPR-friendly -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="4b7eeb1c-03ad-4347-ab65-9bcbc445e068"></script>
 </head>
