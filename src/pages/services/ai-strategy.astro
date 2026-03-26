@@ -2,28 +2,28 @@
 import Base from '../../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import heroImg from '../../assets/services/brand-strategy-hero.webp';
-import caseImg from '../../assets/services/brand-strategy-case-study.webp';
+import heroImg from '../../assets/services/ai-strategy-hero.webp';
+import caseImg from '../../assets/services/ai-strategy-case-study.webp';
 
-const relatedTags = ['strategy', 'b2b marketing strategy'];
+const relatedTags = ['ai', 'ai & marketing'];
 const allPosts = await getCollection('blog');
 const relatedPosts = allPosts
   .filter(post => relatedTags.includes(post.data.tag.toLowerCase()))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
-<Base title="B2B Brand Strategy & Positioning" description="Most B2B brands are built by accident. We build them on purpose. Positioning, messaging, and brand strategy for mid-market B2B companies.">
+<Base title="AI & Hybrid Marketing Strategy for B2B | The B2B Tinkerers" description="AI won't replace your marketing team. But teams that use AI well will outcompete those that don't. We help B2B companies build the hybrid model that actually works.">
 
 <!-- HERO -->
 <section class="sv-hero">
   <div class="sv-hero-bg">
-    <Image src={heroImg} alt="Brand strategy documents and colour swatches on a conference table" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <Image src={heroImg} alt="Circuit board pattern merging with organic leaf veins" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
   </div>
   <div class="sv-hero-overlay"></div>
   <div class="sv-hero-content">
-    <div class="sv-eyebrow">Service 02</div>
-    <h1 class="sv-h1">Brand Strategy<br/>& Positioning</h1>
-    <p class="sv-subtitle">Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters. That clarity doesn't happen by accident. It's built.</p>
+    <div class="sv-eyebrow">Service 05</div>
+    <h1 class="sv-h1">AI & Hybrid<br/>Marketing Strategy</h1>
+    <p class="sv-subtitle">AI won't replace your marketing team. But teams that use AI well will outcompete those that don't. We help B2B companies understand where AI genuinely adds value in their marketing operation and build the workflows to make it stick.</p>
   </div>
 </section>
 
@@ -32,12 +32,12 @@ const relatedPosts = allPosts
   <div class="sv-problem-inner">
     <div class="sv-problem-left">
       <div class="section-eyebrow">The challenge</div>
-      <h2 class="sv-h2">Your brand says everything.<br/>Which means it says nothing.</h2>
+      <h2 class="sv-h2">Everyone is talking about AI.<br/>Almost nobody is using it well.</h2>
     </div>
     <div class="sv-problem-right">
-      <p>Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.</p>
-      <p>The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn't as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.</p>
-      <p>Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don't have the patience to figure out your value for you. That's your job.</p>
+      <p>There is enormous pressure to "do something with AI" right now. Leadership reads the headlines, sees competitors announcing AI initiatives, and wants to know the plan. But the honest truth is that most B2B marketing teams have no clarity on what AI should actually do for them. The urgency is real. The direction is missing.</p>
+      <p>So teams experiment. Someone starts using ChatGPT for blog drafts. Another person tries an AI tool for ad copy. A third explores automated reporting. None of it connects to a strategy. None of it scales. And when leadership asks what the ROI is, nobody has a good answer. The tools are powerful, but isolated experiments don't compound into anything meaningful.</p>
+      <p>Worse, some teams rush to automate processes that were broken to begin with. AI doesn't fix a bad content strategy. It just produces bad content faster. The real question is not "where can we use AI?" It is "where does human judgment matter most, and where does it not?" Get that wrong and you waste budget. Get it right and you build a genuine competitive advantage.</p>
     </div>
   </div>
 </section>
@@ -47,37 +47,37 @@ const relatedPosts = allPosts
   <div class="sv-deliver-inner">
     <div class="sv-deliver-header">
       <div class="section-eyebrow">What we deliver</div>
-      <h2 class="sv-h2">A positioning and messaging system your whole company can use.</h2>
-      <p class="sv-deliver-intro">Not a brand book that sits on a shelf. A practical framework that gives your sales team, your marketers, and your leadership a shared language for what you do, who you do it for, and why it matters.</p>
+      <h2 class="sv-h2">A practical AI strategy, not a science experiment.</h2>
+      <p class="sv-deliver-intro">We build AI strategies that create value, not hype. Every recommendation is grounded in your team's actual capabilities, your real workflows, and what will genuinely move the needle for your marketing operation.</p>
     </div>
     <div class="sv-deliver-grid">
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          <div class="sv-deliver-label">Market & competitor positioning map</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M9 15h.01"/><path d="M15 15h.01"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>
+          <div class="sv-deliver-label">AI readiness assessment</div>
         </div>
-        <div class="sv-deliver-desc">Where you sit relative to alternatives. How buyers perceive you versus competitors. And the gaps in the market you can realistically own. Not theory. A clear picture based on real market signals.</div>
+        <div class="sv-deliver-desc">Where your team, data, and processes are today. What's ready for AI and what isn't. A clear-eyed evaluation before anyone starts buying tools or building workflows.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <div class="sv-deliver-label">ICP definition and buyer journey</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          <div class="sv-deliver-label">Content and campaign automation strategy</div>
         </div>
-        <div class="sv-deliver-desc">Who you're really selling to, what they care about at each stage, and what makes them choose. Not a persona exercise. A practical map of how your best customers actually buy.</div>
+        <div class="sv-deliver-desc">Which workflows benefit from automation. Which need human judgment. Where the handoffs live. A practical map of what to automate, what to augment, and what to leave alone.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <div class="sv-deliver-label">Core messaging architecture</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l-2 7H3l5.5 4.5L6 21l6-4.5L18 21l-2.5-7.5L21 9h-7z"/><circle cx="12" cy="12" r="3"/><path d="M5 5l1.5 1.5"/><path d="M17.5 17.5L19 19"/><path d="M19 5l-1.5 1.5"/><path d="M5.5 17.5L4 19"/></svg>
+          <div class="sv-deliver-label">Tool selection and stack integration</div>
         </div>
-        <div class="sv-deliver-desc">Value proposition, key messages by audience, proof points. A framework that works across your website, sales decks, campaigns, and conversations. One source of truth for how you talk about what you do.</div>
+        <div class="sv-deliver-desc">The right tools for your actual needs. Not the trendiest, not the cheapest. The ones that fit your workflows, integrate with your existing stack, and your team will actually use.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          <div class="sv-deliver-label">Brand voice and tone guidelines</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/><path d="M18 6l2-2 2 2"/><path d="M20 4v6"/></svg>
+          <div class="sv-deliver-label">Team capability building</div>
         </div>
-        <div class="sv-deliver-desc">How you sound, how you write, what language you use and what you avoid. Practical enough for your team to apply without a brand police. Because guidelines only work if people actually use them.</div>
+        <div class="sv-deliver-desc">Training your team to work with AI, not be replaced by it. Practical skills, not theory. The goal is confidence and competence, not dependence on external consultants.</div>
       </div>
     </div>
   </div>
@@ -87,30 +87,30 @@ const relatedPosts = allPosts
 <section class="sv-process">
   <div class="sv-process-inner">
     <div class="section-eyebrow">How we work</div>
-    <h2 class="sv-h2">From diagnosis to delivery in 6-8 weeks.</h2>
+    <h2 class="sv-h2">From assessment to operational AI in 6-8 weeks.</h2>
     <div class="sv-process-grid">
       <div class="sv-process-step">
         <span class="sv-process-num">01</span>
-        <div class="sv-process-title">Discovery</div>
-        <div class="sv-process-body">Stakeholder interviews, competitor deep-dive, current positioning audit. We talk to your team, your customers, and your market before forming any opinions.</div>
+        <div class="sv-process-title">Assessment</div>
+        <div class="sv-process-body">Current workflows, team capabilities, data landscape, tool audit. We understand where you are before recommending where to go.</div>
         <span class="sv-process-tag">Week 1-2</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">02</span>
         <div class="sv-process-title">Strategy</div>
-        <div class="sv-process-body">Positioning framework, value proposition, ICP definition. This is where the hard choices happen. We facilitate the decisions, you own them.</div>
+        <div class="sv-process-body">Use case prioritisation, build vs buy decisions, integration architecture. The hard choices about where AI fits and where it doesn't.</div>
         <span class="sv-process-tag">Week 3-4</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">03</span>
-        <div class="sv-process-title">Build</div>
-        <div class="sv-process-body">Messaging architecture, brand voice guidelines, visual direction brief. The strategy becomes tools your team can actually deploy.</div>
+        <div class="sv-process-title">Pilot</div>
+        <div class="sv-process-body">Implement 2-3 high-impact workflows. Measure results. Iterate. Real proof of value before committing to a full rollout.</div>
         <span class="sv-process-tag">Week 5-6</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">04</span>
-        <div class="sv-process-title">Activate</div>
-        <div class="sv-process-body">Team workshop, rollout plan, internal adoption. A brand strategy that lives in a slide deck is worthless. We make sure it reaches the people who need it.</div>
+        <div class="sv-process-title">Scale</div>
+        <div class="sv-process-body">Team training, documentation, rollout plan for remaining use cases. Everything your team needs to run this without us.</div>
         <span class="sv-process-tag">Week 7-8</span>
       </div>
     </div>
@@ -121,22 +121,22 @@ const relatedPosts = allPosts
 <section class="sv-stats">
   <div class="sv-stats-inner">
     <div class="section-eyebrow sv-stats-eyebrow">The numbers</div>
-    <h2 class="sv-h2 sv-stats-title">Why positioning is not optional.</h2>
+    <h2 class="sv-h2 sv-stats-title">The AI gap is already here.</h2>
     <div class="sv-stats-grid">
       <div class="sv-stat-card sv-stat-1">
-        <span class="sv-stat-num">77%</span>
-        <span class="sv-stat-label">of B2B buyers say brand is a critical factor in their purchase decision</span>
-        <span class="sv-stat-source">Gartner 2024</span>
+        <span class="sv-stat-num">64%</span>
+        <span class="sv-stat-label">of B2B marketers say AI will significantly impact their strategy but only 19% have a formal plan</span>
+        <span class="sv-stat-source">Salesforce State of Marketing 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-2">
-        <span class="sv-stat-num">2.5x</span>
-        <span class="sv-stat-label">higher win rates for companies with clear, differentiated positioning</span>
-        <span class="sv-stat-source">Forrester 2024</span>
+        <span class="sv-stat-num">40%</span>
+        <span class="sv-stat-label">productivity increase in marketing teams that have successfully integrated AI into core workflows</span>
+        <span class="sv-stat-source">McKinsey 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-3">
-        <span class="sv-stat-num">60%</span>
-        <span class="sv-stat-label">of B2B companies cannot clearly articulate what makes them different</span>
-        <span class="sv-stat-source">LinkedIn B2B Institute 2024</span>
+        <span class="sv-stat-num">5x</span>
+        <span class="sv-stat-label">faster content production with AI-augmented workflows while maintaining quality standards</span>
+        <span class="sv-stat-source">HubSpot 2024</span>
       </div>
     </div>
   </div>
@@ -148,13 +148,13 @@ const relatedPosts = allPosts
     <div class="section-eyebrow">Case in point</div>
     <div class="sv-case-grid">
       <div class="sv-case-text">
-        <h2 class="sv-h2">A SaaS company repositioned from "feature-rich" to "category leader" and doubled inbound pipeline in 6 months.</h2>
-        <p>The company had a strong product and a loyal customer base. But every pitch started with a feature comparison. Prospects were evaluating them as one of four similar vendors, and price was becoming the deciding factor.</p>
-        <p>We ran a positioning sprint. The insight was that their customers did not buy them for features. They bought them because the platform eliminated a specific operational bottleneck that cost mid-market companies between 15 and 40 hours per month. That was the position: not "we do more" but "we remove this problem entirely."</p>
-        <p>The repositioning cascaded through everything: website, sales deck, outbound sequences, event messaging. Within six months, inbound pipeline had doubled. Average deal size increased by 30% because they were no longer competing on price. The sales team reported that conversations changed. Prospects started saying "we heard you're the ones who solve [specific problem]" instead of "can you walk me through your features?"</p>
+        <h2 class="sv-h2">A B2B SaaS company reduced content production time by 60% and increased output quality by integrating AI into their editorial workflow.</h2>
+        <p>The marketing team was producing 4 pieces of content per month and struggling to keep up. Demand from sales for case studies, thought leadership, and product content was growing, but headcount was not. The team was stuck in a cycle of producing just enough to stay visible, without the bandwidth to focus on quality or strategy.</p>
+        <p>We mapped their editorial workflow end to end, identified where AI could handle research, outlines, and first drafts, and built a human-AI pipeline with clear quality gates. Each piece still went through human editorial review, but the time spent on the low-value production work dropped dramatically.</p>
+        <p>Within 8 weeks, output increased from 4 to 12 pieces per month. More importantly, the team spent more time on strategy, positioning, and distribution. Content quality improved because writers were editing and refining rather than staring at blank pages. The bottleneck shifted from "can we produce enough" to "what should we produce next."</p>
       </div>
       <div class="sv-case-img">
-        <Image src={caseImg} alt="Strategic mapping diagram on a whiteboard with connected nodes" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <Image src={caseImg} alt="Human fingerprint pattern merging with digital circuit traces" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@ const relatedPosts = allPosts
     <div class="sv-insights-header">
       <div>
         <div class="section-eyebrow">Related insights</div>
-        <h2 class="sv-h2">What we're writing about brand and strategy.</h2>
+        <h2 class="sv-h2">What we're writing about AI and marketing.</h2>
       </div>
       <a class="sv-insights-all" href="/insights">All articles →</a>
     </div>
@@ -190,8 +190,8 @@ const relatedPosts = allPosts
 <!-- CTA -->
 <section class="sv-cta">
   <div class="sv-cta-inner">
-    <h2 class="sv-cta-h2">Ready to own your position in the market?</h2>
-    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your brand stands and where it could go.</p>
+    <h2 class="sv-cta-h2">Ready to make AI work for your marketing team?</h2>
+    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where AI can actually help your operation.</p>
     <a class="btn-primary" href="#contact">Let's talk →</a>
   </div>
 </section>

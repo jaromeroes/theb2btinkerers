@@ -2,28 +2,28 @@
 import Base from '../../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import heroImg from '../../assets/services/brand-strategy-hero.webp';
-import caseImg from '../../assets/services/brand-strategy-case-study.webp';
+import heroImg from '../../assets/services/fractional-cmo-hero.webp';
+import caseImg from '../../assets/services/fractional-cmo-case-study.webp';
 
-const relatedTags = ['strategy', 'b2b marketing strategy'];
+const relatedTags = ['fractional cmo', 'strategy', 'b2b marketing strategy'];
 const allPosts = await getCollection('blog');
 const relatedPosts = allPosts
   .filter(post => relatedTags.includes(post.data.tag.toLowerCase()))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
-<Base title="B2B Brand Strategy & Positioning" description="Most B2B brands are built by accident. We build them on purpose. Positioning, messaging, and brand strategy for mid-market B2B companies.">
+<Base title="Fractional CMO for B2B Companies | The B2B Tinkerers" description="Senior marketing leadership without the full-time cost. We embed into your leadership team, set strategy, coach your people, and keep marketing connected to the business.">
 
 <!-- HERO -->
 <section class="sv-hero">
   <div class="sv-hero-bg">
-    <Image src={heroImg} alt="Brand strategy documents and colour swatches on a conference table" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <Image src={heroImg} alt="Executive meeting room table with open notebook and coffee cup" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
   </div>
   <div class="sv-hero-overlay"></div>
   <div class="sv-hero-content">
-    <div class="sv-eyebrow">Service 02</div>
-    <h1 class="sv-h1">Brand Strategy<br/>& Positioning</h1>
-    <p class="sv-subtitle">Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters. That clarity doesn't happen by accident. It's built.</p>
+    <div class="sv-eyebrow">Service 06</div>
+    <h1 class="sv-h1">Fractional CMO</h1>
+    <p class="sv-subtitle">Senior marketing leadership without the full-time cost. We embed into your leadership team: setting strategy, coaching your people, and making sure marketing stays connected to what the business actually needs. Not a consultant who sends a report and disappears.</p>
   </div>
 </section>
 
@@ -32,12 +32,12 @@ const relatedPosts = allPosts
   <div class="sv-problem-inner">
     <div class="sv-problem-left">
       <div class="section-eyebrow">The challenge</div>
-      <h2 class="sv-h2">Your brand says everything.<br/>Which means it says nothing.</h2>
+      <h2 class="sv-h2">You need a CMO.<br/>You don't need a full-time CMO.</h2>
     </div>
     <div class="sv-problem-right">
-      <p>Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.</p>
-      <p>The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn't as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.</p>
-      <p>Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don't have the patience to figure out your value for you. That's your job.</p>
+      <p>There's a stage most growing B2B companies reach where marketing needs more than a capable executor. It needs strategic leadership. Someone who can connect marketing activity to business goals, make trade-offs, and set direction. But the budget or stage of the company doesn't justify a full-time CMO hire. Not yet. Maybe not ever.</p>
+      <p>The gap between a marketing manager executing tactics and a senior leader setting direction is wider than most companies realise. One follows the plan. The other decides what the plan should be, why it matters, and how it connects to revenue. Without that senior layer, marketing becomes a collection of activities rather than a function with purpose.</p>
+      <p>When nobody owns the marketing strategy, it drifts. Campaigns get launched without a clear connection to business priorities. Messaging fragments across channels. The team becomes reactive, chasing whatever feels urgent that week instead of building something that compounds. The work gets done, but it doesn't add up to anything.</p>
     </div>
   </div>
 </section>
@@ -47,37 +47,37 @@ const relatedPosts = allPosts
   <div class="sv-deliver-inner">
     <div class="sv-deliver-header">
       <div class="section-eyebrow">What we deliver</div>
-      <h2 class="sv-h2">A positioning and messaging system your whole company can use.</h2>
-      <p class="sv-deliver-intro">Not a brand book that sits on a shelf. A practical framework that gives your sales team, your marketers, and your leadership a shared language for what you do, who you do it for, and why it matters.</p>
+      <h2 class="sv-h2">CMO-level thinking, without the CMO-level overhead.</h2>
+      <p class="sv-deliver-intro">We embed into your team, not hover above it. That means being in the room when decisions get made, knowing the people by name, and understanding the business well enough to make calls that stick.</p>
     </div>
     <div class="sv-deliver-grid">
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          <div class="sv-deliver-label">Market & competitor positioning map</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 16l2 2 4-4"/></svg>
+          <div class="sv-deliver-label">Weekly leadership involvement</div>
         </div>
-        <div class="sv-deliver-desc">Where you sit relative to alternatives. How buyers perceive you versus competitors. And the gaps in the market you can realistically own. Not theory. A clear picture based on real market signals.</div>
+        <div class="sv-deliver-desc">Regular presence in leadership meetings. Not a monthly check-in. Actual involvement in decisions that affect marketing. The kind of presence that means marketing has a voice when priorities are set, budgets are discussed, and strategy shifts.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <div class="sv-deliver-label">ICP definition and buyer journey</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          <div class="sv-deliver-label">Strategy ownership and team direction</div>
         </div>
-        <div class="sv-deliver-desc">Who you're really selling to, what they care about at each stage, and what makes them choose. Not a persona exercise. A practical map of how your best customers actually buy.</div>
+        <div class="sv-deliver-desc">Setting the marketing strategy, aligning it with business goals, and making sure the team executes with clarity and confidence. Not just advice. Ownership of the direction and accountability for the outcomes.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <div class="sv-deliver-label">Core messaging architecture</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <div class="sv-deliver-label">Board and investor-level narrative</div>
         </div>
-        <div class="sv-deliver-desc">Value proposition, key messages by audience, proof points. A framework that works across your website, sales decks, campaigns, and conversations. One source of truth for how you talk about what you do.</div>
+        <div class="sv-deliver-desc">The marketing story for stakeholders who think in terms of revenue, market share, and competitive position. Clear reporting that connects marketing activity to business outcomes in language the board actually cares about.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          <div class="sv-deliver-label">Brand voice and tone guidelines</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          <div class="sv-deliver-label">Hiring and team structure guidance</div>
         </div>
-        <div class="sv-deliver-desc">How you sound, how you write, what language you use and what you avoid. Practical enough for your team to apply without a brand police. Because guidelines only work if people actually use them.</div>
+        <div class="sv-deliver-desc">When to hire, who to hire, how to structure the team as it grows. Building the marketing function, not just running it. Making sure every new role adds capability rather than just capacity.</div>
       </div>
     </div>
   </div>
@@ -87,31 +87,31 @@ const relatedPosts = allPosts
 <section class="sv-process">
   <div class="sv-process-inner">
     <div class="section-eyebrow">How we work</div>
-    <h2 class="sv-h2">From diagnosis to delivery in 6-8 weeks.</h2>
+    <h2 class="sv-h2">Embedded leadership from day one.</h2>
     <div class="sv-process-grid">
       <div class="sv-process-step">
         <span class="sv-process-num">01</span>
-        <div class="sv-process-title">Discovery</div>
-        <div class="sv-process-body">Stakeholder interviews, competitor deep-dive, current positioning audit. We talk to your team, your customers, and your market before forming any opinions.</div>
+        <div class="sv-process-title">Immersion</div>
+        <div class="sv-process-body">Deep-dive into business, team, and current marketing state. Attend key meetings. Listen before acting. Understand the dynamics, the constraints, and where the real opportunities are.</div>
         <span class="sv-process-tag">Week 1-2</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">02</span>
-        <div class="sv-process-title">Strategy</div>
-        <div class="sv-process-body">Positioning framework, value proposition, ICP definition. This is where the hard choices happen. We facilitate the decisions, you own them.</div>
+        <div class="sv-process-title">Direction</div>
+        <div class="sv-process-body">Set the strategic framework. Define priorities, KPIs, and the 90-day roadmap. Align with leadership on what marketing needs to deliver and how success will be measured.</div>
         <span class="sv-process-tag">Week 3-4</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">03</span>
-        <div class="sv-process-title">Build</div>
-        <div class="sv-process-body">Messaging architecture, brand voice guidelines, visual direction brief. The strategy becomes tools your team can actually deploy.</div>
-        <span class="sv-process-tag">Week 5-6</span>
+        <div class="sv-process-title">Execution</div>
+        <div class="sv-process-body">Weekly involvement. Coach the team, review work, make decisions, remove blockers. Present to the board when needed. Keep everything moving in the same direction.</div>
+        <span class="sv-process-tag">Ongoing</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">04</span>
-        <div class="sv-process-title">Activate</div>
-        <div class="sv-process-body">Team workshop, rollout plan, internal adoption. A brand strategy that lives in a slide deck is worthless. We make sure it reaches the people who need it.</div>
-        <span class="sv-process-tag">Week 7-8</span>
+        <div class="sv-process-title">Build</div>
+        <div class="sv-process-body">Develop team capabilities. Hire when needed. Build processes that will outlast our engagement. The goal is a marketing function that can eventually stand on its own.</div>
+        <span class="sv-process-tag">Ongoing</span>
       </div>
     </div>
   </div>
@@ -121,22 +121,22 @@ const relatedPosts = allPosts
 <section class="sv-stats">
   <div class="sv-stats-inner">
     <div class="section-eyebrow sv-stats-eyebrow">The numbers</div>
-    <h2 class="sv-h2 sv-stats-title">Why positioning is not optional.</h2>
+    <h2 class="sv-h2 sv-stats-title">Why fractional leadership works.</h2>
     <div class="sv-stats-grid">
       <div class="sv-stat-card sv-stat-1">
-        <span class="sv-stat-num">77%</span>
-        <span class="sv-stat-label">of B2B buyers say brand is a critical factor in their purchase decision</span>
-        <span class="sv-stat-source">Gartner 2024</span>
+        <span class="sv-stat-num">78%</span>
+        <span class="sv-stat-label">of mid-market companies say they need senior marketing leadership but cannot justify a full-time CMO hire</span>
+        <span class="sv-stat-source">Pavilion 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-2">
-        <span class="sv-stat-num">2.5x</span>
-        <span class="sv-stat-label">higher win rates for companies with clear, differentiated positioning</span>
-        <span class="sv-stat-source">Forrester 2024</span>
+        <span class="sv-stat-num">3x</span>
+        <span class="sv-stat-label">faster time to strategic clarity compared to hiring a full-time CMO (no recruitment, no onboarding delay)</span>
+        <span class="sv-stat-source">Chief Outsiders 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-3">
-        <span class="sv-stat-num">60%</span>
-        <span class="sv-stat-label">of B2B companies cannot clearly articulate what makes them different</span>
-        <span class="sv-stat-source">LinkedIn B2B Institute 2024</span>
+        <span class="sv-stat-num">52%</span>
+        <span class="sv-stat-label">of companies using fractional executives report improved strategic alignment within 90 days</span>
+        <span class="sv-stat-source">Deloitte 2024</span>
       </div>
     </div>
   </div>
@@ -148,13 +148,13 @@ const relatedPosts = allPosts
     <div class="section-eyebrow">Case in point</div>
     <div class="sv-case-grid">
       <div class="sv-case-text">
-        <h2 class="sv-h2">A SaaS company repositioned from "feature-rich" to "category leader" and doubled inbound pipeline in 6 months.</h2>
-        <p>The company had a strong product and a loyal customer base. But every pitch started with a feature comparison. Prospects were evaluating them as one of four similar vendors, and price was becoming the deciding factor.</p>
-        <p>We ran a positioning sprint. The insight was that their customers did not buy them for features. They bought them because the platform eliminated a specific operational bottleneck that cost mid-market companies between 15 and 40 hours per month. That was the position: not "we do more" but "we remove this problem entirely."</p>
-        <p>The repositioning cascaded through everything: website, sales deck, outbound sequences, event messaging. Within six months, inbound pipeline had doubled. Average deal size increased by 30% because they were no longer competing on price. The sales team reported that conversations changed. Prospects started saying "we heard you're the ones who solve [specific problem]" instead of "can you walk me through your features?"</p>
+        <h2 class="sv-h2">A B2B industrial company went from "we don't really do marketing" to a structured, pipeline-generating function in under 6 months.</h2>
+        <p>The company was growing on reputation and referrals. They had one person handling marketing, mostly focused on trade events and product brochures. Leadership knew they needed more from marketing but had no clear idea what "more" looked like or how to get there. There was no strategy, no pipeline tracking, and no connection between marketing activity and sales outcomes.</p>
+        <p>We embedded as fractional CMO. The first step was building a marketing strategy directly connected to sales targets and business priorities. We defined the ICP, mapped the buyer journey, and built a messaging framework the sales team could actually use. Then we hired two additional team members with the right skills to execute against the plan. We set up a demand generation engine that combined content, outreach, and events into a system rather than a set of disconnected activities.</p>
+        <p>Six months later, marketing was contributing 25% of new pipeline. The team had its own seat at the leadership table. Sales and marketing were aligned on targets and reporting. Most importantly, the function was built to sustain itself. When our engagement scaled back, the team had the strategy, the processes, and the confidence to keep building.</p>
       </div>
       <div class="sv-case-img">
-        <Image src={caseImg} alt="Strategic mapping diagram on a whiteboard with connected nodes" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <Image src={caseImg} alt="Compass lying on architectural blueprints" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@ const relatedPosts = allPosts
     <div class="sv-insights-header">
       <div>
         <div class="section-eyebrow">Related insights</div>
-        <h2 class="sv-h2">What we're writing about brand and strategy.</h2>
+        <h2 class="sv-h2">What we're writing about marketing leadership.</h2>
       </div>
       <a class="sv-insights-all" href="/insights">All articles →</a>
     </div>
@@ -190,8 +190,8 @@ const relatedPosts = allPosts
 <!-- CTA -->
 <section class="sv-cta">
   <div class="sv-cta-inner">
-    <h2 class="sv-cta-h2">Ready to own your position in the market?</h2>
-    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your brand stands and where it could go.</p>
+    <h2 class="sv-cta-h2">Need senior marketing leadership without the full-time commitment?</h2>
+    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your marketing needs direction.</p>
     <a class="btn-primary" href="#contact">Let's talk →</a>
   </div>
 </section>

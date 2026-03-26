@@ -2,8 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import heroImg from '../../assets/services/brand-strategy-hero.webp';
-import caseImg from '../../assets/services/brand-strategy-case-study.webp';
+import heroImg from '../../assets/services/go-to-market-hero.webp';
+import caseImg from '../../assets/services/go-to-market-case-study.webp';
 
 const relatedTags = ['strategy', 'b2b marketing strategy'];
 const allPosts = await getCollection('blog');
@@ -12,18 +12,18 @@ const relatedPosts = allPosts
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
-<Base title="B2B Brand Strategy & Positioning" description="Most B2B brands are built by accident. We build them on purpose. Positioning, messaging, and brand strategy for mid-market B2B companies.">
+<Base title="B2B Go-To-Market Strategy | The B2B Tinkerers" description="A clear GTM motion that connects positioning to pipeline. Market entry, channel strategy, and demand generation for mid-market B2B companies.">
 
 <!-- HERO -->
 <section class="sv-hero">
   <div class="sv-hero-bg">
-    <Image src={heroImg} alt="Brand strategy documents and colour swatches on a conference table" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <Image src={heroImg} alt="Wall map with pins and coloured threads connecting different points" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
   </div>
   <div class="sv-hero-overlay"></div>
   <div class="sv-hero-content">
-    <div class="sv-eyebrow">Service 02</div>
-    <h1 class="sv-h1">Brand Strategy<br/>& Positioning</h1>
-    <p class="sv-subtitle">Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters. That clarity doesn't happen by accident. It's built.</p>
+    <div class="sv-eyebrow">Service 03</div>
+    <h1 class="sv-h1">Go-To-Market<br/>Strategy</h1>
+    <p class="sv-subtitle">A GTM strategy is more than a launch plan. It's the answer to: who are we selling to, what do we say, where do we show up, and how do sales and marketing move together. We build it from scratch or fix what's broken.</p>
   </div>
 </section>
 
@@ -32,12 +32,12 @@ const relatedPosts = allPosts
   <div class="sv-problem-inner">
     <div class="sv-problem-left">
       <div class="section-eyebrow">The challenge</div>
-      <h2 class="sv-h2">Your brand says everything.<br/>Which means it says nothing.</h2>
+      <h2 class="sv-h2">You have a product.<br/>You don't have a motion.</h2>
     </div>
     <div class="sv-problem-right">
-      <p>Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.</p>
-      <p>The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn't as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.</p>
-      <p>Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don't have the patience to figure out your value for you. That's your job.</p>
+      <p>You have a good product. Maybe even a great one. But there is no systematic way to get it in front of the right buyers at the right time. Leads trickle in from random channels. Some deals close, but nobody can explain why those ones worked and others didn't. Growth feels accidental, not repeatable.</p>
+      <p>Sales is doing one thing. Marketing is doing another. Both teams are busy, but they are not moving in the same direction. Sales blames marketing for low-quality leads. Marketing blames sales for not following up. Meanwhile, the pipeline stays unpredictable and the board keeps asking the same question: when does this become a machine?</p>
+      <p>Entering a new market without a playbook is where it gets expensive. Companies assume that what worked in one geography or segment will work in the next. It rarely does. The gap between product-market fit and repeatable revenue is where most B2B companies stall. Not because the product fails, but because the go-to-market motion was never properly built.</p>
     </div>
   </div>
 </section>
@@ -47,37 +47,37 @@ const relatedPosts = allPosts
   <div class="sv-deliver-inner">
     <div class="sv-deliver-header">
       <div class="section-eyebrow">What we deliver</div>
-      <h2 class="sv-h2">A positioning and messaging system your whole company can use.</h2>
-      <p class="sv-deliver-intro">Not a brand book that sits on a shelf. A practical framework that gives your sales team, your marketers, and your leadership a shared language for what you do, who you do it for, and why it matters.</p>
+      <h2 class="sv-h2">The playbook that connects your product to your pipeline.</h2>
+      <p class="sv-deliver-intro">Not a strategy deck that gathers dust. A working GTM motion with clear ownership, measurable targets, and a shared plan that sales and marketing can actually execute together.</p>
     </div>
     <div class="sv-deliver-grid">
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          <div class="sv-deliver-label">Market & competitor positioning map</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div class="sv-deliver-label">Market entry or expansion planning</div>
         </div>
-        <div class="sv-deliver-desc">Where you sit relative to alternatives. How buyers perceive you versus competitors. And the gaps in the market you can realistically own. Not theory. A clear picture based on real market signals.</div>
+        <div class="sv-deliver-desc">Which segments, which geographies, in what order, with what resources. A prioritised roadmap based on market size, competitive intensity, and your actual capacity to win.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <div class="sv-deliver-label">ICP definition and buyer journey</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <div class="sv-deliver-label">Channel mix and prioritisation</div>
         </div>
-        <div class="sv-deliver-desc">Who you're really selling to, what they care about at each stage, and what makes them choose. Not a persona exercise. A practical map of how your best customers actually buy.</div>
+        <div class="sv-deliver-desc">Where to show up, what to invest in, what to skip. A channel strategy based on where your buyers actually spend their attention, not where everyone else is spending their budget.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <div class="sv-deliver-label">Core messaging architecture</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <div class="sv-deliver-label">Demand generation architecture</div>
         </div>
-        <div class="sv-deliver-desc">Value proposition, key messages by audience, proof points. A framework that works across your website, sales decks, campaigns, and conversations. One source of truth for how you talk about what you do.</div>
+        <div class="sv-deliver-desc">The engine that turns awareness into qualified pipeline. Not a list of tactics, but a connected system with clear stages, conversion targets, and content mapped to every step of the buyer journey.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          <div class="sv-deliver-label">Brand voice and tone guidelines</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <div class="sv-deliver-label">Sales and marketing playbook</div>
         </div>
-        <div class="sv-deliver-desc">How you sound, how you write, what language you use and what you avoid. Practical enough for your team to apply without a brand police. Because guidelines only work if people actually use them.</div>
+        <div class="sv-deliver-desc">How both teams move together. Messaging by segment, lead handoff criteria, shared pipeline targets, and a common language that eliminates the usual finger-pointing.</div>
       </div>
     </div>
   </div>
@@ -87,31 +87,31 @@ const relatedPosts = allPosts
 <section class="sv-process">
   <div class="sv-process-inner">
     <div class="section-eyebrow">How we work</div>
-    <h2 class="sv-h2">From diagnosis to delivery in 6-8 weeks.</h2>
+    <h2 class="sv-h2">From strategy to motion in 8-10 weeks.</h2>
     <div class="sv-process-grid">
       <div class="sv-process-step">
         <span class="sv-process-num">01</span>
-        <div class="sv-process-title">Discovery</div>
-        <div class="sv-process-body">Stakeholder interviews, competitor deep-dive, current positioning audit. We talk to your team, your customers, and your market before forming any opinions.</div>
+        <div class="sv-process-title">Market assessment</div>
+        <div class="sv-process-body">Market sizing, segment analysis, competitive landscape, buyer research. We map the terrain before we plan the route.</div>
         <span class="sv-process-tag">Week 1-2</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">02</span>
-        <div class="sv-process-title">Strategy</div>
-        <div class="sv-process-body">Positioning framework, value proposition, ICP definition. This is where the hard choices happen. We facilitate the decisions, you own them.</div>
-        <span class="sv-process-tag">Week 3-4</span>
+        <div class="sv-process-title">Strategy design</div>
+        <div class="sv-process-body">Positioning per segment, channel strategy, messaging by audience, pricing validation. The hard decisions that shape everything downstream.</div>
+        <span class="sv-process-tag">Week 3-5</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">03</span>
-        <div class="sv-process-title">Build</div>
-        <div class="sv-process-body">Messaging architecture, brand voice guidelines, visual direction brief. The strategy becomes tools your team can actually deploy.</div>
-        <span class="sv-process-tag">Week 5-6</span>
+        <div class="sv-process-title">Playbook build</div>
+        <div class="sv-process-body">Campaign frameworks, content plan, sales enablement materials, KPI dashboard. Strategy becomes a set of tools your teams can deploy immediately.</div>
+        <span class="sv-process-tag">Week 6-8</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">04</span>
-        <div class="sv-process-title">Activate</div>
-        <div class="sv-process-body">Team workshop, rollout plan, internal adoption. A brand strategy that lives in a slide deck is worthless. We make sure it reaches the people who need it.</div>
-        <span class="sv-process-tag">Week 7-8</span>
+        <div class="sv-process-title">Launch support</div>
+        <div class="sv-process-body">First campaign execution, team alignment, weekly standup cadence. We stay in the room until the motion is running and the team owns it.</div>
+        <span class="sv-process-tag">Week 9-10</span>
       </div>
     </div>
   </div>
@@ -121,22 +121,22 @@ const relatedPosts = allPosts
 <section class="sv-stats">
   <div class="sv-stats-inner">
     <div class="section-eyebrow sv-stats-eyebrow">The numbers</div>
-    <h2 class="sv-h2 sv-stats-title">Why positioning is not optional.</h2>
+    <h2 class="sv-h2 sv-stats-title">Why GTM strategy separates growers from starters.</h2>
     <div class="sv-stats-grid">
       <div class="sv-stat-card sv-stat-1">
-        <span class="sv-stat-num">77%</span>
-        <span class="sv-stat-label">of B2B buyers say brand is a critical factor in their purchase decision</span>
-        <span class="sv-stat-source">Gartner 2024</span>
+        <span class="sv-stat-num">72%</span>
+        <span class="sv-stat-label">of companies that miss revenue targets cite poor go-to-market execution as the primary cause</span>
+        <span class="sv-stat-source">SBI Growth Advisory 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-2">
-        <span class="sv-stat-num">2.5x</span>
-        <span class="sv-stat-label">higher win rates for companies with clear, differentiated positioning</span>
-        <span class="sv-stat-source">Forrester 2024</span>
+        <span class="sv-stat-num">3.5x</span>
+        <span class="sv-stat-label">higher revenue growth for B2B companies with a documented and aligned GTM strategy</span>
+        <span class="sv-stat-source">McKinsey 2024</span>
       </div>
       <div class="sv-stat-card sv-stat-3">
-        <span class="sv-stat-num">60%</span>
-        <span class="sv-stat-label">of B2B companies cannot clearly articulate what makes them different</span>
-        <span class="sv-stat-source">LinkedIn B2B Institute 2024</span>
+        <span class="sv-stat-num">45%</span>
+        <span class="sv-stat-label">of B2B product launches fail to meet revenue expectations within the first year</span>
+        <span class="sv-stat-source">Gartner 2024</span>
       </div>
     </div>
   </div>
@@ -148,13 +148,13 @@ const relatedPosts = allPosts
     <div class="section-eyebrow">Case in point</div>
     <div class="sv-case-grid">
       <div class="sv-case-text">
-        <h2 class="sv-h2">A SaaS company repositioned from "feature-rich" to "category leader" and doubled inbound pipeline in 6 months.</h2>
-        <p>The company had a strong product and a loyal customer base. But every pitch started with a feature comparison. Prospects were evaluating them as one of four similar vendors, and price was becoming the deciding factor.</p>
-        <p>We ran a positioning sprint. The insight was that their customers did not buy them for features. They bought them because the platform eliminated a specific operational bottleneck that cost mid-market companies between 15 and 40 hours per month. That was the position: not "we do more" but "we remove this problem entirely."</p>
-        <p>The repositioning cascaded through everything: website, sales deck, outbound sequences, event messaging. Within six months, inbound pipeline had doubled. Average deal size increased by 30% because they were no longer competing on price. The sales team reported that conversations changed. Prospects started saying "we heard you're the ones who solve [specific problem]" instead of "can you walk me through your features?"</p>
+        <h2 class="sv-h2">An industrial tech company entered a new European market and built a qualified pipeline of &euro;2M in 5 months.</h2>
+        <p>The company had strong product-market fit in their home market. Customers loved the product, retention was high, and the sales team knew how to close. But when they decided to expand into a new European geography, they quickly discovered that none of their existing playbooks translated. The buyer profile was different, the competitive landscape was unfamiliar, and the channels that worked at home generated nothing.</p>
+        <p>We built a market-specific GTM motion from the ground up. That started with deep buyer research in the target market, followed by localised messaging that spoke to the problems and priorities of that specific audience. We designed a channel strategy focused on the two or three places where their ideal buyers actually spent time, and we created a sales enablement kit that gave the local team everything they needed to have sharp, relevant conversations from day one.</p>
+        <p>Within five months they had a qualified pipeline worth over two million euros and their first three closed deals in the new market. More importantly, the motion was repeatable. The same framework has since been adapted for a second market expansion with similar early results.</p>
       </div>
       <div class="sv-case-img">
-        <Image src={caseImg} alt="Strategic mapping diagram on a whiteboard with connected nodes" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <Image src={caseImg} alt="Vintage globe with small flag pins marking locations" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@ const relatedPosts = allPosts
     <div class="sv-insights-header">
       <div>
         <div class="section-eyebrow">Related insights</div>
-        <h2 class="sv-h2">What we're writing about brand and strategy.</h2>
+        <h2 class="sv-h2">What we're writing about GTM and growth strategy.</h2>
       </div>
       <a class="sv-insights-all" href="/insights">All articles →</a>
     </div>
@@ -190,8 +190,8 @@ const relatedPosts = allPosts
 <!-- CTA -->
 <section class="sv-cta">
   <div class="sv-cta-inner">
-    <h2 class="sv-cta-h2">Ready to own your position in the market?</h2>
-    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your brand stands and where it could go.</p>
+    <h2 class="sv-cta-h2">Ready to turn your product into a growth engine?</h2>
+    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about your market and your motion.</p>
     <a class="btn-primary" href="#contact">Let's talk →</a>
   </div>
 </section>

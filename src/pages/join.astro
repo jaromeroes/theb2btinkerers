@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Join the Team" description="We're a deliberately small group of senior B2B marketing strategists who challenge the status quo. If that resonates, let's talk.">
+
+<section class="jn-hero">
+  <div class="jn-hero-inner">
+    <div class="jn-eyebrow">Join the team</div>
+    <h1 class="jn-h1">We're small on purpose. Every person here is someone we'd want in the room when it matters.</h1>
+    <p class="jn-hero-sub">A curated network of senior B2B strategists across Europe. Remote, flexible, united by the obsession with work that actually moves the needle.</p>
+  </div>
+</section>
+
+<section class="jn-manifesto">
+  <div class="jn-manifesto-inner">
+    <div class="jn-manifesto-left">
+      <div class="section-eyebrow">Who we are</div>
+      <h2 class="jn-h2">A small group of experts with the itch to challenge the status quo.</h2>
+    </div>
+    <div class="jn-manifesto-right">
+      <p>The B2B Tinkerers is not an agency that scales by adding junior staff. We are a deliberately small collective of senior marketing strategists who've spent years inside B2B companies. We've built teams, launched products, repositioned brands, and sat in the rooms where strategies get funded or killed.</p>
+      <p>We work remotely, across time zones, on projects that matter. No hierarchy, no account managers, no layers between the thinking and the doing. When a client works with us, they get the senior person. Always.</p>
+      <p>What holds us together is not a contract or a business card. It's a shared belief that most B2B marketing is underperforming not because of budget or tools but because of misaligned strategy. We exist to fix that.</p>
+      <p>If you've spent your career getting frustrated by marketing that doesn't connect to business outcomes, you already know what we mean.</p>
+    </div>
+  </div>
+</section>
+
+<section class="jn-values">
+  <div class="section-eyebrow">What we look for</div>
+  <div class="jn-values-grid">
+    <div class="jn-card"><span class="jn-num">01</span><div class="jn-card-title">You've done this before</div><div class="jn-card-body">Senior experience, not enthusiasm alone. You've led marketing functions, built strategies from scratch, and know what good looks like because you've delivered it.</div></div>
+    <div class="jn-card"><span class="jn-num">02</span><div class="jn-card-title">You challenge, not comply</div><div class="jn-card-body">We don't want people who nod along. We want people who push back, ask hard questions, and aren't afraid to say 'that won't work' when it won't.</div></div>
+    <div class="jn-card"><span class="jn-num">03</span><div class="jn-card-title">You ship, not just strategise</div><div class="jn-card-body">Ideas without execution are just opinions. You have a bias for getting things done, testing, learning, and iterating.</div></div>
+    <div class="jn-card"><span class="jn-num">04</span><div class="jn-card-title">You think in business outcomes</div><div class="jn-card-body">Not impressions, not MQLs, not vanity dashboards. Revenue, pipeline, market position. You keep score the way the business does.</div></div>
+  </div>
+</section>
+
+<section class="jn-cta">
+  <div class="jn-cta-inner">
+    <h2 class="jn-cta-h2">No open positions. No application form.</h2>
+    <span class="jn-cta-sub">If what you've read here resonates, reach out. The best conversations start without a job description.</span>
+    <a class="btn-primary" href="#contact">Let's talk →</a>
+    <a class="jn-cta-email" href="mailto:hello@theb2btinkerers.com">hello@theb2btinkerers.com</a>
+  </div>
+</section>
+
+</Base>
+
+<style>
+.jn-hero{padding:calc(68px + clamp(60px,8vw,100px)) var(--pad) clamp(64px,8vw,96px);background:var(--forest);position:relative;overflow:hidden}
+.jn-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(212,232,74,0.07) 0%,transparent 55%);pointer-events:none}
+.jn-hero-inner{max-width:800px;position:relative;z-index:1}
+.jn-eyebrow{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lime);opacity:.65;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.jn-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--lime)}
+.jn-h1{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(30px,5vw,64px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream)}
+.jn-hero-sub{font-size:clamp(14px,1.6vw,17px);line-height:1.75;color:rgba(245,240,232,.45);margin-top:24px;max-width:620px}
+.jn-manifesto{padding:clamp(72px,9vw,112px) var(--pad);background:var(--cream)}
+.jn-manifesto-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:start}
+@media(max-width:760px){.jn-manifesto-inner{grid-template-columns:1fr}}
+.jn-h2{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(22px,3vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.02;color:var(--forest)}
+.jn-manifesto-right p{font-size:clamp(14px,1.6vw,16px);line-height:1.9;color:rgba(26,26,26,.65);margin-bottom:22px}
+.jn-manifesto-right p:last-child{margin-bottom:0}
+.jn-values{padding:clamp(72px,9vw,112px) var(--pad);background:var(--linen)}
+.jn-values .section-eyebrow{color:var(--forest);opacity:.22;margin-bottom:36px}
+.jn-values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+@media(max-width:900px){.jn-values-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.jn-values-grid{grid-template-columns:1fr}}
+.jn-card{background:var(--forest);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,28px)}
+.jn-card:nth-child(2){background:var(--lime)}
+.jn-num{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:40px;font-weight:800;color:var(--cream);opacity:.09;display:block;line-height:1;margin-bottom:6px}
+.jn-card:nth-child(2) .jn-num{color:var(--forest);opacity:.13}
+.jn-card-title{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(14px,1.8vw,17px);font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.25}
+.jn-card:nth-child(2) .jn-card-title{color:var(--forest)}
+.jn-card-body{font-size:12.5px;line-height:1.7;color:rgba(245,240,232,.58)}
+.jn-card:nth-child(2) .jn-card-body{color:rgba(28,74,58,.62)}
+.jn-cta{padding:clamp(72px,9vw,112px) var(--pad);background:var(--forest)}
+.jn-cta-inner{max-width:660px}
+.jn-cta-h2{font-family:'Bricolage Grotesque Variable',sans-serif;font-size:clamp(26px,4vw,52px);font-weight:800;letter-spacing:-0.04em;line-height:.97;color:var(--cream);margin-bottom:20px}
+.jn-cta-sub{font-size:clamp(13px,1.5vw,16px);line-height:1.8;color:rgba(245,240,232,.45);margin-bottom:36px;display:block}
+.jn-cta-email{display:block;font-size:13px;color:rgba(245,240,232,.28);margin-top:12px;text-decoration:none}
+</style>

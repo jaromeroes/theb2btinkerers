@@ -2,8 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import heroImg from '../../assets/services/brand-strategy-hero.webp';
-import caseImg from '../../assets/services/brand-strategy-case-study.webp';
+import heroImg from '../../assets/services/marketing-audit-hero.webp';
+import caseImg from '../../assets/services/marketing-audit-case-study.webp';
 
 const relatedTags = ['strategy', 'b2b marketing strategy'];
 const allPosts = await getCollection('blog');
@@ -12,18 +12,18 @@ const relatedPosts = allPosts
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
-<Base title="B2B Brand Strategy & Positioning" description="Most B2B brands are built by accident. We build them on purpose. Positioning, messaging, and brand strategy for mid-market B2B companies.">
+<Base title="B2B Marketing Audit | The B2B Tinkerers" description="An honest assessment of where your marketing stands. We audit positioning, team, budget, and alignment with business goals for mid-market B2B companies.">
 
 <!-- HERO -->
 <section class="sv-hero">
   <div class="sv-hero-bg">
-    <Image src={heroImg} alt="Brand strategy documents and colour swatches on a conference table" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <Image src={heroImg} alt="Scattered analytics reports and dashboards on a desk with a magnifying glass" format="webp" quality={85} loading="eager" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block;" />
   </div>
   <div class="sv-hero-overlay"></div>
   <div class="sv-hero-content">
-    <div class="sv-eyebrow">Service 02</div>
-    <h1 class="sv-h1">Brand Strategy<br/>& Positioning</h1>
-    <p class="sv-subtitle">Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters. That clarity doesn't happen by accident. It's built.</p>
+    <div class="sv-eyebrow">Service 01</div>
+    <h1 class="sv-h1">Marketing Audit</h1>
+    <p class="sv-subtitle">You suspect your marketing isn't working as hard as it should. But you're not sure where the gaps are, what's actually driving results, and what's just noise. We find out.</p>
   </div>
 </section>
 
@@ -32,12 +32,12 @@ const relatedPosts = allPosts
   <div class="sv-problem-inner">
     <div class="sv-problem-left">
       <div class="section-eyebrow">The challenge</div>
-      <h2 class="sv-h2">Your brand says everything.<br/>Which means it says nothing.</h2>
+      <h2 class="sv-h2">You're spending.<br/>But are you investing?</h2>
     </div>
     <div class="sv-problem-right">
-      <p>Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.</p>
-      <p>The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn't as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.</p>
-      <p>Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don't have the patience to figure out your value for you. That's your job.</p>
+      <p>Marketing budgets keep growing. Headcount increases. New tools get added to the stack. But pipeline doesn't follow. The board asks why, and nobody has a clear answer. Not because the team isn't working hard. They are. But effort without alignment is just motion.</p>
+      <p>Teams stay busy executing campaigns, producing content, running events. Activity metrics look healthy. But when leadership asks what's actually producing revenue, the room goes quiet. There's a gap between what marketing does and what the business needs, and it widens a little more every quarter.</p>
+      <p>The real issue is rarely effort. It's focus. Without a clear picture of what's working and what isn't, every decision is a guess. And guessing gets expensive. Eventually, leadership loses confidence in marketing altogether. Not because marketing failed, but because nobody could prove it didn't.</p>
     </div>
   </div>
 </section>
@@ -47,37 +47,37 @@ const relatedPosts = allPosts
   <div class="sv-deliver-inner">
     <div class="sv-deliver-header">
       <div class="section-eyebrow">What we deliver</div>
-      <h2 class="sv-h2">A positioning and messaging system your whole company can use.</h2>
-      <p class="sv-deliver-intro">Not a brand book that sits on a shelf. A practical framework that gives your sales team, your marketers, and your leadership a shared language for what you do, who you do it for, and why it matters.</p>
+      <h2 class="sv-h2">A clear picture of what's working, what's wasted, and what to fix first.</h2>
+      <p class="sv-deliver-intro">Our audit is practical, not theoretical. You won't get a 90-page report full of best practices. You'll get an honest assessment of your current marketing, grounded in your data, your market, and your business goals.</p>
     </div>
     <div class="sv-deliver-grid">
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          <div class="sv-deliver-label">Market & competitor positioning map</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <div class="sv-deliver-label">Positioning & messaging review</div>
         </div>
-        <div class="sv-deliver-desc">Where you sit relative to alternatives. How buyers perceive you versus competitors. And the gaps in the market you can realistically own. Not theory. A clear picture based on real market signals.</div>
+        <div class="sv-deliver-desc">How your brand shows up versus how it should. We assess whether your positioning is clear, differentiated, and consistent across every touchpoint your buyers encounter.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <div class="sv-deliver-label">ICP definition and buyer journey</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <div class="sv-deliver-label">Channel & budget audit</div>
         </div>
-        <div class="sv-deliver-desc">Who you're really selling to, what they care about at each stage, and what makes them choose. Not a persona exercise. A practical map of how your best customers actually buy.</div>
+        <div class="sv-deliver-desc">Where money goes, what it produces, and what to cut or double down on. We map spend to outcomes so you can see which channels earn their keep and which are just burning budget.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <div class="sv-deliver-label">Core messaging architecture</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
+          <div class="sv-deliver-label">Sales-marketing alignment assessment</div>
         </div>
-        <div class="sv-deliver-desc">Value proposition, key messages by audience, proof points. A framework that works across your website, sales decks, campaigns, and conversations. One source of truth for how you talk about what you do.</div>
+        <div class="sv-deliver-desc">How well the two functions connect. Where handoffs break. We look at lead definitions, SLAs, feedback loops, and shared metrics to find the friction points that cost you pipeline.</div>
       </div>
       <div class="sv-deliver-card">
         <div class="sv-deliver-head">
-          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          <div class="sv-deliver-label">Brand voice and tone guidelines</div>
+          <svg class="sv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><polyline points="3 6 4 7 6 5"/><polyline points="3 12 4 13 6 11"/><polyline points="3 18 4 19 6 17"/></svg>
+          <div class="sv-deliver-label">Prioritised recommendations with business impact</div>
         </div>
-        <div class="sv-deliver-desc">How you sound, how you write, what language you use and what you avoid. Practical enough for your team to apply without a brand police. Because guidelines only work if people actually use them.</div>
+        <div class="sv-deliver-desc">Not 50 ideas. The 5 that will move the needle. Each recommendation comes with expected impact, effort required, and a clear rationale tied to your business objectives.</div>
       </div>
     </div>
   </div>
@@ -87,31 +87,31 @@ const relatedPosts = allPosts
 <section class="sv-process">
   <div class="sv-process-inner">
     <div class="section-eyebrow">How we work</div>
-    <h2 class="sv-h2">From diagnosis to delivery in 6-8 weeks.</h2>
+    <h2 class="sv-h2">From kickoff to recommendations in 3-4 weeks.</h2>
     <div class="sv-process-grid">
       <div class="sv-process-step">
         <span class="sv-process-num">01</span>
         <div class="sv-process-title">Discovery</div>
-        <div class="sv-process-body">Stakeholder interviews, competitor deep-dive, current positioning audit. We talk to your team, your customers, and your market before forming any opinions.</div>
-        <span class="sv-process-tag">Week 1-2</span>
+        <div class="sv-process-body">Stakeholder interviews, data collection, access to tools and dashboards. We learn how your marketing works before we judge it.</div>
+        <span class="sv-process-tag">Week 1</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">02</span>
-        <div class="sv-process-title">Strategy</div>
-        <div class="sv-process-body">Positioning framework, value proposition, ICP definition. This is where the hard choices happen. We facilitate the decisions, you own them.</div>
-        <span class="sv-process-tag">Week 3-4</span>
+        <div class="sv-process-title">Analysis</div>
+        <div class="sv-process-body">Deep-dive into channels, content, pipeline data, competitor positioning. We follow the numbers and talk to the people who know the reality on the ground.</div>
+        <span class="sv-process-tag">Week 2</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">03</span>
-        <div class="sv-process-title">Build</div>
-        <div class="sv-process-body">Messaging architecture, brand voice guidelines, visual direction brief. The strategy becomes tools your team can actually deploy.</div>
-        <span class="sv-process-tag">Week 5-6</span>
+        <div class="sv-process-title">Diagnosis</div>
+        <div class="sv-process-body">Pattern identification, gap analysis, opportunity mapping. This is where we connect what we found to what it means for your business.</div>
+        <span class="sv-process-tag">Week 3</span>
       </div>
       <div class="sv-process-step">
         <span class="sv-process-num">04</span>
-        <div class="sv-process-title">Activate</div>
-        <div class="sv-process-body">Team workshop, rollout plan, internal adoption. A brand strategy that lives in a slide deck is worthless. We make sure it reaches the people who need it.</div>
-        <span class="sv-process-tag">Week 7-8</span>
+        <div class="sv-process-title">Recommendations</div>
+        <div class="sv-process-body">Presentation to leadership with a prioritised action plan. Clear, specific, and tied to business outcomes. No fluff, no filler.</div>
+        <span class="sv-process-tag">Week 4</span>
       </div>
     </div>
   </div>
@@ -121,22 +121,22 @@ const relatedPosts = allPosts
 <section class="sv-stats">
   <div class="sv-stats-inner">
     <div class="section-eyebrow sv-stats-eyebrow">The numbers</div>
-    <h2 class="sv-h2 sv-stats-title">Why positioning is not optional.</h2>
+    <h2 class="sv-h2 sv-stats-title">The cost of flying blind.</h2>
     <div class="sv-stats-grid">
       <div class="sv-stat-card sv-stat-1">
-        <span class="sv-stat-num">77%</span>
-        <span class="sv-stat-label">of B2B buyers say brand is a critical factor in their purchase decision</span>
-        <span class="sv-stat-source">Gartner 2024</span>
-      </div>
-      <div class="sv-stat-card sv-stat-2">
-        <span class="sv-stat-num">2.5x</span>
-        <span class="sv-stat-label">higher win rates for companies with clear, differentiated positioning</span>
+        <span class="sv-stat-num">65%</span>
+        <span class="sv-stat-label">of B2B marketing budgets are considered ineffective by the companies spending them</span>
         <span class="sv-stat-source">Forrester 2024</span>
       </div>
+      <div class="sv-stat-card sv-stat-2">
+        <span class="sv-stat-num">$1T</span>
+        <span class="sv-stat-label">lost annually due to sales and marketing misalignment across B2B</span>
+        <span class="sv-stat-source">G2 / Industry 2024</span>
+      </div>
       <div class="sv-stat-card sv-stat-3">
-        <span class="sv-stat-num">60%</span>
-        <span class="sv-stat-label">of B2B companies cannot clearly articulate what makes them different</span>
-        <span class="sv-stat-source">LinkedIn B2B Institute 2024</span>
+        <span class="sv-stat-num">27%</span>
+        <span class="sv-stat-label">faster profit growth in companies with tightly aligned marketing and sales</span>
+        <span class="sv-stat-source">ZoomInfo / Marketo 2024</span>
       </div>
     </div>
   </div>
@@ -148,13 +148,13 @@ const relatedPosts = allPosts
     <div class="section-eyebrow">Case in point</div>
     <div class="sv-case-grid">
       <div class="sv-case-text">
-        <h2 class="sv-h2">A SaaS company repositioned from "feature-rich" to "category leader" and doubled inbound pipeline in 6 months.</h2>
-        <p>The company had a strong product and a loyal customer base. But every pitch started with a feature comparison. Prospects were evaluating them as one of four similar vendors, and price was becoming the deciding factor.</p>
-        <p>We ran a positioning sprint. The insight was that their customers did not buy them for features. They bought them because the platform eliminated a specific operational bottleneck that cost mid-market companies between 15 and 40 hours per month. That was the position: not "we do more" but "we remove this problem entirely."</p>
-        <p>The repositioning cascaded through everything: website, sales deck, outbound sequences, event messaging. Within six months, inbound pipeline had doubled. Average deal size increased by 30% because they were no longer competing on price. The sales team reported that conversations changed. Prospects started saying "we heard you're the ones who solve [specific problem]" instead of "can you walk me through your features?"</p>
+        <h2 class="sv-h2">A manufacturing company cut marketing waste by 40% and redirected budget to channels that actually produced pipeline.</h2>
+        <p>The company was spreading its marketing budget across eight channels with no clear attribution model. Every channel had a champion internally, and nobody could prove which ones were working. The result was a lot of activity, modest pipeline, and growing frustration from leadership about marketing ROI.</p>
+        <p>Our audit revealed that three of those eight channels drove roughly 80% of qualified leads. Two channels produced almost nothing measurable. The remaining three had potential but were underfunded and poorly executed. The problem wasn't the total budget. It was how it was distributed.</p>
+        <p>The company redirected spend, simplified the tech stack, and focused execution on the channels with proven results. Within a quarter, pipeline quality improved noticeably while total marketing spend actually decreased. The marketing team went from defending their budget to demonstrating clear contribution to revenue.</p>
       </div>
       <div class="sv-case-img">
-        <Image src={caseImg} alt="Strategic mapping diagram on a whiteboard with connected nodes" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <Image src={caseImg} alt="Printed data visualisations and charts with pencil annotations" format="webp" quality={85} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@ const relatedPosts = allPosts
     <div class="sv-insights-header">
       <div>
         <div class="section-eyebrow">Related insights</div>
-        <h2 class="sv-h2">What we're writing about brand and strategy.</h2>
+        <h2 class="sv-h2">What we're writing about marketing and strategy.</h2>
       </div>
       <a class="sv-insights-all" href="/insights">All articles →</a>
     </div>
@@ -190,8 +190,8 @@ const relatedPosts = allPosts
 <!-- CTA -->
 <section class="sv-cta">
   <div class="sv-cta-inner">
-    <h2 class="sv-cta-h2">Ready to own your position in the market?</h2>
-    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest conversation about where your brand stands and where it could go.</p>
+    <h2 class="sv-cta-h2">Not sure what's working and what's not? That's exactly where we start.</h2>
+    <p class="sv-cta-sub">30 minutes. No pitch. Just an honest look at where your marketing stands.</p>
     <a class="btn-primary" href="#contact">Let's talk →</a>
   </div>
 </section>
