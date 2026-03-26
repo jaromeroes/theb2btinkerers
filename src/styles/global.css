@@ -22,7 +22,7 @@ body{background:var(--cream);color:var(--ink);font-family:'Inter Variable',sans-
 .nav-logo{text-decoration:none;flex-shrink:0;display:flex;align-items:center}
 .nav-logo-img{height:36px;width:auto}
 .nav-links{display:flex;gap:clamp(16px,3vw,36px);align-items:center}
-.nav-link{font-size:13px;font-weight:500;color:rgba(245,240,232,0.6);text-decoration:none;padding:5px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.nav-link{font-size:15px;font-weight:600;color:rgba(245,240,232,0.7);text-decoration:none;padding:5px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
 .nav-link:hover,.nav-link.active{color:var(--cream);border-bottom-color:var(--lime)}
 .nav-cta{background:var(--lime);color:var(--forest);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:10px 22px;text-decoration:none;transition:opacity .15s;white-space:nowrap;flex-shrink:0}
 .nav-cta:hover{opacity:.85}
