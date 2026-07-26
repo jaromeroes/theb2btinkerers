@@ -1,1 +1,9 @@
 node_modules
+# build output — Netlify builds from source; dist untracked since 2026-07-26
+dist/
+# generated types
+.astro/
+# macOS
+.DS_Store
+# tool temp
+.playwright-mcp/
