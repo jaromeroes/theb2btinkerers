@@ -43,7 +43,21 @@ export default async (request: Request, context: Context) => {
 
   // 302, never 301: a permanent redirect would be cached by the browser and
   // would keep sending the visitor to /es/ even after they opt out.
-  return Response.redirect(new URL('/es/', new URL(request.url).origin), 302);
+  //
+  // The response must never be cached by anything. This site sits behind
+  // Cloudflare, so a cached redirect would be replayed to visitors from other
+  // countries and to people who have already opted out. Cloudflare currently
+  // reports cf-cache-status: DYNAMIC for it, but that depends on cache config
+  // rather than on anything this code guarantees, so say so explicitly.
+  return new Response(null, {
+    status: 302,
+    headers: {
+      location: new URL('/es/', new URL(request.url).origin).toString(),
+      'cache-control': 'no-store, no-cache, must-revalidate, private',
+      // The decision varies per visitor on all three of these inputs.
+      vary: 'Cookie, User-Agent, X-Nf-Geo',
+    },
+  });
 };
 
 export const config: Config = {
