@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import { postSlug } from '../../content/utils';
 import { serviceDetail, servicesCommon } from '../../i18n/pages/services';
 import { mirrorAlternates, localizePath } from '../../i18n/utils';
 import { fmtShortDate } from '../../i18n/pages/insights';
@@ -219,7 +220,7 @@ const img = images[slug];
     </div>
     <div class="sv-insights-grid">
       {relatedPosts.map(post => (
-        <a class="sv-insight-card" href={p(`/insights/${post.slug}`)}>
+        <a class="sv-insight-card" href={p(`/insights/${postSlug(post)}`)}>
           <span class="sv-insight-tag">{post.data.tag}</span>
           <div class="sv-insight-title">{post.data.title}</div>
           <div class="sv-insight-meta">

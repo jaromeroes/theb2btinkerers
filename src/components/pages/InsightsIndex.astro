@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../content/utils';
+import { isPublished, postSlug } from '../../content/utils';
 import BlogImage from '../BlogImage.astro';
 import { insights, fmtLongDate } from '../../i18n/pages/insights';
 import { mirrorAlternates, localizePath } from '../../i18n/utils';
@@ -31,7 +31,7 @@ const rest = posts.slice(1);
 {posts.length > 0 ? (
   <section class="ilist">
     <div class="ilist-in">
-      <a class="ifeat" href={p(`/insights/${featured.slug}`)}>
+      <a class="ifeat" href={p(`/insights/${postSlug(featured)}`)}>
         <div class="ifeat-img">
           {featured.data.image && <BlogImage image={featured.data.image} alt={featured.data.title} loading="eager" fetchpriority="high" />}
         </div>
@@ -44,7 +44,7 @@ const rest = posts.slice(1);
       </a>
       <div class="igrid">
         {rest.map(post => (
-          <a class="icard" href={p(`/insights/${post.slug}`)}>
+          <a class="icard" href={p(`/insights/${postSlug(post)}`)}>
             <div class="icard-img">
               {post.data.image && <BlogImage image={post.data.image} alt={post.data.title} loading="lazy" />}
             </div>

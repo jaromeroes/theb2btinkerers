@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import BlogImage from '../BlogImage.astro';
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../content/utils';
+import { isPublished, postSlug } from '../../content/utils';
 import { home } from '../../i18n/pages/home';
 import { ui } from '../../i18n/ui';
 import { serviceIcons } from '../service-icons';
@@ -116,7 +116,7 @@ const rest = posts.slice(1, 4);
     </div>
     {featured ? (
       <div class="ins-editorial">
-        <a class="ins-feat" href={p(`/insights/${featured.slug}`)}>
+        <a class="ins-feat" href={p(`/insights/${postSlug(featured)}`)}>
           <div class="ins-feat-img">
             {featured.data.image && <BlogImage image={featured.data.image} alt={featured.data.title} loading="lazy" />}
           </div>
@@ -129,7 +129,7 @@ const rest = posts.slice(1, 4);
         </a>
         <div class="ins-list">
           {rest.map(post => (
-            <a class="ins-row" href={p(`/insights/${post.slug}`)}>
+            <a class="ins-row" href={p(`/insights/${postSlug(post)}`)}>
               <div class="ins-row-img">
                 {post.data.image && <BlogImage image={post.data.image} alt={post.data.title} loading="lazy" />}
               </div>

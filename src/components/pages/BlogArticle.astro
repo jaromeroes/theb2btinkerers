@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import BlogImage from '../BlogImage.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
-import { isPublished } from '../../content/utils';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { isPublished, postSlug } from '../../content/utils';
 import { insights, fmtLongDate, fmtShortDate } from '../../i18n/pages/insights';
 import { localizePath } from '../../i18n/utils';
 import type { Lang } from '../../i18n/config';
@@ -12,14 +12,14 @@ const { lang, post } = Astro.props;
 const t = insights[lang].article;
 const p = (path: string) => localizePath(path, lang);
 
-const { Content, headings } = await post.render();
+const { Content, headings } = await render(post);
 
 // Only surface posts that are already published (future-dated posts stay hidden).
 const allPosts = (await getCollection('blog')).filter(pp => isPublished(pp));
 
 // Related: same language, same tag.
 const related = allPosts
-  .filter(pp => pp.data.lang === lang && pp.slug !== post.slug && pp.data.tag === post.data.tag)
+  .filter(pp => pp.data.lang === lang && postSlug(pp) !== postSlug(post) && pp.data.tag === post.data.tag)
   .slice(0, 3);
 
 // hreflang pairing across languages via translationKey.
@@ -27,7 +27,7 @@ const counterpart = post.data.translationKey
   ? allPosts.find(pp => pp.data.translationKey === post.data.translationKey && pp.data.lang !== lang)
   : undefined;
 const blogPath = (entry: CollectionEntry<'blog'>) =>
-  entry.data.lang === 'es' ? `/es/insights/${entry.slug}` : `/insights/${entry.slug}`;
+  entry.data.lang === 'es' ? `/es/insights/${postSlug(entry)}` : `/insights/${postSlug(entry)}`;
 const selfPath = blogPath(post);
 const otherPath = counterpart ? blogPath(counterpart) : null;
 const alternates = lang === 'en'
@@ -108,7 +108,7 @@ const formattedDate = fmtLongDate(post.data.date, lang);
     </div>
     <div class="art-related-grid">
       {related.map(rel => (
-        <a class="idx-card" href={p(`/insights/${rel.slug}`)}>
+        <a class="idx-card" href={p(`/insights/${postSlug(rel)}`)}>
           <div class="idx-card-body">
             <span class="idx-tag">{rel.data.tag}</span>
             <div class="idx-title">{rel.data.title}</div>
