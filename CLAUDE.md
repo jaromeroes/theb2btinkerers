@@ -4,7 +4,7 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project
 
-Static B2B marketing consultancy website (theb2btinkerers.com) built with **Astro 4.16**, deployed on **Netlify**, Node 20. The site belongs to The B2B Tinkerers, a B2B marketing strategy consultancy ("the anti-agency") targeting B2B companies in tech/SaaS, industrial, and financial services sectors across Europe and North America.
+Static B2B marketing consultancy website (theb2btinkerers.com) built with **Astro 7**, deployed on **Netlify**, Node 22 (Astro 7 requires >=22.12; pinned in `netlify.toml`, `.nvmrc` and `package.json` engines). The site belongs to The B2B Tinkerers, a B2B marketing strategy consultancy ("the anti-agency") targeting B2B companies in tech/SaaS, industrial, and financial services sectors across Europe and North America.
 
 The site is **bilingual (EN/ES)** via Astro's native i18n. English (US) is the default locale served on the existing URLs (`/`, `/about`, `/services/*`, `/insights/*`, `/join`) to preserve SEO. Spanish (Spain) lives under the `/es/` prefix. See **Internationalization (i18n)** below.
 
@@ -18,7 +18,7 @@ No test framework is configured. Verify changes by running `npm run build` befor
 
 ## Architecture
 
-**Astro static site** with no frontend framework (no React/Vue). Only 3 dependencies: Astro, @astrojs/sitemap (pinned to 3.2.1), and variable fonts (Inter + Bricolage Grotesque).
+**Astro static site** with no frontend framework (no React/Vue). Only 3 dependencies: Astro, @astrojs/sitemap, and variable fonts (Inter + Bricolage Grotesque).
 
 ### Routing
 
@@ -59,7 +59,9 @@ Native Astro i18n. Config in `astro.config.mjs`: `defaultLocale: 'en'`, `locales
 
 ## Content System
 
-Blog posts live in `src/content/blog/` as Markdown files. Schema defined in `src/content/config.ts`. English posts are `<slug>.md`; their Spanish counterpart is `<slug>.es.md` with `lang: "es"`, a translated `slug`, and a matching `translationKey`.
+Blog posts live in `src/content/blog/` as Markdown files, loaded through the Content Layer `glob()` loader. Schema defined in `src/content.config.ts`. English posts are `<slug>.md`; their Spanish counterpart is `<slug>.es.md` with `lang: "es"`, a translated `slug`, and a matching `translationKey`.
+
+**Slugs:** under the old collections API a frontmatter `slug` silently overrode the generated one. The Content Layer dropped that: `entry.id` always comes from the filename, so `foo.es.md` would yield `foo.es`. `slug` is now an explicit schema field, read through `postSlug()` in `src/content/utils.ts` (`data.slug ?? id`). **Always route through `postSlug()`, never `entry.id`**, or every Spanish URL breaks.
 
 ### Frontmatter
 ```yaml

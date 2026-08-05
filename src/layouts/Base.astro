@@ -87,9 +87,9 @@ const langTargets: Record<Lang, string> = {
     </div>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label={t.nav.langSwitchLabel}>
-        <a class={`lang-opt${lang === 'en' ? ' active' : ''}`} href={langTargets.en} hreflang="en" aria-current={lang === 'en' ? 'true' : undefined}>{langLabels.en}</a>
+        <a class={`lang-opt${lang === 'en' ? ' active' : ''}`} href={langTargets.en} hreflang="en" data-lang-pref="en" aria-current={lang === 'en' ? 'true' : undefined}>{langLabels.en}</a>
         <span class="lang-sep" aria-hidden="true">/</span>
-        <a class={`lang-opt${lang === 'es' ? ' active' : ''}`} href={langTargets.es} hreflang="es" aria-current={lang === 'es' ? 'true' : undefined}>{langLabels.es}</a>
+        <a class={`lang-opt${lang === 'es' ? ' active' : ''}`} href={langTargets.es} hreflang="es" data-lang-pref="es" aria-current={lang === 'es' ? 'true' : undefined}>{langLabels.es}</a>
       </div>
       <a class="nav-cta" href="#contact">{t.nav.cta}</a>
     </div>
@@ -111,9 +111,9 @@ const langTargets: Record<Lang, string> = {
     <a class="nav-mobile-link" href={p('/about')}>{t.nav.about}</a>
     <a class="nav-mobile-link" href={p('/join')}>{t.nav.joinMobile}</a>
     <div class="nav-mobile-lang">
-      <a class={`lang-opt${lang === 'en' ? ' active' : ''}`} href={langTargets.en} hreflang="en">{langLabels.en}</a>
+      <a class={`lang-opt${lang === 'en' ? ' active' : ''}`} href={langTargets.en} hreflang="en" data-lang-pref="en">{langLabels.en}</a>
       <span class="lang-sep" aria-hidden="true">/</span>
-      <a class={`lang-opt${lang === 'es' ? ' active' : ''}`} href={langTargets.es} hreflang="es">{langLabels.es}</a>
+      <a class={`lang-opt${lang === 'es' ? ' active' : ''}`} href={langTargets.es} hreflang="es" data-lang-pref="es">{langLabels.es}</a>
     </div>
     <a class="nav-mobile-cta" href="#contact">{t.nav.cta}</a>
   </div>
@@ -320,6 +320,22 @@ document.getElementById('nav-services-toggle')?.addEventListener('click', functi
       btn.disabled = false;
       btn.textContent = labelDefault;
     }
+  });
+})();
+
+/* Remember an explicit language choice.
+   netlify/edge-functions/lang-redirect.ts sends first-time visitors from Spain
+   and Latin America to /es/. This cookie is how they opt out: once someone has
+   used the switcher, the edge function stops redirecting them, so choosing
+   English on /es/ does not bounce straight back. */
+(function () {
+  document.querySelectorAll('[data-lang-pref]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var v = el.getAttribute('data-lang-pref');
+      document.cookie =
+        'lang-pref=' + v + ';path=/;max-age=31536000;samesite=lax' +
+        (location.protocol === 'https:' ? ';secure' : '');
+    });
   });
 })();
 </script>

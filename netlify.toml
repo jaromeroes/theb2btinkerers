@@ -2,8 +2,16 @@
   command = "npm run build"
   publish = "dist"
 
+# ─────────── Language routing by country ───────────
+# Handled by netlify/edge-functions/lang-redirect.ts, which runs on `/` only.
+# It is an edge function rather than a [[redirects]] rule because the decision
+# needs the request cookie and user agent, and redirect conditions can read
+# neither. See the comments in that file for why.
+
 [build.environment]
-  NODE_VERSION = "20"
+  # Astro 7 requires Node >= 22.12. Keep this in step with .nvmrc and the
+  # `engines` field in package.json.
+  NODE_VERSION = "22"
 
 # Cache immutable hashed assets for 1 year
 [[headers]]
