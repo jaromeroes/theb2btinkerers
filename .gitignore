@@ -1,1 +1,22 @@
+# dependencies
 node_modules
+
+# build output (Netlify builds from source via `npm run build`)
+dist
+.astro
+
+# environment
+.env
+.env.*
+!.env.example
+
+# os / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea
+.vscode
+
+# logs
+npm-debug.log*
+yarn-error.log*

@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
+
+# Client deliverables. Not part of the public site: crawlers must not fetch them.
+# netlify.toml also serves `X-Robots-Tag: noindex, nofollow` on these paths, so
+# anything that ignores the rules below still gets told not to index.
+# Note: robots.txt is a request, not enforcement. The only hard guarantee is not
+# serving the files at all (see docs/brand-docs, which were moved out of public/).
+Disallow: /clients/
 Disallow: /eaship-calculator/
 
 Sitemap: https://theb2btinkerers.com/sitemap-index.xml
