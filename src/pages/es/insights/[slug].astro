@@ -1,13 +1,13 @@
 ---
 import BlogArticle from '../../../components/pages/BlogArticle.astro';
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../../content/utils';
+import { isPublished, postSlug } from '../../../content/utils';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts
     .filter(post => post.data.lang === 'es' && isPublished(post))
-    .map(post => ({ params: { slug: post.slug }, props: { post } }));
+    .map(post => ({ params: { slug: postSlug(post) }, props: { post } }));
 }
 
 const { post } = Astro.props;
