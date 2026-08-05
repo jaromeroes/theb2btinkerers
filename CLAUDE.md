@@ -158,12 +158,15 @@ Netlify auto-deploys from `main` branch. Config in `netlify.toml`. Sitemap auto-
 **Cloudflare sits in front of Netlify** (`server: cloudflare`, `cf-ray` present on every response). This is not configured anywhere in the repo, and it has consequences:
 
 - **Cloudflare injects a "Managed robots.txt" block above `public/robots.txt`.** The served file has Cloudflare's content first (`Content-Signal`, plus `Disallow: /` for AI crawlers: GPTBot, ClaudeBot, CCBot, Google-Extended, Bytespider, Amazonbot, Applebot-Extended, meta-externalagent), then ours. Googlebot is not blocked. Side effect: the served file has two `User-agent: *` groups. Crawlers that merge same-agent groups honour our `Disallow` lines; any that take only the first group would ignore them, which is one reason the client paths also carry `X-Robots-Tag`.
-- **Anything per-visitor must be explicitly uncacheable.** The language redirect sends `no-store` plus `Vary` for exactly this reason. Never rely on `cf-cache-status: DYNAMIC` being the default.
+- **Anything per-visitor would need to be explicitly uncacheable.** Never rely on `cf-cache-status: DYNAMIC` being the default.
+- **Cloudflare Email Obfuscation rewrites the contact email** into `/cdn-cgi/l/email-protection#…` with a key that rotates on every request. Two fetches of the same page therefore never hash the same. Normalise `email-protection#…` and `data-cfemail="…"` before diffing responses, or you will chase a difference that is not there.
 - Headers from `netlify.toml` do pass through (verified: CSP, HSTS, X-Frame-Options all present in production).
 
 ### Language routing
 
-`netlify/edge-functions/lang-redirect.ts` 302s visitors from Spain and 19 Latin American countries to `/es/`, on `/` only. Skips anyone with a `lang-pref` cookie (set by the language switcher in `Base.astro`) and skips crawlers by user agent. Geolocation behind Cloudflare has only been verified from Spain; if visitors from Latin America land on the wrong language, check whether Netlify is seeing the forwarded client IP or a Cloudflare edge IP.
+**There is deliberately no server-side language redirect, and none should be added.** An earlier attempt geo-redirected ES/LATAM visitors from `/` to `/es/` while skipping crawlers by user agent. That serves Googlebot something different from a real visitor on the same IP, which is cloaking under Google's spam policies; removing the crawler check instead would make Search Console report `/` as a redirect whenever Google crawls from Europe. Search visibility is the priority, so both were rejected.
+
+Instead `Base.astro` renders a `#lang-offer` bar, `hidden`, on every page. A script un-hides it when `navigator.language` prefers the other language, linking to that page's actual counterpart via `alternates`. The served HTML is identical for every visitor including crawlers, and the script only ever adds a link. An explicit choice (the switcher, or the dismiss button) is stored in `localStorage` under `lang-pref` and suppresses the offer permanently.
 
 ### Git Conventions
 
