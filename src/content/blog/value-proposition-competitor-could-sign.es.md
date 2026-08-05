@@ -16,7 +16,7 @@ Haz esta prueba en tu propia web. Copia tu propuesta de valor en un documento. D
 
 Si no puedes, tienes un problema. Y es el más caro del B2B, porque es el que nadie detecta.
 
-Aquí va el diagnóstico real, más afilado que cualquier workshop de posicionamiento. Coge el titular de tu home e imagina a tu mayor competidor poniéndole su logo. ¿Se volvería algo falso? ¿Alguien de su empresa protestaría? Si la respuesta es no, si un rival podría firmar tu propuesta de valor y decirla en serio palabra por palabra, entonces lo que tienes no es una propuesta de valor. Es teatro de posicionamiento. Parece una postura. No compromete con nada.
+Aquí va el diagnóstico real, más afilado que cualquier workshop de posicionamiento. Coge el titular de tu home e imagina a tu mayor competidor poniéndole su logo. ¿Se volvería algo falso? ¿Alguien de su empresa protestaría? Si la respuesta es no, si un rival podría firmar tu propuesta de valor y decirla en serio palabra por palabra, entonces lo que tienes no es una propuesta de valor, sino teatro de posicionamiento: algo que parece una postura sin comprometerse con nada.
 
 ## La prueba de la igualdad que casi todo el B2B suspende
 

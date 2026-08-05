@@ -24,11 +24,11 @@ La IA no está reemplazando a los equipos de marketing B2B. Pero ya está separa
 
 Seamos concretos. Los casos de uso de IA que generan valor real y medible en marketing B2B hoy no son los vistosos.
 
-**Investigación y síntesis.** La capacidad de procesar grandes volúmenes de información —análisis de competencia, transcripciones de entrevistas con clientes, informes de mercado, grabaciones de llamadas de ventas— y extraer insight estructurado es genuinamente transformadora. Un trabajo que llevaba una semana ahora lleva una tarde. El resultado no es perfecto. Pero es un buen primer borrador de algo que habría sido una página en blanco.
+**Investigación y síntesis.** La capacidad de procesar grandes volúmenes de información (análisis de competencia, transcripciones de entrevistas con clientes, informes de mercado, grabaciones de llamadas de ventas) y extraer insight estructurado es genuinamente transformadora. Un trabajo que llevaba una semana ahora lleva una tarde. El resultado no es perfecto. Pero es un buen primer borrador de algo que habría sido una página en blanco.
 
 **Contenido a escala, con barreras.** No "genérame un post de blog". Eso casi nunca produce nada publicable sin una edición humana importante. Pero "con este brief, esta audiencia y estos tres ejemplos de nuestro tono, genera cinco variaciones de este asunto de email": eso sí funciona. La clave son las barreras: inputs específicos, restricciones específicas, criterio humano al final.
 
-**Infraestructura de personalización.** Los comités de compra B2B suelen ser de 6 a 10 personas. A cada una le importan cosas distintas. La IA hace factible —por primera vez— crear versiones genuinamente personalizadas de contenido para distintos interlocutores a escala, sin un equipo de 20 redactores. Todavía está emergiendo, pero los primeros resultados son significativos.
+**Infraestructura de personalización.** Los comités de compra B2B suelen ser de 6 a 10 personas. A cada una le importan cosas distintas. La IA hace factible, por primera vez, crear versiones genuinamente personalizadas de contenido para distintos interlocutores a escala, sin un equipo de 20 redactores. Todavía está emergiendo, pero los primeros resultados son significativos.
 
 **Iteración más rápida.** El mayor cambio para la mayoría de equipos de marketing no es la calidad del output de la IA, sino la velocidad del bucle. Probar una idea, recibir feedback, iterar, en horas en lugar de días. Para equipos que estaban limitados por el tiempo de producción y no por las ideas, esto es genuinamente liberador.
 
@@ -60,7 +60,7 @@ Si eres un responsable de marketing B2B intentando darle sentido a esto en la pr
 
 **Audita en qué se va tu tiempo actual.** Antes de comprar ninguna herramienta, entiende adónde va de verdad el tiempo de tu equipo. En nuestra experiencia, entre el 40 y el 60% del tiempo de un equipo de marketing B2B se va en tareas que la IA maneja bien: investigación, primeros borradores, recopilación de datos, reporting, documentos de brief. Ahí está tu oportunidad.
 
-**Empieza por un workflow, no por todo el stack.** Elige la única tarea repetible que más tiempo consume a tu equipo —briefs de contenido, análisis de competencia, secuencias de email, lo que sea— y construye un workflow de IA en condiciones alrededor. Un workflow bien hecho te enseña más que cinco mal hechos.
+**Empieza por un workflow, no por todo el stack.** Elige la única tarea repetible que más tiempo consume a tu equipo (briefs de contenido, análisis de competencia, secuencias de email, lo que sea) y construye un workflow de IA en condiciones alrededor. Un workflow bien hecho te enseña más que cinco mal hechos.
 
 **Invierte en el prompting como habilidad.** La brecha de calidad entre los equipos que usan la IA con eficacia y los que la usan mal se explica casi por completo por cómo interactúan con las herramientas. El prompting es una habilidad. Se puede enseñar. Merece la pena invertir en ello.
 
@@ -70,7 +70,7 @@ Si eres un responsable de marketing B2B intentando darle sentido a esto en la pr
 
 ## El pronóstico honesto
 
-La IA cambiará el marketing B2B de forma significativa en los próximos tres años. Los equipos que están experimentando con criterio ahora —sin perseguir cada herramienta nueva, sino construyendo capacidad real en áreas concretas— tendrán una ventaja notable.
+La IA cambiará el marketing B2B de forma significativa en los próximos tres años. Los equipos que están experimentando con criterio ahora (sin perseguir cada herramienta nueva, sino construyendo capacidad real en áreas concretas) tendrán una ventaja notable.
 
 Los equipos que esperan a que "se asiente" antes de meterse ya van por detrás. La tecnología no va a volverse más simple ni menos relevante. La curva de aprendizaje solo se va a hacer más empinada cuanto más esperes.
 

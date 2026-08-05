@@ -31,7 +31,7 @@ None of this means attribution is worthless. It means attribution is directional
 
 Here's what marketers underestimate. A good CFO can smell a too-clean story from across the table. They spend their entire working life around numbers that don't quite reconcile, and they've developed an instinct for the ones that are too tidy to be real. A marketing report claiming precise, flattering attribution across a messy six-month buying cycle doesn't read as impressive. It reads as either naive or manipulated.
 
-And the cost of getting caught is not proportional. It's total. The moment finance catches one invented number, one figure that falls apart under a single follow-up question, they don't just discount that number. They discount everything marketing has ever reported and everything it will report next. You've spent your credibility on a decimal place. That's a terrible trade.
+And the cost of getting caught isn't proportional, it's total. The moment finance catches one invented number, one figure that falls apart under a single follow-up question, they don't just discount that number. They discount everything marketing has ever reported and everything it will report next. You've spent your credibility on a decimal place. That's a terrible trade.
 
 This is trust bankruptcy, and it works exactly like the financial kind. It builds slowly through small overstatements nobody challenges, then arrives all at once the day someone finally does. After that, every budget conversation starts from a deficit. You're no longer the function that drives growth. You're the function whose numbers need checking.
 
@@ -39,7 +39,7 @@ The irony is brutal. The whole point of the fabricated precision was to look cre
 
 ## The Honest Measurement Toolkit
 
-The alternative isn't measuring less. It's measuring honestly, which is harder and far more persuasive. It starts with one discipline: separate what you can prove from what you can only infer, and never let the two blur.
+The alternative isn't measuring less but measuring honestly, which is harder and far more persuasive. It starts with one discipline: separate what you can prove from what you can only infer, and never let the two blur.
 
 Some things you can genuinely prove. If you ran a holdout, you can measure incrementality. Take your big bet, the paid channel or the nurture program, and deliberately withhold it from a comparable slice of the audience. The difference in outcome between the group that got it and the group that didn't is the closest thing to real causation you'll ever get. It's not free, and it's not instant, but for your largest investments it's the difference between knowing and guessing.
 

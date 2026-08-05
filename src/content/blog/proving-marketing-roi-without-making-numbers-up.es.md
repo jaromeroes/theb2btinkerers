@@ -32,7 +32,7 @@ Nada de esto significa que la atribución no valga nada. Significa que la atribu
 
 Esto es lo que los marketers subestiman. Un buen CFO huele una historia demasiado limpia desde el otro lado de la mesa. Se pasan la vida laboral entera rodeados de números que no acaban de cuadrar, y han desarrollado un instinto para los que están demasiado ordenados para ser reales. Un informe de marketing que reclama una atribución precisa y favorecedora a lo largo de un ciclo de compra caótico de seis meses no se lee como algo impresionante. Se lee como ingenuo o como manipulado.
 
-Y el coste de que te pillen no es proporcional. Es total. En el momento en que finanzas caza un número inventado, una cifra que se desmorona ante una sola pregunta de seguimiento, no descuenta solo ese número. Descuenta todo lo que marketing ha reportado jamás y todo lo que va a reportar después. Te has gastado tu credibilidad en un decimal. Es un pésimo intercambio.
+Y el coste de que te pillen no es proporcional, es total. En el momento en que finanzas caza un número inventado, una cifra que se desmorona ante una sola pregunta de seguimiento, no descuenta solo ese número. Descuenta todo lo que marketing ha reportado jamás y todo lo que va a reportar después. Te has gastado tu credibilidad en un decimal. Es un pésimo intercambio.
 
 Esto es la quiebra de confianza, y funciona exactamente igual que la financiera. Se construye despacio, a base de pequeñas exageraciones que nadie cuestiona, y luego llega de golpe el día en que alguien por fin lo hace. A partir de ahí, cada conversación de presupuesto arranca desde el déficit. Ya no eres la función que impulsa el crecimiento. Eres la función cuyos números hay que revisar.
 
@@ -40,7 +40,7 @@ La ironía es brutal. Todo el sentido de la precisión fabricada era parecer cre
 
 ## El kit de medición honesta
 
-La alternativa no es medir menos. Es medir con honestidad, que es más difícil y mucho más persuasivo. Empieza por una disciplina: separa lo que puedes demostrar de lo que solo puedes inferir, y no dejes nunca que las dos cosas se mezclen.
+La alternativa no es medir menos, sino medir con honestidad, que es más difícil y mucho más persuasivo. Empieza por una disciplina: separa lo que puedes demostrar de lo que solo puedes inferir, y no dejes nunca que las dos cosas se mezclen.
 
 Algunas cosas sí las puedes demostrar de verdad. Si has corrido un holdout, puedes medir incrementalidad. Coge tu gran apuesta, el canal de pago o el programa de nurturing, y déjalo fuera a propósito de una porción comparable de la audiencia. La diferencia de resultado entre el grupo que lo recibió y el que no es lo más cerca de la causalidad real que vas a llegar nunca. No es gratis, y no es inmediato, pero para tus mayores inversiones es la diferencia entre saber y suponer.
 

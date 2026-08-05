@@ -22,7 +22,7 @@ Que quede claro: esto no va de que los eventos B2B no funcionen. Algunos funcion
 
 ## El ritual que nadie vuelve a decidir
 
-Fíjate en cómo entra la feria en el plan. No se propone, ni se debate, ni se gana. Ya está ahí. Llega en la plantilla del presupuesto como un hecho preexistente, y la única conversación que se tiene sobre ella es logística. Qué pabellón. Cuántos metros de stand. Quién viaja. Si repetimos la sesión patrocinada.
+Fíjate en cómo entra la feria en el plan. Nunca se propone, ni se debate, ni se gana, porque ya está ahí. Llega en la plantilla del presupuesto como un hecho preexistente, y la única conversación que se tiene sobre ella es logística: qué pabellón, cuántos metros de stand, quién viaja, si repetimos la sesión patrocinada.
 
 Fíjate en lo que falta en esa lista. Nadie pregunta si hay que ir.
 
@@ -80,7 +80,7 @@ El arreglo no tiene glamour y lleva una hora. Hazlo antes de la señal, porque d
 
 **Escribe el descalificador.** Este es el que todo el mundo se salta, y es el que hace real todo lo demás. Antes de reservar, define qué te diría que fue la decisión equivocada. Si ninguna evidencia puede contar nunca en contra de ir, estás otra vez en territorio infalsable y no has tomado ninguna decisión. Una hipótesis sin descalificador es un deseo.
 
-**Cierra reuniones con cuentas concretas antes de ir, o no vayas.** Es la prueba más afilada que existe. Pon un mínimo: "doce reuniones confirmadas con cuentas de la lista objetivo antes de comprometer el stand". Y luego trabaja para llegar. Si no consigues que doce cuentas objetivo te den veinte minutos cuando ya van a estar en el edificio y no tienen nada que perder, eso no es un problema de agenda. Es el mercado diciéndote algo sobre tu relevancia, y vale mucho más que la feria.
+**Cierra reuniones con cuentas concretas antes de ir, o no vayas.** Es la prueba más afilada que existe. Pon un mínimo: "doce reuniones confirmadas con cuentas de la lista objetivo antes de comprometer el stand". Y luego trabaja para llegar. Si no consigues que doce cuentas objetivo te den veinte minutos cuando ya van a estar en el edificio y no tienen nada que perder, eso no es tanto un problema de agenda como el mercado diciéndote algo sobre tu relevancia, y esa respuesta vale mucho más que la feria.
 
 **Mide las cosas que pueden salir mal.** Reuniones mantenidas con cuentas objetivo. Oportunidades creadas o avanzadas. Pipeline influido dentro de una ventana definida. No escaneos de badges. No tráfico de stand. No "muy buen ambiente en el stand". Elige métricas que puedan volver malas, porque una métrica que solo puede volver buena no está midiendo nada. Si no tienes claro que tus números actuales sobrevivan a esa prueba, suele ser señal de que todo el mapa de gasto necesita [una mirada honesta](/es/services/marketing-audit), no solo la línea del evento.
 
@@ -88,7 +88,7 @@ El arreglo no tiene glamour y lleva una hora. Hazlo antes de la señal, porque d
 
 La pregunta nunca fue si las ferias funcionan. Muchas funcionan, para empresas que aparecieron con un propósito y se fueron con lo que habían ido a buscar. La pregunta es si alguna vez decidiste ir, o si heredaste una obligación de una versión de la empresa que tomó esa decisión en unas condiciones que ya no existen.
 
-Renovar no es decidir. Es la ausencia de una decisión vestida de decisión. Y los hábitos más caros nunca son los que no te puedes permitir. Son los que sí, que es exactamente por lo que nadie se para a comprobarlo.
+Renovar no es decidir. Es la ausencia de una decisión vestida de decisión. Y los hábitos más caros nunca son los que no te puedes permitir, sino los que sí, que es exactamente por lo que nadie se para a comprobarlo.
 
 Así que este año, antes de que salga la señal, haz la pregunta que no se hace desde hace ocho años: si esto no estuviera ya en el presupuesto, ¿lo meteríamos?
 

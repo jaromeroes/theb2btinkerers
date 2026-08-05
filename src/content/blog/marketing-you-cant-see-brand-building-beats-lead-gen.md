@@ -17,11 +17,11 @@ Let me explain why, because this is the argument that decides where your budget 
 
 ## The 95% you're pretending don't exist
 
-There's a finding from the Ehrenberg-Bass Institute, put clearly by John Dawes, that should reframe how you think about every campaign you run. It's called the 95-5 rule. At any given moment, only about 5% of B2B buyers are actually in-market, meaning they have a live need, a budget, and an intention to buy something in your category. The other 95% aren't. They're not evaluating vendors. They're not filling out forms. They're running their business and not thinking about you at all.
+There's a finding from the Ehrenberg-Bass Institute, put clearly by John Dawes, that should reframe how you think about every campaign you run. It's called the 95-5 rule. At any given moment, only about 5% of B2B buyers are actually in-market, meaning they have a live need, a budget, and an intention to buy something in your category. The other 95% aren't evaluating vendors or filling out forms. They're running their business and not thinking about you at all.
 
-Now look at where most B2B marketing money goes. Demand capture. Paid search on high-intent keywords. Retargeting. Gated content designed to catch a hand-raise. Sales-led nurture sequences that fire the moment someone downloads a whitepaper. All of it is aimed, with great precision, at that 5%. And all of it competes, head to head, with every other vendor doing exactly the same thing to exactly the same tiny pool.
+Now look at where most B2B marketing money goes. Demand capture: paid search on high-intent keywords, retargeting, gated content designed to catch a hand-raise. Sales-led nurture sequences that fire the moment someone downloads a whitepaper. All of it is aimed, with great precision, at that 5%. And all of it competes, head to head, with every other vendor doing exactly the same thing to exactly the same tiny pool.
 
-This is the uncomfortable math nobody says out loud in the QBR. You can have the sharpest lead-gen engine on earth, and it still can't convert someone who isn't buying. No demo, no discount, no sequence of seven perfectly-timed emails turns a 95%-er into a customer this quarter. They're not resisting your pitch. They're just not in the market. Pushing harder doesn't shorten a sales cycle that hasn't started.
+This is the uncomfortable math nobody says out loud in the QBR. You can have the sharpest lead-gen engine on earth, and it still can't convert someone who isn't buying. No demo, no discount, no sequence of seven perfectly-timed emails turns a 95%-er into a customer this quarter. They're not resisting your pitch, they're just not in the market, and pushing harder doesn't shorten a sales cycle that hasn't started.
 
 ![Abstract risograph iceberg with a small visible tip above the waterline and a vast hidden mass below](../../assets/blog/brand-building-01.webp)
 
@@ -57,8 +57,8 @@ The patience is the strategy. Brand-building only compounds if you let it run lo
 
 The best marketing you'll ever do is a bet on a buyer who isn't ready yet. It won't show up in this quarter's numbers. It won't have a clean CPA. It'll look, to anyone watching only the dashboard, like money that didn't do anything. And then eighteen months from now a stranger who never filled out a form will put you on their shortlist first, and won't quite be able to tell you why.
 
-That's not a rounding error in your plan. That's where durable growth comes from. Lead-gen fishes the 5% everyone else is also fishing. Brand-building owns the 95% before they start looking. One is a cost you pay every quarter forever. The other is an asset you build once and keep drawing on. Choose accordingly.
+That's not a rounding error in your plan, it's where durable growth comes from. Lead-gen fishes the 5% everyone else is also fishing. Brand-building owns the 95% before they start looking. One is a cost you pay every quarter forever. The other is an asset you build once and keep drawing on. Choose accordingly.
 
 ---
 
-*At The B2B Tinkerers, we help B2B companies balance the marketing that shows up on the dashboard with the marketing that actually compounds. If you're all capture and no brand, [let's talk](#contact) — or see how we approach [brand strategy](/services/brand-strategy).*
+*At The B2B Tinkerers, we help B2B companies balance the marketing that shows up on the dashboard with the marketing that actually compounds. If you're all capture and no brand, [let's talk](#contact), or see how we approach [brand strategy](/services/brand-strategy).*

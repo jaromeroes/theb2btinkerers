@@ -54,7 +54,7 @@ La potencia del marco de cartera es que te deja decir algo que finanzas respeta:
 
 Nada de este replanteamiento sirve si se queda dentro del equipo de marketing. El cambio ocurre en la sala con finanzas, y ocurre cuando cambias cómo te presentas.
 
-**Habla el idioma de la cuenta de resultados.** Aprende qué le importa de verdad a tu CFO e informa en esos términos. Pipeline generado e influido. CAC combinado y cómo evoluciona. Payback period por canal. Contribución al ingreso, expresada con la humildad que la atribución merece. No necesitas una carrera de finanzas. Necesitas dejar de traducir tu valor a métricas de actividad y empezar a expresarlo en la moneda con la que funciona el negocio.
+**Habla el idioma de la cuenta de resultados.** Aprende qué le importa de verdad a tu CFO e informa en esos términos. Pipeline generado e influido, CAC combinado y cómo evoluciona, payback period por canal. Contribución al ingreso, expresada con la humildad que la atribución merece. No necesitas una carrera de finanzas. Necesitas dejar de traducir tu valor a métricas de actividad y empezar a expresarlo en la moneda con la que funciona el negocio.
 
 **Trae un business case, no una petición de presupuesto.** Hay un mundo de diferencia entre "necesito 200.000 € (220.000 $) para demand gen el próximo trimestre" y "aquí tienes 200.000 € (220.000 $) de inversión propuesta, aquí está el pipeline y el ingreso esperados, aquí está la ventana de payback, y aquí está lo que recorto si rinde por debajo." Una es una mano tendida. La otra es una tesis de inversión. Finanzas financia tesis.
 

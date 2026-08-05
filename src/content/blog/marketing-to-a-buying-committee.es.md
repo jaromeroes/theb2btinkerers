@@ -48,11 +48,11 @@ Lo quiere. Ya está vendido. Y es la única persona del proceso que paga un prec
 
 ### El comprador económico
 
-No le da miedo gastarse 200.000 € (220.000 $). Le da miedo gastárselos *mal*. Ser quien aprobó la cosa que no funcionó, en un año en el que se recortaron otros tres presupuestos. No necesita tu lista de features. Necesita un motivo defendible, en su propio idioma, de por qué esta fue la decisión sensata.
+El miedo no es gastarse 200.000 € (220.000 $), es gastárselos *mal*. Ser quien aprobó la cosa que no funcionó, en un año en el que se recortaron otros tres presupuestos. Lo que necesita de ti es un motivo defendible, en su propio idioma, de por qué esta fue la decisión sensata. Tu lista de features no le sirve para eso.
 
 ### El escéptico de IT, seguridad, legal o compras
 
-Ese al que todos se olvidan hasta la semana seis. No gana nada si tu producto es brillante. Se come toda la culpa si filtra datos, rompe una integración o incumple una cláusula que nadie leyó. Su incentivo no es ayudar al deal. Su incentivo es que el riesgo no acabe en su mesa. Eso no es obstruccionismo. Es su trabajo, bien hecho.
+Ese al que todos se olvidan hasta la semana seis. No gana nada si tu producto es brillante. Se come toda la culpa si filtra datos, rompe una integración o incumple una cláusula que nadie leyó. Su incentivo es sencillamente que el riesgo no acabe en su mesa. Eso no es obstruccionismo. Es su trabajo, bien hecho.
 
 ### El usuario final
 
@@ -66,7 +66,7 @@ Cuatro miedos. Cuatro cosas distintas que hacen falta. Y a ninguna de esas perso
 
 Si el deal se gana en una sala en la que no estás, entonces el único marketing que importa es el que sabe entrar en esa sala sin ti.
 
-Ese es un brief de producción completamente distinto. No awareness. No nurturing. **Munición interna.** Material construido para ser reenviado, pegado, capturado y defendido por otra persona, en tu ausencia, bajo interrogatorio.
+Ese es un brief de producción completamente distinto: no awareness ni nurturing, sino **munición interna**. Material construido para ser reenviado, pegado, capturado y defendido por otra persona, en tu ausencia, bajo interrogatorio.
 
 Cómo se ve esto en la práctica:
 
@@ -84,7 +84,7 @@ Fíjate en lo que no es nada de esto: ni gated, ni ingenioso, ni diseñado para 
 
 Aquí está el replanteamiento que cambia lo que tu equipo produce el lunes.
 
-Tu champion no es un lead. Tu champion es un compañero al que nunca vas a dirigir, entrando en una reunión a la que nunca vas a asistir, para defender un caso que nunca vas a oír, contra objeciones que nunca vas a tener ocasión de contestar. Es, funcionalmente, tu comercial dentro de la cuenta. Sin cobrar, mal informado y solo.
+Tu champion no es un lead, sino un compañero al que nunca vas a dirigir, entrando en una reunión a la que nunca vas a asistir, para defender un caso que nunca vas a oír, contra objeciones que nunca vas a tener ocasión de contestar. Es, funcionalmente, tu comercial dentro de la cuenta. Sin cobrar, mal informado y solo.
 
 Así que la pregunta deja de ser "¿qué necesita oír el comprador?" y pasa a ser algo mucho más útil: **¿qué necesita esta persona en la mano para ganar esa discusión el jueves?**
 

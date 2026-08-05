@@ -132,9 +132,9 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       problem: {
         titleLines: ["You're spending.", 'But are you investing?'],
         paragraphs: [
-          "Marketing budgets keep growing. Headcount increases. New tools get added to the stack. But pipeline doesn't follow. The board asks why, and nobody has a clear answer. Not because the team isn't working hard. They are. But effort without alignment is just motion.",
-          "Teams stay busy executing campaigns, producing content, running events. Activity metrics look healthy. But when leadership asks what's actually producing revenue, the room goes quiet. There's a gap between what marketing does and what the business needs, and it widens a little more every quarter.",
-          "The real issue is rarely effort. It's focus. Without a clear picture of what's working and what isn't, every decision is a guess. And guessing gets expensive. Eventually, leadership loses confidence in marketing altogether. Not because marketing failed, but because nobody could prove it didn't.",
+          "Marketing budgets keep growing, headcount goes up, and new tools keep arriving in the stack, but pipeline doesn't follow. Then the board asks why and nobody in the room has a clear answer. It isn't that the team lacks effort. The effort is usually the one thing not in doubt. What's missing is any agreement on which part of it is actually load-bearing.",
+          "Teams stay busy executing campaigns, producing content and running events, and the activity metrics look healthy enough. Then leadership asks what's actually producing revenue and the room goes quiet. There's a gap between what marketing does and what the business needs, and it widens a little more every quarter nobody measures it.",
+          "Without a clear picture of what's working, every decision is a guess, and guesses compound. You keep funding the channel that had a good month two years ago. You cut the one nobody happened to defend in the meeting. Eventually leadership stops trusting marketing altogether, and that's the expensive part, because winning that trust back takes far longer than losing it did.",
         ],
       },
       deliver: {
@@ -144,7 +144,7 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
           { label: 'Positioning & messaging review', desc: 'How your brand shows up versus how it should. We assess whether your positioning is clear, differentiated, and consistent across every touchpoint your buyers encounter.' },
           { label: 'Channel & budget audit', desc: 'Where money goes, what it produces, and what to cut or double down on. We map spend to outcomes so you can see which channels earn their keep and which are just burning budget.' },
           { label: 'Sales-marketing alignment assessment', desc: 'How well the two functions connect. Where handoffs break. We look at lead definitions, SLAs, feedback loops, and shared metrics to find the friction points that cost you pipeline.' },
-          { label: 'Prioritised recommendations with business impact', desc: 'Not 50 ideas. The 5 that will move the needle. Each recommendation comes with expected impact, effort required, and a clear rationale tied to your business objectives.' },
+          { label: 'Prioritised recommendations with business impact', desc: 'Not 50 ideas. The five that will actually change something. Each one comes with expected impact, effort required, and a clear rationale tied to your business objectives.' },
         ],
       },
       process: {
@@ -153,7 +153,7 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
           { num: '01', title: 'Discovery', body: 'Stakeholder interviews, data collection, access to tools and dashboards. We learn how your marketing works before we judge it.', tag: 'Week 1' },
           { num: '02', title: 'Analysis', body: 'Deep-dive into channels, content, pipeline data, competitor positioning. We follow the numbers and talk to the people who know the reality on the ground.', tag: 'Week 2' },
           { num: '03', title: 'Diagnosis', body: 'Pattern identification, gap analysis, opportunity mapping. This is where we connect what we found to what it means for your business.', tag: 'Week 3' },
-          { num: '04', title: 'Recommendations', body: 'Presentation to leadership with a prioritised action plan. Clear, specific, and tied to business outcomes. No fluff, no filler.', tag: 'Week 4' },
+          { num: '04', title: 'Recommendations', body: 'Presentation to leadership with a prioritised action plan, specific enough that someone can own each item by the end of the meeting.', tag: 'Week 4' },
         ],
       },
       stats: {
@@ -183,16 +183,16 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['AI & Hybrid', 'Marketing Strategy'],
       subtitle: "AI won't replace your marketing team. But teams that use AI well will outcompete those that don't. We help B2B companies understand where AI genuinely adds value in their marketing operation and build the workflows to make it stick.",
       problem: {
-        titleLines: ['Everyone is talking about AI.', 'Almost nobody is using it well.'],
+        titleLines: ['What is AI actually supposed', 'to do for your marketing team?'],
         paragraphs: [
-          'There is enormous pressure to "do something with AI" right now. Leadership reads the headlines, sees competitors announcing AI initiatives, and wants to know the plan. But the honest truth is that most B2B marketing teams have no clarity on what AI should actually do for them. The urgency is real. The direction is missing.',
-          'So teams experiment. Someone starts using ChatGPT for blog drafts. Another person tries an AI tool for ad copy. A third explores automated reporting. None of it connects to a strategy. None of it scales. And when leadership asks what the ROI is, nobody has a good answer. The tools are powerful, but isolated experiments don\'t compound into anything meaningful.',
-          'Worse, some teams rush to automate processes that were broken to begin with. AI doesn\'t fix a bad content strategy. It just produces bad content faster. The real question is not "where can we use AI?" It is "where does human judgment matter most, and where does it not?" Get that wrong and you waste budget. Get it right and you build a genuine competitive advantage.',
+          'There is enormous pressure to "do something with AI" right now. Leadership reads the headlines, sees competitors announcing AI initiatives, and wants to know the plan by Friday. The honest position most B2B marketing teams are in is that they have no idea what AI should actually do for them, and no comfortable way to say that out loud. The urgency is genuine; the direction isn\'t there yet.',
+          'So teams experiment. Someone starts drafting blog posts in ChatGPT, someone else tries a tool for ad copy, a third person has a go at automated reporting. None of it connects to a strategy or survives past the person who set it up, so when leadership asks about ROI there is nothing to point at. The tools really are powerful. Isolated experiments just never compound into anything.',
+          'Worse, some teams rush to automate processes that were broken to begin with. AI doesn\'t fix a bad content strategy, it just produces bad content faster. The useful question was never "where can we use AI?" but "where does human judgment actually earn its keep, and where is it only habit?" Teams that answer that honestly end up with an advantage that is hard to copy, because it lives in how they work rather than in which tool they bought.',
         ],
       },
       deliver: {
         h2: 'A practical AI strategy, not a science experiment.',
-        intro: "We build AI strategies that create value, not hype. Every recommendation is grounded in your team's actual capabilities, your real workflows, and what will genuinely move the needle for your marketing operation.",
+        intro: "We build AI strategies that create value, not hype. Every recommendation is grounded in what your team can actually absorb, the workflows you really run, and what would genuinely change how the operation works day to day.",
         cards: [
           { label: 'AI readiness assessment', desc: "Where your team, data, and processes are today. What's ready for AI and what isn't. A clear-eyed evaluation before anyone starts buying tools or building workflows." },
           { label: 'Content and campaign automation strategy', desc: 'Which workflows benefit from automation. Which need human judgment. Where the handoffs live. A practical map of what to automate, what to augment, and what to leave alone.' },
@@ -236,11 +236,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Brand Strategy', '& Positioning'],
       subtitle: "Most B2B companies compete on product features and price. The ones that win compete on clarity. They know exactly who they are, who they serve, and why it matters. That clarity doesn't happen by accident. It's built.",
       problem: {
-        titleLines: ['Your brand says everything.', 'Which means it says nothing.'],
+        titleLines: ['Everything you say about yourself,', 'your competitor could say too.'],
         paragraphs: [
-          "Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor. It works fine until it doesn't.",
-          'The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn\'t as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing creates content that sounds generic because nobody agreed on what makes you different. None of these problems announce themselves loudly. They just quietly drain your pipeline.',
-          'Your product might genuinely be better. But if your positioning is fuzzy, the market will pick the company that communicates more clearly. Every time. Buyers don\'t have the patience to figure out your value for you. That\'s your job.',
+          "Most B2B brands are accidental. Built from a founder's pitch that stuck, a tagline nobody hated enough to change, and a website that says roughly the same thing as every competitor's. That holds up for longer than you would expect, and then it stops holding up all at once.",
+          'The cost is invisible at first. You lose a deal and blame pricing. A prospect picks a competitor whose product isn\'t as good but whose story is sharper. Your sales team describes what you do five different ways. Marketing produces content that reads as generic because nobody ever agreed on what makes you different. None of this shows up as a line item. It drains the pipeline quietly enough that you attribute it to something else.',
+          'Your product might genuinely be better. It won\'t matter much while your positioning is fuzzy, because the market reliably picks the company that communicates more clearly. Buyers have no patience for working out your value on your behalf, and no particular reason to.',
         ],
       },
       deliver: {
@@ -289,11 +289,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Go-To-Market', 'Strategy'],
       subtitle: "A GTM strategy is more than a launch plan. It's the answer to: who are we selling to, what do we say, where do we show up, and how do sales and marketing move together. We build it from scratch or fix what's broken.",
       problem: {
-        titleLines: ['You have a product.', "You don't have a motion."],
+        titleLines: ['The product works.', 'Getting it in front of the right people is still guesswork.'],
         paragraphs: [
-          'You have a good product. Maybe even a great one. But there is no systematic way to get it in front of the right buyers at the right time. Leads trickle in from random channels. Some deals close, but nobody can explain why those ones worked and others didn\'t. Growth feels accidental, not repeatable.',
-          'Sales is doing one thing. Marketing is doing another. Both teams are busy, but they are not moving in the same direction. Sales blames marketing for low-quality leads. Marketing blames sales for not following up. Meanwhile, the pipeline stays unpredictable and the board keeps asking the same question: when does this become a machine?',
-          'Entering a new market without a playbook is where it gets expensive. Companies assume that what worked in one geography or segment will work in the next. It rarely does. The gap between product-market fit and repeatable revenue is where most B2B companies stall. Not because the product fails, but because the go-to-market motion was never properly built.',
+          'You have a good product, maybe even a great one. What you don\'t have is a systematic way to get it in front of the right buyers at the right time. Leads trickle in from channels nobody chose deliberately. Some deals close and nobody can explain why those and not the others, which makes growth feel like weather rather than something you built.',
+          'Meanwhile sales is doing one thing and marketing is doing another. Both teams are busy, and neither is moving in the same direction as the other. Sales blames marketing for lead quality, marketing blames sales for follow-up, and the pipeline stays unpredictable while the board keeps asking the same question: when does this become a machine?',
+          'Entering a new market without a playbook is where this gets expensive. Companies assume that what worked in one geography or segment will transfer to the next, and it rarely does. The gap between product-market fit and repeatable revenue is where most B2B companies stall, and the product is almost never the reason. The go-to-market motion simply never got built properly.',
         ],
       },
       deliver: {
@@ -342,10 +342,10 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Marketing Plan &', 'Business Alignment'],
       subtitle: 'Most marketing plans are written for board decks, not for execution. We build plans that start from the business and work backwards to a quarterly roadmap your team can own and your leadership can trust.',
       problem: {
-        titleLines: ['Your marketing plan exists.', 'Your team ignores it.'],
+        titleLines: ['The plan looked right in January.', 'By March nobody was opening the file.'],
         paragraphs: [
           "Most marketing plans look great in January and are irrelevant by March. They're built for the board presentation, not for the people who have to execute them. The result is a document that gets filed away while the team goes back to doing what they were already doing.",
-          'The deeper problem is the disconnect between what leadership expects and what marketing delivers. Leadership wants pipeline, revenue, and market share. Marketing reports on impressions, clicks, and content output. Neither side is wrong. They\'re just operating from different playbooks. And nobody built the bridge between them.',
+          'The deeper problem is the disconnect between what leadership expects and what marketing delivers. Leadership wants pipeline, revenue and market share. Marketing reports impressions, clicks and content output. Neither side is being unreasonable, they are just working from different playbooks, and nobody was ever given the job of reconciling the two.',
           'So teams run on tactics without a strategic thread. Campaigns launch because "we always do this." Budget gets allocated based on last year\'s plan plus 10%. Marketing metrics don\'t connect to business outcomes. And when the CEO asks "what did marketing produce this quarter?" the answer is either silence or a spreadsheet that raises more questions than it answers.',
         ],
       },
@@ -395,11 +395,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Fractional CMO'],
       subtitle: 'Senior marketing leadership without the full-time cost. We embed into your leadership team: setting strategy, coaching your people, and making sure marketing stays connected to what the business actually needs. Not a consultant who sends a report and disappears.',
       problem: {
-        titleLines: ['You need a CMO.', "You don't need a full-time CMO."],
+        titleLines: ['You need someone senior to own this.', 'Not necessarily five days a week.'],
         paragraphs: [
-          "There's a stage most growing B2B companies reach where marketing needs more than a capable executor. It needs strategic leadership. Someone who can connect marketing activity to business goals, make trade-offs, and set direction. But the budget or stage of the company doesn't justify a full-time CMO hire. Not yet. Maybe not ever.",
-          'The gap between a marketing manager executing tactics and a senior leader setting direction is wider than most companies realise. One follows the plan. The other decides what the plan should be, why it matters, and how it connects to revenue. Without that senior layer, marketing becomes a collection of activities rather than a function with purpose.',
-          'When nobody owns the marketing strategy, it drifts. Campaigns get launched without a clear connection to business priorities. Messaging fragments across channels. The team becomes reactive, chasing whatever feels urgent that week instead of building something that compounds. The work gets done, but it doesn\'t add up to anything.',
+          "There's a stage most growing B2B companies reach where marketing needs more than a capable executor. It needs someone who can connect activity to business goals, make trade-offs and hold a direction when the quarter gets noisy. The budget or the stage rarely justifies a full-time CMO at that point, and for plenty of companies it never will.",
+          'The gap between a marketing manager executing tactics and a senior leader setting direction is wider than most companies realise. It is not seniority for its own sake. It is the difference between running the plan well and being accountable for whether it was the right plan in the first place. Without that layer, marketing becomes a collection of activities rather than a function with a point of view.',
+          'When nobody owns the marketing strategy, it drifts. Campaigns launch without a clear line back to business priorities, messaging fragments across channels, and the team turns reactive, chasing whatever felt urgent on Monday instead of building something that compounds. The work still gets done. It just never adds up to anything.',
         ],
       },
       deliver: {
@@ -452,9 +452,9 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       problem: {
         titleLines: ['Estás gastando.', '¿Pero estás invirtiendo?'],
         paragraphs: [
-          'Los presupuestos de marketing no paran de crecer. El equipo aumenta. Se suman herramientas nuevas al stack. Pero el pipeline no sigue el ritmo. El consejo pregunta por qué y nadie tiene una respuesta clara. No porque el equipo no se esfuerce. Se esfuerza. Pero esfuerzo sin alineación es solo movimiento.',
-          'Los equipos están ocupados ejecutando campañas, produciendo contenido, organizando eventos. Las métricas de actividad pintan bien. Pero cuando la dirección pregunta qué está generando ingresos de verdad, la sala se queda en silencio. Hay una brecha entre lo que hace marketing y lo que necesita el negocio, y se ensancha un poco más cada trimestre.',
-          'El problema de fondo rara vez es el esfuerzo. Es el foco. Sin una imagen clara de qué funciona y qué no, cada decisión es una apuesta. Y apostar sale caro. Al final, la dirección pierde la confianza en marketing por completo. No porque marketing fallara, sino porque nadie pudo demostrar que no lo hizo.',
+          'Los presupuestos de marketing no paran de crecer, el equipo aumenta y al stack se le suman herramientas nuevas, pero el pipeline no sigue el ritmo. Entonces el consejo pregunta por qué y nadie en la sala tiene una respuesta clara. No es que falte esfuerzo. El esfuerzo suele ser lo único que nadie discute. Lo que falta es un acuerdo sobre qué parte de ese esfuerzo sostiene algo de verdad.',
+          'Los equipos están ocupados ejecutando campañas, produciendo contenido y organizando eventos, y las métricas de actividad pintan razonablemente bien. Entonces la dirección pregunta qué está generando ingresos de verdad y la sala se queda en silencio. Hay una brecha entre lo que hace marketing y lo que necesita el negocio, y se ensancha un poco más cada trimestre que nadie la mide.',
+          'Sin una imagen clara de qué funciona, cada decisión es una apuesta, y las apuestas se acumulan. Sigues financiando el canal que tuvo un buen mes hace dos años. Recortas el que nadie defendió en la reunión. Al final la dirección deja de fiarse de marketing, y esa es la parte cara, porque recuperar esa confianza lleva mucho más que perderla.',
         ],
       },
       deliver: {
@@ -473,7 +473,7 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
           { num: '01', title: 'Descubrimiento', body: 'Entrevistas con stakeholders, recogida de datos, acceso a herramientas y cuadros de mando. Aprendemos cómo funciona tu marketing antes de juzgarlo.', tag: 'Semana 1' },
           { num: '02', title: 'Análisis', body: 'Inmersión en canales, contenido, datos de pipeline, posicionamiento de la competencia. Seguimos los números y hablamos con quien conoce la realidad sobre el terreno.', tag: 'Semana 2' },
           { num: '03', title: 'Diagnóstico', body: 'Identificación de patrones, análisis de brechas, mapeo de oportunidades. Aquí conectamos lo que encontramos con lo que significa para tu negocio.', tag: 'Semana 3' },
-          { num: '04', title: 'Recomendaciones', body: 'Presentación a dirección con un plan de acción priorizado. Claro, específico y atado a resultados de negocio. Sin paja, sin relleno.', tag: 'Semana 4' },
+          { num: '04', title: 'Recomendaciones', body: 'Presentación a dirección con un plan de acción priorizado, lo bastante específico como para que cada punto tenga dueño antes de acabar la reunión.', tag: 'Semana 4' },
         ],
       },
       stats: {
@@ -503,16 +503,16 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Estrategia de marketing', 'con IA e híbrida'],
       subtitle: 'La IA no reemplazará a tu equipo de marketing. Pero los equipos que la usan bien superarán a los que no. Ayudamos a empresas B2B a entender dónde la IA aporta valor real en su operación de marketing y a construir los workflows para que cuaje.',
       problem: {
-        titleLines: ['Todo el mundo habla de IA.', 'Casi nadie la usa bien.'],
+        titleLines: ['¿Qué se supone que tiene que hacer', 'la IA por tu equipo de marketing?'],
         paragraphs: [
-          'Ahora mismo hay una presión enorme por "hacer algo con IA". La dirección lee los titulares, ve a los competidores anunciando iniciativas de IA y quiere conocer el plan. Pero la verdad honesta es que la mayoría de equipos de marketing B2B no tiene claro qué debería hacer la IA por ellos. La urgencia es real. Falta la dirección.',
-          'Así que los equipos experimentan. Alguien empieza a usar ChatGPT para borradores de blog. Otra persona prueba una herramienta de IA para copys de anuncios. Un tercero explora el reporting automatizado. Nada de eso conecta con una estrategia. Nada escala. Y cuando la dirección pregunta por el ROI, nadie tiene una buena respuesta. Las herramientas son potentes, pero los experimentos aislados no componen en nada significativo.',
-          'Peor aún, algunos equipos corren a automatizar procesos que ya estaban rotos de partida. La IA no arregla una mala estrategia de contenido. Solo produce mal contenido más rápido. La pregunta de verdad no es "¿dónde podemos usar IA?". Es "¿dónde importa más el criterio humano y dónde no?". Fállalo y desperdicias presupuesto. Acértalo y construyes una ventaja competitiva genuina.',
+          'Ahora mismo hay una presión enorme por "hacer algo con IA". La dirección lee los titulares, ve a los competidores anunciando iniciativas de IA y quiere el plan para el viernes. La posición honesta de la mayoría de equipos de marketing B2B es que no tienen ni idea de qué debería hacer la IA por ellos, ni una forma cómoda de decirlo en voz alta. La urgencia es real; la dirección todavía no está.',
+          'Así que los equipos experimentan. Alguien empieza a redactar posts en ChatGPT, otra persona prueba una herramienta para copys de anuncios, una tercera se pone con el reporting automatizado. Nada de eso conecta con una estrategia ni sobrevive a la persona que lo montó, así que cuando la dirección pregunta por el ROI no hay nada que señalar. Las herramientas son potentes de verdad. Los experimentos aislados simplemente no componen en nada.',
+          'Peor aún, algunos equipos corren a automatizar procesos que ya estaban rotos de partida. La IA no arregla una mala estrategia de contenido, solo produce mal contenido más rápido. La pregunta útil nunca fue "¿dónde podemos usar IA?", sino "¿dónde aporta de verdad el criterio humano y dónde es solo costumbre?". Los equipos que responden eso con honestidad acaban con una ventaja difícil de copiar, porque vive en cómo trabajan y no en qué herramienta compraron.',
         ],
       },
       deliver: {
         h2: 'Una estrategia de IA práctica, no un experimento de laboratorio.',
-        intro: 'Construimos estrategias de IA que crean valor, no hype. Cada recomendación se ancla en las capacidades reales de tu equipo, tus workflows reales y en lo que de verdad va a mover la aguja para tu operación de marketing.',
+        intro: 'Construimos estrategias de IA que crean valor, no hype. Cada recomendación se ancla en lo que tu equipo puede asumir de verdad, en los workflows que realmente ejecutáis y en lo que cambiaría el día a día de la operación.',
         cards: [
           { label: 'Evaluación de madurez para IA', desc: 'Dónde están hoy tu equipo, tus datos y tus procesos. Qué está listo para la IA y qué no. Una evaluación con los pies en el suelo antes de que nadie empiece a comprar herramientas o montar workflows.' },
           { label: 'Estrategia de automatización de contenido y campañas', desc: 'Qué workflows se benefician de la automatización. Cuáles necesitan criterio humano. Dónde están los traspasos. Un mapa práctico de qué automatizar, qué aumentar y qué dejar en paz.' },
@@ -556,11 +556,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Estrategia de marca', 'y posicionamiento'],
       subtitle: 'La mayoría de empresas B2B compite por características de producto y precio. Las que ganan compiten por claridad. Saben exactamente quiénes son, a quién sirven y por qué importa. Esa claridad no ocurre por accidente. Se construye.',
       problem: {
-        titleLines: ['Tu marca lo dice todo.', 'Lo que significa que no dice nada.'],
+        titleLines: ['Todo lo que dices de ti', 'lo podría decir tu competencia.'],
         paragraphs: [
-          'La mayoría de marcas B2B son accidentales. Construidas a partir del pitch del fundador que pegó, un tagline que nadie odió lo suficiente como para cambiar y una web que dice más o menos lo mismo que la de cualquier competidor. Funciona bien hasta que deja de funcionar.',
-          'El coste es invisible al principio. Pierdes una operación y culpas al precio. Un prospecto elige a un competidor cuyo producto no es tan bueno, pero cuya historia es más nítida. Tu equipo de ventas describe lo que hacéis de cinco formas distintas. Marketing crea contenido que suena genérico porque nadie se puso de acuerdo en qué os hace diferentes. Ninguno de estos problemas se anuncia a gritos. Simplemente drenan tu pipeline en silencio.',
-          'Puede que tu producto sea genuinamente mejor. Pero si tu posicionamiento es difuso, el mercado elegirá a la empresa que comunica con más claridad. Siempre. Los compradores no tienen la paciencia de descifrar tu valor por ti. Ese es tu trabajo.',
+          'La mayoría de marcas B2B son accidentales. Construidas a partir del pitch del fundador que pegó, un tagline que nadie odió lo suficiente como para cambiarlo y una web que dice más o menos lo mismo que la de cualquier competidor. Aguanta más tiempo del que esperarías, y luego deja de aguantar de golpe.',
+          'El coste es invisible al principio. Pierdes una operación y culpas al precio. Un prospecto elige a un competidor cuyo producto no es tan bueno, pero cuya historia es más nítida. Tu equipo de ventas describe lo que hacéis de cinco formas distintas. Marketing produce contenido que suena genérico porque nadie llegó a acordar qué os hace diferentes. Nada de esto aparece como una partida en ninguna cuenta. Drena el pipeline lo bastante en silencio como para que se lo achaques a otra cosa.',
+          'Puede que tu producto sea genuinamente mejor. No va a importar demasiado mientras tu posicionamiento sea difuso, porque el mercado elige de forma bastante fiable a la empresa que comunica con más claridad. Los compradores no tienen paciencia para descifrar tu valor por ti, ni razón alguna para tenerla.',
         ],
       },
       deliver: {
@@ -609,11 +609,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Estrategia', 'Go-To-Market'],
       subtitle: 'Una estrategia de GTM es más que un plan de lanzamiento. Es la respuesta a: a quién le vendemos, qué decimos, dónde aparecemos y cómo se mueven juntos ventas y marketing. La construimos desde cero o arreglamos lo que está roto.',
       problem: {
-        titleLines: ['Tienes un producto.', 'No tienes un motion.'],
+        titleLines: ['El producto funciona.', 'Ponerlo delante de la gente adecuada sigue siendo a ojo.'],
         paragraphs: [
-          'Tienes un buen producto. Puede que incluso uno estupendo. Pero no hay una forma sistemática de ponerlo delante de los compradores adecuados en el momento adecuado. Los leads gotean desde canales aleatorios. Algunas operaciones se cierran, pero nadie sabe explicar por qué funcionaron esas y otras no. El crecimiento se siente accidental, no repetible.',
-          'Ventas hace una cosa. Marketing hace otra. Ambos equipos están ocupados, pero no se mueven en la misma dirección. Ventas culpa a marketing por los leads de baja calidad. Marketing culpa a ventas por no hacer seguimiento. Mientras tanto, el pipeline sigue siendo impredecible y el consejo repite la misma pregunta: ¿cuándo se convierte esto en una máquina?',
-          'Entrar en un mercado nuevo sin un playbook es donde se vuelve caro. Las empresas asumen que lo que funcionó en una geografía o segmento funcionará en el siguiente. Rara vez es así. La brecha entre el product-market fit y los ingresos repetibles es donde se atasca la mayoría de empresas B2B. No porque el producto falle, sino porque el motion de go-to-market nunca se construyó bien.',
+          'Tienes un buen producto, puede que incluso uno estupendo. Lo que no tienes es una forma sistemática de ponerlo delante de los compradores adecuados en el momento adecuado. Los leads gotean desde canales que nadie eligió a propósito. Algunas operaciones se cierran y nadie sabe explicar por qué esas y no las otras, lo que hace que el crecimiento se parezca más al tiempo meteorológico que a algo construido.',
+          'Mientras tanto ventas hace una cosa y marketing hace otra. Ambos equipos están ocupados, y ninguno se mueve en la misma dirección que el otro. Ventas culpa a marketing por la calidad de los leads, marketing culpa a ventas por el seguimiento, y el pipeline sigue impredecible mientras el consejo repite la misma pregunta: ¿cuándo se convierte esto en una máquina?',
+          'Entrar en un mercado nuevo sin un playbook es donde esto se vuelve caro. Las empresas asumen que lo que funcionó en una geografía o segmento se traslada al siguiente, y rara vez es así. La brecha entre el product-market fit y los ingresos repetibles es donde se atasca la mayoría de empresas B2B, y el producto casi nunca es el motivo. El motion de go-to-market sencillamente nunca se llegó a construir bien.',
         ],
       },
       deliver: {
@@ -662,10 +662,10 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['Plan de marketing', 'y alineación con negocio'],
       subtitle: 'La mayoría de planes de marketing se escriben para decks de consejo, no para ejecutar. Nosotros construimos planes que parten del negocio y trabajan hacia atrás hasta un roadmap trimestral que tu equipo puede hacer suyo y tu dirección puede confiar.',
       problem: {
-        titleLines: ['Tu plan de marketing existe.', 'Tu equipo lo ignora.'],
+        titleLines: ['El plan tenía buena pinta en enero.', 'En marzo ya nadie abría el archivo.'],
         paragraphs: [
           'La mayoría de planes de marketing lucen genial en enero y son irrelevantes en marzo. Están hechos para la presentación al consejo, no para quien tiene que ejecutarlos. El resultado es un documento que se archiva mientras el equipo vuelve a hacer lo que ya venía haciendo.',
-          'El problema de fondo es la desconexión entre lo que espera la dirección y lo que entrega marketing. La dirección quiere pipeline, ingresos y cuota de mercado. Marketing reporta impresiones, clics y volumen de contenido. Ningún lado se equivoca. Simplemente operan desde playbooks distintos. Y nadie construyó el puente entre ambos.',
+          'El problema de fondo es la desconexión entre lo que espera la dirección y lo que entrega marketing. La dirección quiere pipeline, ingresos y cuota de mercado. Marketing reporta impresiones, clics y volumen de contenido. Ninguno de los dos lados es irrazonable, simplemente trabajan desde playbooks distintos, y a nadie le encargaron nunca reconciliarlos.',
           'Así que los equipos funcionan a base de tácticas sin un hilo estratégico. Se lanzan campañas porque "siempre lo hacemos". El presupuesto se asigna según el plan del año pasado más un 10%. Las métricas de marketing no conectan con resultados de negocio. Y cuando el CEO pregunta "¿qué produjo marketing este trimestre?", la respuesta es o silencio o una hoja de cálculo que plantea más preguntas de las que responde.',
         ],
       },
@@ -715,11 +715,11 @@ export const serviceDetail: Record<Lang, Record<ServiceSlug, ServiceDetail>> = {
       titleLines: ['CMO fraccional'],
       subtitle: 'Liderazgo de marketing senior sin el coste de un full-time. Nos integramos en tu equipo directivo: marcando la estrategia, formando a tu gente y asegurándonos de que el marketing sigue conectado con lo que el negocio necesita de verdad. No un consultor que envía un informe y desaparece.',
       problem: {
-        titleLines: ['Necesitas un CMO.', 'No necesitas un CMO full-time.'],
+        titleLines: ['Necesitas a alguien senior que se haga cargo.', 'No necesariamente cinco días a la semana.'],
         paragraphs: [
-          'Hay una etapa que alcanzan la mayoría de empresas B2B en crecimiento en la que marketing necesita más que un ejecutor competente. Necesita liderazgo estratégico. Alguien que sepa conectar la actividad de marketing con los objetivos de negocio, hacer trade-offs y marcar la dirección. Pero el presupuesto o la etapa de la empresa no justifican contratar un CMO full-time. Todavía no. Quizá nunca.',
-          'La brecha entre un marketing manager que ejecuta tácticas y un líder senior que marca la dirección es más ancha de lo que la mayoría de empresas cree. Uno sigue el plan. El otro decide cuál debería ser el plan, por qué importa y cómo conecta con los ingresos. Sin esa capa senior, marketing se convierte en una colección de actividades en lugar de una función con propósito.',
-          'Cuando nadie es dueño de la estrategia de marketing, esta se dispersa. Se lanzan campañas sin una conexión clara con las prioridades del negocio. Los mensajes se fragmentan entre canales. El equipo se vuelve reactivo, persiguiendo lo que parece urgente esa semana en lugar de construir algo que componga. El trabajo se hace, pero no suma a nada.',
+          'Hay una etapa que alcanzan la mayoría de empresas B2B en crecimiento en la que marketing necesita más que un ejecutor competente. Necesita a alguien que sepa conectar la actividad con los objetivos de negocio, hacer trade-offs y sostener una dirección cuando el trimestre se pone ruidoso. El presupuesto o la etapa rara vez justifican un CMO full-time en ese punto, y para muchas empresas no lo justificarán nunca.',
+          'La brecha entre un marketing manager que ejecuta tácticas y un líder senior que marca la dirección es más ancha de lo que la mayoría de empresas cree. No es senioridad por la senioridad. Es la diferencia entre ejecutar bien el plan y ser responsable de si era el plan correcto. Sin esa capa, marketing se convierte en una colección de actividades en lugar de una función con un punto de vista.',
+          'Cuando nadie es dueño de la estrategia de marketing, esta se dispersa. Se lanzan campañas sin una línea clara de vuelta a las prioridades del negocio, los mensajes se fragmentan entre canales y el equipo se vuelve reactivo, persiguiendo lo que parecía urgente el lunes en lugar de construir algo que componga. El trabajo se sigue haciendo. Simplemente nunca suma a nada.',
         ],
       },
       deliver: {

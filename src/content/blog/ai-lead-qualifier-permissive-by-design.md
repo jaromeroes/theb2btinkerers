@@ -11,9 +11,9 @@ image: "../../assets/blog/ai-qualifier-cover.webp"
 translationKey: "ai-qualifier-permissive"
 ---
 
-There's a spreadsheet. It came out of a contact database because someone applied a filter, and now it has a few hundred rows on it, each one a company. And somewhere in the building there's a person, usually the newest SDR or whoever lost the argument, reading those rows one at a time and deciding whether each company is worth a call.
+Somewhere in the building, usually the newest SDR or whoever lost the argument, someone is working through a spreadsheet. A few hundred rows, each one a company, pulled out of a contact database because somebody applied a filter. Their job is to read those rows one at a time and decide which companies are worth a call.
 
-Open the website. Squint at it. Guess. Next row.
+Open the website. Squint at it. Guess, and move on to the next row.
 
 That's where AI lead qualification actually earns its keep, and it's also where most outbound quietly dies. Not in the pitch, not in the sequence. In the two hours a week nobody wants to spend checking whether a list of companies has anything to do with your ICP.
 
@@ -21,7 +21,7 @@ I've been working as a fractional CMO for a B2B SaaS platform in industrial logi
 
 The manual process had all three of the classic problems. It was slow. It was inconsistent, because two people qualified the same company differently, and the same person qualified differently at 6pm on Friday than at 10am on Tuesday. And it never finished. It just got abandoned every time something more urgent showed up, which is the real failure mode. Not bad qualification. No qualification.
 
-So I built a small script. The interesting part isn't the code, and it isn't the model. It's three design decisions, and one of them sounds like a bug.
+So I built a small script. What makes it work isn't the code or the model but three design decisions, one of which sounds like a bug.
 
 ## What It Actually Does
 
@@ -29,7 +29,7 @@ For each company on the list, the script asks a frontier model with web search t
 
 It checkpoints after each company, so if the run dies at company 63 of 100, it picks up at 64 instead of starting over. Boring detail, saves your afternoon.
 
-That's the whole thing. It's not an agent swarm. It's not a platform. It's a loop, a prompt, and a CSV.
+That's the whole thing: a loop, a prompt and a CSV. No agent swarm, no platform.
 
 ## Decision 1: It Says Yes Too Often, On Purpose
 
@@ -91,7 +91,7 @@ I can't tell you it works yet. We set a bar before we started, which is the only
 
 I'm telling you this because the alternative is the thing I dislike most about how AI gets written about in B2B marketing. Somebody builds a tool, describes it in confident prose, and lets the absence of a stated bar imply that it cleared one. What I have is a design I believe in and a test I haven't finished. Those are different things and I'd rather say so than pad this piece with a number I invented.
 
-If it clears 85%, it ships as the default. If it doesn't, the prompt file gets another version and we run it again. That's the loop.
+If it clears 85% it ships as the default, and if it doesn't the prompt file gets another version and we run it again.
 
 ## The Leverage Wasn't the Model
 

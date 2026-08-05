@@ -34,7 +34,7 @@ Aquí va la matemática incómoda. La atención, el presupuesto y el foco del eq
 
 Y casi todos los canales tienen un umbral. Por debajo de cierto nivel de gasto, frecuencia y consistencia, una campaña simplemente no registra. Tus compradores no la ven lo suficiente para recordarla. El algoritmo no recibe señal suficiente para optimizar. El equipo no la corre las veces necesarias para aprender qué funciona. Estás pagando la campaña sin comprar el resultado, porque nunca cruzaste la línea donde empieza a componer.
 
-Las apuestas menos numerosas y más grandes cruzan ese umbral. Concentra el mismo presupuesto en dos campañas en vez de ocho y cada una tiene ya el gasto para que la vean, la pista para iterarla, y suficiente cabeza del equipo para mejorarla semana a semana. Eso no es hacer menos. Son los mismos recursos por fin ordenados para romper en lugar de disolverse.
+Las apuestas menos numerosas y más grandes cruzan ese umbral. Concentra el mismo presupuesto en dos campañas en vez de ocho y cada una tiene ya el gasto para que la vean, la pista para iterarla, y suficiente cabeza del equipo para mejorarla semana a semana. Eso no es hacer menos, son los mismos recursos por fin ordenados para romper en lugar de disolverse.
 
 Esta es la diferencia entre movimiento y progreso. Un equipo ocupado repartiéndose a lo fino genera mucho movimiento. Un equipo enfocado genera resultados. Si tu equipo está atascado en modo reactivo y todo ya parece urgente, el [problema de sistema operativo](/es/insights) suele estar debajo del problema de portfolio, y merece la pena arreglar los dos.
 

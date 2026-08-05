@@ -71,7 +71,7 @@ A quality gate. A checklist the output has to clear before it ships. Sourced cla
 
 Versioning. You keep the workflow, not just the output. When something breaks, you can see what changed. When something works, you can reuse it. A pipeline you can't inspect is just a slower party trick.
 
-And the thing worth saying plainly: don't remove the human from the judgment step. Automate the assembly, the reformatting, the first draft, the tab-hopping. Never automate the decision about whether something is true, on-brand, or worth sending. That's not caution for its own sake. It's the line between compounding and embarrassment.
+And the thing worth saying plainly: don't remove the human from the judgment step. Automate the assembly, the reformatting, the first draft, the tab-hopping. Never automate the decision about whether something is true, on-brand, or worth sending. That isn't caution for its own sake, it's the line between compounding and embarrassment.
 
 ## The Plumbing Is the Point
 
@@ -79,7 +79,7 @@ The teams pulling ahead with AI right now aren't the ones with a secret model. T
 
 That's genuinely available to a small team this quarter. You don't need scale. You need to pick one workflow, define the input, build the steps, put the gate in place, and run it enough times that it starts to compound. Then pick the next one.
 
-Everyone has the engine. Almost nobody builds the car. That's the whole opportunity.
+Everyone has the engine, almost nobody builds the car, and that's the whole opportunity.
 
 ---
 

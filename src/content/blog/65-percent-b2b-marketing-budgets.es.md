@@ -20,11 +20,11 @@ Queremos hablar de por qué pasa esto, y de lo que cuesta en realidad.
 
 Lo primero que hay que entender: la desalineación no es un problema de comunicación. No se arregla con un canal de Slack compartido, una sync semanal o un dashboard común.
 
-La desalineación ocurre cuando marketing y ventas optimizan para cosas distintas. A marketing se le mide por MQL. A ventas por ingresos cerrados. Ambos equipos cumplen sus números. El negocio pierde igual.
+La desalineación ocurre cuando marketing y ventas optimizan para cosas distintas. A marketing se le mide por MQL. A ventas por ingresos cerrados. Ambos equipos cumplen sus números y el negocio pierde igual.
 
 Esto es estructural. Y empieza en cómo se construye la estrategia de marketing, normalmente desconectada de cómo gana dinero el negocio de verdad.
 
-Cuando auditamos una operación de marketing B2B, el hallazgo más común no es que el marketing sea malo. Es que el marketing está optimizado para el objetivo equivocado. Buen contenido, buenas campañas, una inversión razonable, todo apuntando en una dirección que no conecta con el pipeline.
+Cuando auditamos una operación de marketing B2B, el hallazgo más común no es que el marketing sea malo, sino que está optimizado para el objetivo equivocado. Buen contenido, buenas campañas, una inversión razonable, todo apuntando en una dirección que no conecta con el pipeline.
 
 ![Gráficos de ingresos y embudos de marketing: dos informes que rara vez cuentan la misma historia](../../assets/blog/65-percent-b2b-marketing-revenue-vs-marketing.webp)
 
@@ -40,7 +40,7 @@ El coste directo es fácil de calcular. El coste indirecto, el lastre sobre toda
 
 ## Por qué la mayoría de soluciones no funciona
 
-La respuesta típica a la desalineación es proceso. Definir una definición de lead compartida. Montar un SLA. Crear un dashboard conjunto. Revisarlo cada mes.
+La respuesta típica a la desalineación es proceso. Definir una definición de lead compartida, montar un SLA, crear un dashboard conjunto y revisarlo cada mes.
 
 Estas cosas ayudan en el margen. Casi nunca arreglan el problema de fondo.
 

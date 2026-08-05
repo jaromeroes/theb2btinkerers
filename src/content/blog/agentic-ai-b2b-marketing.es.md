@@ -50,7 +50,7 @@ Aquí es donde la IA agéntica aporta, de forma silenciosa, más valor a los equ
 
 Si tu equipo dedica dos días al final de cada mes a montar un informe de rendimiento, aquí es probablemente donde la IA agéntica tiene el ROI más inmediato. Conecta las fuentes de datos, define la estructura del relato y deja que el agente extraiga los números y escriba el primer borrador del comentario. Tú revisas y distribuyes. No es esfuerzo cero, pero sí una fracción del actual.
 
-![Herramientas de marketing —contenido, outreach, operaciones, analítica— conectadas a través de un único punto de orquestación](../../assets/blog/agentic-ai-b2b-marketing-orchestration.webp)
+![Herramientas de marketing (contenido, outreach, operaciones, analítica) conectadas a través de un único punto de orquestación](../../assets/blog/agentic-ai-b2b-marketing-orchestration.webp)
 
 ## La diferencia entre herramientas sueltas y orquestación
 

@@ -52,7 +52,7 @@ Cuando una tarea cae en el terreno confuso del medio y el eje por sí solo no la
 
 Eso es todo. Pasa cualquier tarea por esa pregunta y la respuesta se afila rápido.
 
-Si un cliente descubre que usaste IA para limpiar tus datos, resumir una llamada o redactar la primera versión de un informe, se encoge de hombros. Claro que lo hiciste. Eso es simplemente operar con competencia, y nadie se siente engañado. Pero si descubre que la nota "personal" de tu fundador la generó una máquina, o que la recomendación estratégica que presentaste era en realidad el output de un modelo sin editar, algo se rompe. No porque la IA sea el diablo, sino porque diste a entender que había una persona ahí y no la había. El engaño no es la automatización. Es la pretensión.
+Si un cliente descubre que usaste IA para limpiar tus datos, resumir una llamada o redactar la primera versión de un informe, se encoge de hombros. Claro que lo hiciste. Eso es simplemente operar con competencia, y nadie se siente engañado. Pero si descubre que la nota "personal" de tu fundador la generó una máquina, o que la recomendación estratégica que presentaste era en realidad el output de un modelo sin editar, algo se rompe. No porque la IA sea el diablo, sino porque diste a entender que había una persona ahí y no la había. El engaño no es la automatización, es la pretensión.
 
 Cuando la respuesta al test es sí, perdemos confianza, mantén a una persona clara y realmente en el bucle. No como un sello de goma que deja pasar el output, sino como quien de verdad toma la decisión que el cliente cree que está tomando una persona. Cuando la respuesta es no, automatiza sin complejos y no te pongas precioso con ello.
 

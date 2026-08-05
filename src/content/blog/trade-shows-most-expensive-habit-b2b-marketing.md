@@ -21,7 +21,7 @@ To be clear: this isn't an argument that B2B events don't work. Some work extrao
 
 ## The Ritual Nobody Re-Decides
 
-Watch how the trade show enters the plan. It doesn't get proposed, debated, and won. It's already there. It arrives in the budget template as a pre-existing fact, and the only conversation anyone has about it is logistical. Which hall. How big a stand. Who's flying out. Whether we do the sponsored session again.
+Watch how the trade show enters the plan. It never gets proposed, debated and won, because it's already there. It arrives in the budget template as a pre-existing fact, and the only conversation anyone has about it is logistical: which hall, how big a stand, who's flying out, whether we do the sponsored session again.
 
 Notice what's missing from that list. Nobody asks whether to go at all.
 
@@ -31,7 +31,7 @@ The tell is what happens when you ask the team why you go. The answers are all b
 
 ## Why It Survives Every Budget Cut
 
-Here's the part that should bother you. When the quarter tightens and the red pen comes out, the event line is almost never the one that gets cut. Content gets trimmed. The paid test gets paused. Headcount gets frozen. The booth survives.
+Here's the part that should bother you. When the quarter tightens and the red pen comes out, the event line is almost never the one that gets cut. Content gets trimmed, the paid test gets paused, headcount gets frozen. The booth survives.
 
 There are three reasons, and none of them are about performance.
 
@@ -79,15 +79,15 @@ The fix is unglamorous and takes about an hour. Do it before the deposit, becaus
 
 **Write the disqualifier.** This is the one everybody skips, and it's the one that makes the whole thing real. Before you book, define what would tell you this was the wrong call. If no evidence could ever count against going, you're back in unfalsifiable territory and you haven't made a decision at all. A hypothesis without a disqualifier is a wish.
 
-**Pre-book meetings with named accounts, or don't go.** This is the sharpest test available. Set a floor: "twelve confirmed meetings with accounts from the target list before we commit to the stand." Then work to hit it. If you can't get twelve target accounts to agree to twenty minutes when they're already going to be in the building with nothing to lose, that's not a scheduling problem. That's the market telling you something about your relevance, and it's worth far more than the show.
+**Pre-book meetings with named accounts, or don't go.** This is the sharpest test available. Set a floor: "twelve confirmed meetings with accounts from the target list before we commit to the stand." Then work to hit it. If you can't get twelve target accounts to agree to twenty minutes when they're already going to be in the building with nothing to lose, that isn't a scheduling problem so much as the market telling you something about your relevance, and that answer is worth far more than the show.
 
-**Measure the things that can be wrong.** Meetings held with target accounts. Opportunities created or advanced. Pipeline influenced within a defined window. Not badge scans. Not booth traffic. Not "great energy on the stand." Pick metrics that could come back bad, because a metric that can only come back good isn't measuring anything. If you're not sure your current numbers survive that test, that's usually a sign the whole spend map needs [an honest look](/services/marketing-audit), not just the event line.
+**Measure the things that can be wrong.** Meetings held with target accounts. Opportunities created or advanced. Pipeline influenced within a defined window. None of that is badge scans, booth traffic or "great energy on the stand." Pick metrics that could come back bad, because a metric that can only come back good isn't measuring anything. If you're not sure your current numbers survive that test, that's usually a sign the whole spend map needs [an honest look](/services/marketing-audit), not just the event line.
 
 ## You Never Decided
 
 The question was never whether trade shows work. Plenty of them do, for companies that turned up with a purpose and left with the thing they came for. The question is whether you ever decided to go, or whether you inherited an obligation from a version of the company that made the call under conditions that no longer apply.
 
-Renewal isn't a decision. It's the absence of one, wearing a decision's clothes. And the most expensive habits are never the ones you can't afford. They're the ones you can, which is exactly why nobody ever stops to check.
+Renewal isn't a decision. It's the absence of one, wearing a decision's clothes. And the most expensive habits are never the ones you can't afford, but the ones you can, which is exactly why nobody ever stops to check.
 
 So this year, before the deposit goes out, ask the question that hasn't been asked in eight years: if this weren't already in the budget, would we put it there?
 

@@ -28,7 +28,7 @@ It looks like insight. It isn't.
 
 ## Why this is a marketing problem specifically
 
-Every function in a company is being affected by AI. Finance teams are using it. Product teams are using it. Operations teams are using it. But most of those outputs are either verifiable against data or contained within a workflow where quality control exists.
+Every function in a company is being affected by AI. Finance teams are using it, product teams are using it, operations teams are using it. But most of those outputs are either verifiable against data or contained within a workflow where quality control exists.
 
 Marketing outputs are different. A financial model either reconciles or it doesn't. A legal brief either cites the right precedents or it doesn't. A piece of positioning, a brand narrative, a campaign concept: the quality is much harder to evaluate without deep context. Which means the slop is harder to catch, and the bar gets set by whoever produces something first.
 

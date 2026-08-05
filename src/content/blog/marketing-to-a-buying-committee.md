@@ -31,7 +31,7 @@ Here's the structural fact almost nobody designs marketing around: **every perso
 
 That's not a small imbalance. It's the whole game. Nine people have to arrive at something like agreement. One person, in one meeting, with one plausible objection, can send the whole thing back to "next quarter" forever. A no needs one voice. A yes needs consensus.
 
-Which means the thing you're doing is not persuasion. Nobody in that room is waiting to be dazzled. You are de-risking a decision for the most skeptical person in it. Your ceiling isn't set by how excited your champion is. It's set by how uncomfortable the least enthusiastic participant feels, because their discomfort has veto power and your champion's enthusiasm doesn't.
+Which means the job isn't persuasion. Nobody in that room is waiting to be dazzled; you're de-risking a decision for the most skeptical person in it. Your ceiling gets set by how uncomfortable the least enthusiastic participant feels rather than by how excited your champion is, because their discomfort has veto power and enthusiasm doesn't.
 
 Most B2B marketing is built to raise the ceiling. The deal is decided at the floor.
 
@@ -47,11 +47,11 @@ They want this. They're already sold. And they're the only person in the process
 
 ### The economic buyer
 
-They aren't afraid of spending $220,000 (€200,000). They're afraid of spending it *wrong*. Of being the person who approved the thing that didn't work, in a year when three other budgets got cut. They don't need your feature list. They need a defensible reason, in their own language, for why this was the sane call.
+The fear isn't spending $220,000 (€200,000), it's spending it *wrong*. Being the person who approved the thing that didn't work, in a year when three other budgets got cut. What they need from you is a defensible reason, in their own language, for why this was the sane call. The feature list does nothing for that.
 
 ### The skeptic in IT, security, legal or procurement
 
-The one everyone forgets until week six. They get zero upside if your product is brilliant. They get all the blame if it leaks data, breaks an integration, or violates a clause nobody read. Their incentive isn't to help the deal. Their incentive is to not have the risk land on their desk. That's not obstruction. That's their job, done well.
+The one everyone forgets until week six. They get zero upside if your product is brilliant. They get all the blame if it leaks data, breaks an integration, or violates a clause nobody read. Their incentive is simply to keep the risk off their own desk. That's not obstruction. That's their job, done well.
 
 ### The end user
 
@@ -65,7 +65,7 @@ Four fears. Four different things needed. And not one of those people is going t
 
 If the deal is won in a room you're not in, then the only marketing that matters is the marketing that can travel into that room without you.
 
-That's a different production brief entirely. Not awareness. Not nurture. **Internal ammunition.** Material built to be forwarded, pasted, screenshotted and defended by someone else, in your absence, under questioning.
+That's a different production brief entirely: not awareness or nurture, but **internal ammunition**. Material built to be forwarded, pasted, screenshotted and defended by someone else, in your absence, under questioning.
 
 What it looks like in practice:
 
@@ -77,7 +77,7 @@ What it looks like in practice:
 
 **The answer to the objection you hate most.** Written down, in public, in your own words. If you don't arm your champion with a response to your biggest weakness, they'll improvise one. It won't be as good as yours.
 
-Notice what none of these are: gated, clever, or designed to generate a lead. Their entire job is to work when you're not in the room. That's also why this belongs in [go-to-market](/services/go-to-market) work rather than in the content calendar. It's not a campaign. It's the connective tissue between what sales promises and what the committee can actually approve.
+Notice what none of these are: gated, clever, or designed to generate a lead. Their entire job is to work when you're not in the room. That's also why this belongs in [go-to-market](/services/go-to-market) work rather than in the content calendar. It's less a campaign than the connective tissue between what sales promises and what the committee can actually approve.
 
 ## Your Real Audience Is the Champion
 

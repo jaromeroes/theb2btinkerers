@@ -23,7 +23,7 @@ The instinct, when you're in this state, is to assume you need more people. You 
 
 Here's the trap. When a team is drowning, "we need another headcount" feels like the obvious answer. But if you drop a new hire into a team that has no system for how work arrives, gets prioritized, and gets done, you don't get relief. You get a second firefighter running to the same fires.
 
-The volume of requests isn't what's breaking your team. It's the absence of a mechanism to control that volume. Most marketing functions have a content strategy, a brand guide, maybe a campaign calendar. What they almost never have is an **operating system**: the boring, unglamorous machinery that decides what the team works on, in what order, and what it deliberately doesn't do.
+What's breaking your team isn't the volume of requests but the absence of any mechanism to control it. Most marketing functions have a content strategy, a brand guide, maybe a campaign calendar. What they almost never have is an **operating system**: the boring, unglamorous machinery that decides what the team works on, in what order, and what it deliberately doesn't do.
 
 Without it, every request is processed the same way: as an emergency, in the order it shouted loudest. That's not a team. That's a queue with no bouncer.
 
@@ -61,7 +61,7 @@ This is where a concept from software teams earns its place in marketing: **work
 
 ## Building the Operating System
 
-So how do you actually get out? Not with a new tool. With a system. Here's the minimum viable version.
+So how do you actually get out? Not with a new tool but with a system. Here's the minimum viable version.
 
 **Build one front door.** Every request, no exceptions, goes to a single intake: one form, one board, one channel. If it didn't come through the front door, it doesn't exist. This single move makes the invisible workload visible for the first time, which is the precondition for everything else.
 
@@ -79,9 +79,9 @@ Here's the part people get wrong. They think the answer is buying Asana, or Mond
 
 What actually changes the team is the *cadence*: the weekly triage that genuinely happens, the WIP limit that's genuinely enforced, the front door that leadership genuinely respects. The discipline lives in the recurring human decisions, not in the software. You could run all of this on a whiteboard and a standing 30-minute Monday meeting and outperform a team with a $50,000 (€45,000) enterprise platform and no discipline.
 
-The best B2B marketing teams I've seen aren't the busiest. They're the calmest. Not because they have less work, but because they decided, in advance and out loud, what they would and wouldn't do. They traded the adrenaline of constant firefighting for the quiet compounding of finishing what matters.
+The best B2B marketing teams I've seen aren't the busiest ones, they're the calmest. Not because they have less work, but because they decided, in advance and out loud, what they would and wouldn't do. They traded the adrenaline of constant firefighting for the quiet compounding of finishing what matters.
 
-Your team is capable of that. It's probably not a talent problem, and it's probably not a headcount problem. It's a systems problem. And systems, unlike fires, are something you can actually build.
+Your team is capable of that. It's probably not a talent problem or a headcount problem, but a systems problem. And systems, unlike fires, are something you can actually build.
 
 ---
 

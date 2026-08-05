@@ -72,7 +72,7 @@ Una puerta de calidad. Un checklist que el output tiene que pasar antes de salir
 
 Versionado. Guardas el workflow, no solo el output. Cuando algo se rompe, puedes ver qué cambió. Cuando algo funciona, puedes reutilizarlo. Un pipeline que no puedes inspeccionar es solo un truco de fiesta más lento.
 
-Y lo que merece decirse claro: no quites al humano del paso de criterio. Automatiza el ensamblaje, el reformateo, el primer borrador, el salto entre pestañas. Nunca automatices la decisión sobre si algo es cierto, on-brand o merece enviarse. Eso no es cautela porque sí. Es la línea entre componer y hacer el ridículo.
+Y lo que merece decirse claro: no quites al humano del paso de criterio. Automatiza el ensamblaje, el reformateo, el primer borrador, el salto entre pestañas. Nunca automatices la decisión sobre si algo es cierto, on-brand o merece enviarse. Eso no es cautela porque sí, es la línea entre componer y hacer el ridículo.
 
 ## La fontanería es lo importante
 
@@ -80,7 +80,7 @@ Los equipos que están tirando por delante con IA ahora mismo no son los que tie
 
 Eso está genuinamente al alcance de un equipo pequeño este trimestre. No necesitas escala. Necesitas elegir un workflow, definir el input, montar los pasos, poner la puerta y ejecutarlo las veces suficientes para que empiece a componer. Y luego elegir el siguiente.
 
-Todos tienen el motor. Casi nadie construye el coche. Ahí está toda la oportunidad.
+Todos tienen el motor, casi nadie construye el coche, y ahí está toda la oportunidad.
 
 ---
 

@@ -11,13 +11,11 @@ image: "../../assets/blog/icp-too-broad-cover.webp"
 translationKey: "icp-too-broad"
 ---
 
-Ask a B2B team to describe their ICP and you'll get an answer in about four seconds. "Mid-market manufacturers in Europe, 50 to 500 employees, IT or operations leadership, some digital transformation budget." Confident. Rehearsed. Living on slide six of the deck since the last planning cycle.
+Most B2B teams can describe their ICP in about four seconds, because it's been on slide six of the deck since the last planning cycle. "Mid-market manufacturers in Europe, 50 to 500 employees, IT or operations leadership, some digital transformation budget." It comes out sounding confident mainly because it's been rehearsed.
 
-Now ask the harder question. Name a company that fits that description perfectly and that you'd still refuse to take a meeting with.
+The harder question is the one nobody asks in that meeting: name a company that fits the description perfectly and that you'd still refuse to take a meeting with. What usually follows is a pause, then a weak example, then a change of subject.
 
-Usually there's a pause. Then a weak example. Then a change of subject.
-
-That pause is the whole article. Your ICP isn't wrong, exactly. It's just not doing anything. It excludes almost nobody, which means it decides almost nothing, and a filter that filters nothing isn't a filter. It's a description of the market you happen to sell into, wearing the costume of a strategy.
+That pause is the whole article. Your ICP isn't wrong so much as inert. It excludes almost nobody, which means it decides almost nothing, and a filter that filters nothing isn't a filter. It's a description of the market you happen to sell into, wearing the costume of a strategy.
 
 And then everyone wonders why nothing converts.
 
@@ -27,7 +25,7 @@ What most companies actually have is a firmographic outline. Industry, headcount
 
 Do the arithmetic on your own version. "Mid-market manufacturers in Europe, 50 to 500 employees" is tens of thousands of organizations. If your team closes thirty deals a year, you've described a population you will never touch and called it a target. The definition is wide enough that every inbound lead technically qualifies. Every list a BDR scrapes technically qualifies. Every deal that drifted for eight months and died in procurement technically qualified too.
 
-That isn't targeting. It's permission. A broad ICP is how an organization gives itself license to chase anything with a pulse while still feeling disciplined about it, because look, they were in the ICP.
+What that produces isn't targeting, it's permission. A broad ICP is how an organization gives itself license to chase anything with a pulse while still feeling disciplined about it, because look, they were in the ICP.
 
 The damage isn't dramatic, which is exactly why it survives. Broad ICPs don't cause a visible failure. They produce a pipeline that looks healthy in the CRM, a forecast nobody believes, and a conversion rate that's been mediocre for so long it's now considered the industry benchmark.
 
@@ -37,7 +35,7 @@ The damage isn't dramatic, which is exactly why it survives. Broad ICPs don't ca
 
 Nobody sets out to write a useless ICP. It gets stretched by three pressures, each perfectly reasonable in the moment.
 
-**Fear of shrinking the TAM.** Narrowing the ICP makes the addressable market number in the board deck smaller, and nobody wants to be the person who shrinks that slide. So the definition widens until the TAM looks impressive, and then it gets defended because it's impressive, not because it's true. A big market you can't convert is a story for investors. A small one you dominate is a business.
+**Fear of shrinking the TAM.** Narrowing the ICP makes the addressable market number in the board deck smaller, and nobody wants to be the person who shrinks that slide. So the definition widens until the TAM looks impressive, and then it gets defended because it's impressive rather than because it's true. A big market you can't convert makes a good story for investors, which is not the same thing as a business.
 
 **Sales pressure to keep the list long.** Reps need coverage. A tight ICP means a short list, and a short list feels like a quota problem waiting to happen. So the boundaries quietly relax until the list is long enough to feel safe. The irony writes itself: the long list is what makes the quota harder, because the same selling hours now spread across four times the accounts, most of which were never going to buy.
 
@@ -57,11 +55,11 @@ Now look for what they share that *isn't* firmographic. It's usually structural.
 
 Firmographics tell you who *could* buy. Triggers tell you who buys *now*. A company that fits your profile perfectly and has no reason to move this year is not in your ICP this year. It's in your someday file, and someday isn't a sales stage.
 
-Triggers are events with a date attached. New leadership in the function you sell to. An acquisition that broke the reporting. A regulation with a compliance deadline. A system going end-of-life. A failed audit. Fit without a trigger is a nurture sequence. A trigger without fit is a distraction that will eat a quarter. Both together is a deal.
+Triggers are events with a date attached: new leadership in the function you sell to, an acquisition that broke the reporting, a regulation with a compliance deadline, a system going end-of-life, a failed audit. Fit without a trigger is a nurture sequence, and a trigger without fit is a distraction that will eat a quarter. You need both before it's a deal.
 
 ### An explicit list of who it is NOT
 
-The ICP isn't finished until it names the companies you turn away. Not implied. Written.
+The ICP isn't finished until it names the companies you turn away, and names them in writing rather than by implication.
 
 "We're wrong for organizations with no internal owner for this." "We're wrong for anyone who wants a single vendor for everything." "We're wrong below 50 employees, not because of budget, but because there's nobody there to run the change once we leave."
 
@@ -83,7 +81,7 @@ And look at the asymmetry people keep getting backwards. A bad *yes* costs month
 
 ![A scattered cluster of abstract shapes cut by a diagonal line, lime on one side and forest green on the other](../../assets/blog/icp-too-broad-02.webp)
 
-Four moves. None of them need a workshop.
+Four moves, none of which need a workshop.
 
 **Compare closed-won against churned and lost.** Three lists, side by side. Most teams only ever study their wins, which is like studying survivors and concluding that nothing is dangerous. Wins tell you what worked. Churn and losses tell you what your ICP can't see. The real disqualifiers are hiding in the second and third columns.
 
@@ -103,7 +101,7 @@ A sharp ICP doesn't take deals away from you. It takes fake deals away from you.
 
 What you get back is concentration. Fewer accounts, worked properly. A team that stops being thinly spread across an entire market and starts being disproportionately good at one slice of it. Every conversation gets sharper because you've had the same conversation forty times. That's what the narrow definition is actually buying: not a smaller business, a compounding one.
 
-So run the test. Hand your ICP to someone who joined last month and ask them to reject a company with it in thirty seconds. If they can't, you've found the thing that's been quietly capping your conversion rate all along. It isn't the messaging. It isn't the website. It isn't the budget. It's that you never actually decided who this is for.
+So run the test. Hand your ICP to someone who joined last month and ask them to reject a company with it in thirty seconds. If they can't, you've found the thing that's been quietly capping your conversion rate all along, and it was never the messaging or the website or the budget. You just never actually decided who this is for.
 
 For more on positioning and go-to-market, browse our [insights](/insights).
 

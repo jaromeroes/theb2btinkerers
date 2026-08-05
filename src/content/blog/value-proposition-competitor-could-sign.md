@@ -15,7 +15,7 @@ Try this test on your own website. Copy your value proposition into a document. 
 
 If you can't, you have a problem. And it's the most expensive problem in B2B, because it's the one nobody notices.
 
-Here's the real diagnostic, sharper than any positioning workshop. Take your homepage headline and imagine your biggest competitor putting their logo on it. Would anything become false? Would anyone at their company object? If the answer is no, if a rival could sign your value proposition and mean every word, then what you have isn't a value proposition. It's positioning theatre. It looks like a stance. It commits to nothing.
+Here's the real diagnostic, sharper than any positioning workshop. Take your homepage headline and imagine your biggest competitor putting their logo on it. Would anything become false? Would anyone at their company object? If the answer is no, if a rival could sign your value proposition and mean every word, then what you have isn't a value proposition but positioning theatre: something that looks like a stance while committing to nothing.
 
 ## The Sameness Test Most B2B Companies Fail
 

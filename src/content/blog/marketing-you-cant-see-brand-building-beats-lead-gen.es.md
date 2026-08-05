@@ -18,7 +18,7 @@ Déjame explicar por qué, porque este es el argumento que decide dónde va de v
 
 ## El 95% que finges que no existe
 
-Hay un hallazgo del Ehrenberg-Bass Institute, formulado con claridad por John Dawes, que debería recolocar cómo piensas cada campaña que lanzas. Se llama la regla 95-5. En cualquier momento dado, solo un 5% de los compradores B2B está de verdad en mercado, es decir, tiene una necesidad viva, un presupuesto y la intención de comprar algo en tu categoría. El otro 95% no. No está evaluando proveedores. No está rellenando formularios. Está gestionando su negocio y no piensa en ti para nada.
+Hay un hallazgo del Ehrenberg-Bass Institute, formulado con claridad por John Dawes, que debería recolocar cómo piensas cada campaña que lanzas. Se llama la regla 95-5. En cualquier momento dado, solo un 5% de los compradores B2B está de verdad en mercado, es decir, tiene una necesidad viva, un presupuesto y la intención de comprar algo en tu categoría. El otro 95% no está evaluando proveedores ni rellenando formularios. Está gestionando su negocio y no piensa en ti para nada.
 
 Ahora mira dónde va la mayor parte del dinero de marketing B2B. Captura de demanda. Paid search sobre keywords de alta intención. Retargeting. Contenido con formulario diseñado para cazar una levantada de mano. Secuencias de nurturing lideradas por ventas que se disparan en cuanto alguien descarga un whitepaper. Todo apunta, con enorme precisión, a ese 5%. Y todo compite, cara a cara, con cualquier otro proveedor que hace exactamente lo mismo sobre exactamente el mismo charco diminuto.
 
@@ -58,8 +58,8 @@ La paciencia es la estrategia. El brand-building solo compone si lo dejas correr
 
 El mejor marketing que harás en tu vida es una apuesta por un comprador que aún no está listo. No aparecerá en los números de este trimestre. No tendrá un CPA limpio. Parecerá, para quien mire solo el dashboard, dinero que no hizo nada. Y luego, dentro de dieciocho meses, un desconocido que nunca rellenó un formulario te pondrá el primero en su shortlist, y no sabrá muy bien explicarte por qué.
 
-Eso no es un error de redondeo en tu plan. Es de donde sale el crecimiento duradero. El lead-gen pesca al 5% que todos los demás también están pescando. El brand-building se queda con el 95% antes de que empiecen a buscar. Uno es un coste que pagas cada trimestre para siempre. El otro es un activo que construyes una vez y del que sigues tirando. Elige en consecuencia.
+Eso no es un error de redondeo en tu plan, es de donde sale el crecimiento duradero. El lead-gen pesca al 5% que todos los demás también están pescando. El brand-building se queda con el 95% antes de que empiecen a buscar. Uno es un coste que pagas cada trimestre para siempre. El otro es un activo que construyes una vez y del que sigues tirando. Elige en consecuencia.
 
 ---
 
-*En The B2B Tinkerers ayudamos a empresas B2B a equilibrar el marketing que aparece en el dashboard con el marketing que de verdad compone. Si eres todo captura y nada de marca, [hablemos](#contact) — o mira cómo enfocamos la [estrategia de marca](/es/services/brand-strategy).*
+*En The B2B Tinkerers ayudamos a empresas B2B a equilibrar el marketing que aparece en el dashboard con el marketing que de verdad compone. Si eres todo captura y nada de marca, [hablemos](#contact), o mira cómo enfocamos la [estrategia de marca](/es/services/brand-strategy).*

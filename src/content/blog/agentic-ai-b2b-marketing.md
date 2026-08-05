@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI in B2B Marketing: What It Actually Is and What It Can Do for You"
-excerpt: "Agentic AI is generating real expectations in B2B marketing — and for good reason. Here is what it actually means for your team, and where it can make a difference this year."
+excerpt: "Agentic AI is generating real expectations in B2B marketing, and for good reason. Here is what it actually means for your team, and where it can make a difference this year."
 date: 2026-02-11
 tag: "AI"
 image: "../../assets/blog/agentic-ai-b2b-marketing-cover.webp"
@@ -22,7 +22,7 @@ Think of it this way. A generative AI tool is a very capable intern who needs de
 
 The reason this matters practically is that most of the value in marketing is not in producing one piece of content. It is in the sequence of steps around it: research, brief, draft, review loop, publish, distribute, track. Generative AI helps with individual steps. Agentic AI can handle sequences.
 
-![A chain of interconnected gears set in motion by a single figure — agentic AI as a sequence of automated steps](../../assets/blog/agentic-ai-b2b-marketing-workflow-chain.webp)
+![A chain of interconnected gears set in motion by a single figure, agentic AI as a sequence of automated steps](../../assets/blog/agentic-ai-b2b-marketing-workflow-chain.webp)
 
 ## What this actually looks like in a B2B marketing team
 
@@ -42,13 +42,13 @@ The practical approach: use agents for research and draft preparation, keep a hu
 
 **Marketing operations**
 
-This is where agentic AI quietly delivers the most value for mid-market teams. Keeping CRM data clean. Routing leads. Flagging anomalies in campaign performance. Updating dashboards. These are tasks that fall through the cracks precisely because no single person owns them and they do not justify a full-time hire. An agentic system running in the background is well suited to this pattern: check, compare against a rule, flag or act.
+This is where agentic AI quietly delivers the most value for mid-market teams. Keeping CRM data clean, routing leads, flagging anomalies in campaign performance, updating dashboards. These are tasks that fall through the cracks precisely because no single person owns them and they do not justify a full-time hire. An agentic system running in the background is well suited to this pattern: check, compare against a rule, flag or act.
 
 **Reporting and analysis**
 
 If your team spends two days at the end of each month assembling a performance report, this is probably where agentic AI has the most immediate ROI. Connect the data sources, define the narrative structure, let the agent pull the numbers and write the first draft of the commentary. You review and distribute. Not zero effort, but a fraction of the current one.
 
-![Marketing tools — content, outreach, operations, analytics — connected through a single orchestration point](../../assets/blog/agentic-ai-b2b-marketing-orchestration.webp)
+![Marketing tools (content, outreach, operations, analytics) connected through a single orchestration point](../../assets/blog/agentic-ai-b2b-marketing-orchestration.webp)
 
 ## The difference between standalone tools and orchestration
 
@@ -70,7 +70,7 @@ For most mid-market B2B marketing teams, the first agentic win is in content res
 
 From there, you build intuition. You see where the edge cases are. You start asking bigger questions about what else could run this way.
 
-![An operator starting a machine while a colleague observes — the human review layer in agentic workflows](../../assets/blog/agentic-ai-b2b-marketing-entry-point.webp)
+![An operator starting a machine while a colleague observes, the human review layer in agentic workflows](../../assets/blog/agentic-ai-b2b-marketing-entry-point.webp)
 
 ## Three things that consistently go wrong
 

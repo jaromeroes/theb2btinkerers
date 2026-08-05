@@ -24,7 +24,7 @@ Cuando estás en ese estado, el instinto es pensar que necesitas más gente. No 
 
 Aquí está la trampa. Cuando un equipo se ahoga, "necesitamos otra persona" parece la respuesta obvia. Pero si metes a alguien nuevo en un equipo que no tiene ningún sistema sobre cómo llega el trabajo, cómo se prioriza y cómo se cierra, no consigues alivio. Consigues un segundo bombero corriendo hacia los mismos incendios.
 
-Lo que rompe a tu equipo no es el volumen de peticiones. Es la ausencia de un mecanismo para controlar ese volumen. La mayoría de funciones de marketing tienen una estrategia de contenidos, una guía de marca, quizá un calendario de campañas. Lo que casi nunca tienen es un **sistema operativo**: la maquinaria aburrida y sin glamour que decide en qué trabaja el equipo, en qué orden, y qué deja fuera a propósito.
+Lo que rompe a tu equipo no es el volumen de peticiones, sino la ausencia de cualquier mecanismo para controlarlo. La mayoría de funciones de marketing tienen una estrategia de contenidos, una guía de marca, quizá un calendario de campañas. Lo que casi nunca tienen es un **sistema operativo**: la maquinaria aburrida y sin glamour que decide en qué trabaja el equipo, en qué orden, y qué deja fuera a propósito.
 
 Sin eso, cada petición se procesa igual: como una emergencia, en el orden en que gritó más fuerte. Eso no es un equipo. Es una cola sin portero.
 
@@ -80,7 +80,7 @@ Aquí está la parte que la gente confunde. Creen que la respuesta es comprar As
 
 Lo que de verdad cambia al equipo es la *cadencia*: el triaje semanal que ocurre de verdad, el límite de WIP que se respeta de verdad, la puerta de entrada que dirección respeta de verdad. La disciplina vive en las decisiones humanas recurrentes, no en el software. Podrías montar todo esto con una pizarra y una reunión fija de 30 minutos los lunes, y rendir más que un equipo con una plataforma enterprise de 45.000 € (50.000 $) y cero disciplina.
 
-Los mejores equipos de marketing B2B que he visto no son los más ocupados. Son los más tranquilos. No porque tengan menos trabajo, sino porque decidieron, por adelantado y en voz alta, qué iban a hacer y qué no. Cambiaron la adrenalina de apagar fuegos constantes por el silencio que compone al terminar lo que importa.
+Los mejores equipos de marketing B2B que he visto no son los más ocupados, son los más tranquilos. No porque tengan menos trabajo, sino porque decidieron, por adelantado y en voz alta, qué iban a hacer y qué no. Cambiaron la adrenalina de apagar fuegos constantes por el silencio que compone al terminar lo que importa.
 
 Tu equipo es capaz de eso. Probablemente no sea un problema de talento, y probablemente no sea un problema de headcount. Es un problema de sistema. Y los sistemas, a diferencia de los fuegos, sí se pueden construir.
 

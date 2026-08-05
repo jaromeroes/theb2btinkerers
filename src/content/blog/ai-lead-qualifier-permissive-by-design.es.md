@@ -12,9 +12,9 @@ lang: "es"
 translationKey: "ai-qualifier-permissive"
 ---
 
-Hay un Excel. Salió de una base de datos de contactos porque alguien aplicó un filtro, y ahora tiene unos cientos de filas, cada una una empresa. Y en algún sitio de la oficina hay una persona, normalmente el SDR más nuevo o el que perdió la discusión, leyendo esas filas de una en una y decidiendo si cada empresa merece una llamada.
+En algún sitio de la oficina, normalmente el SDR más nuevo o quien perdió la discusión, alguien está peleándose con un Excel. Unos cientos de filas, cada una una empresa, sacadas de una base de datos de contactos porque alguien aplicó un filtro. Su trabajo es leer esas filas de una en una y decidir qué empresas merecen una llamada.
 
-Abrir la web. Entrecerrar los ojos. Adivinar. Siguiente fila.
+Abrir la web. Entrecerrar los ojos. Adivinar, y pasar a la siguiente fila.
 
 Ahí es donde la calificación de leads con IA se gana el sueldo de verdad, y ahí es también donde el outbound se muere en silencio. No en el pitch, no en la secuencia. En las dos horas semanales que nadie quiere dedicar a comprobar si una lista de empresas tiene algo que ver con tu ICP.
 
@@ -22,7 +22,7 @@ Llevo un tiempo trabajando como fractional CMO para una plataforma SaaS B2B de l
 
 El proceso manual tenía los tres problemas de siempre. Era lento. Era inconsistente, porque dos personas calificaban la misma empresa de forma distinta, y la misma persona calificaba distinto un viernes a las 18:00 que un martes a las 10:00. Y no terminaba nunca. Se abandonaba cada vez que aparecía algo más urgente, que es el fallo de verdad. No es calificar mal. Es no calificar.
 
-Así que construí un script pequeño. Lo interesante no es el código, y no es el modelo. Son tres decisiones de diseño, y una de ellas suena a error.
+Así que construí un script pequeño. Lo que hace que funcione no es el código ni el modelo, sino tres decisiones de diseño, y una de ellas suena a error.
 
 ## Qué hace exactamente
 

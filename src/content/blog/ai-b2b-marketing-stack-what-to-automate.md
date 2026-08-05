@@ -51,7 +51,7 @@ When a task lands in the messy middle and the axis alone doesn't settle it, use 
 
 That's it. Run any task through that question and the answer sharpens fast.
 
-If a customer discovers you used AI to clean your data, summarize a call, or draft the first version of a report, they shrug. Of course you did. That's just competent operations, and nobody feels deceived. But if they discover the "personal" note from your founder was machine-generated, or the strategic recommendation you presented was really just an unedited model output, something breaks. Not because AI is evil, but because you implied a human was there and there wasn't. The deception isn't the automation. It's the pretense.
+If a customer discovers you used AI to clean your data, summarize a call, or draft the first version of a report, they shrug. Of course you did. That's just competent operations, and nobody feels deceived. But if they discover the "personal" note from your founder was machine-generated, or the strategic recommendation you presented was really just an unedited model output, something breaks. Not because AI is evil, but because you implied a human was there and there wasn't. The deception isn't the automation, it's the pretense.
 
 When the answer to the test is yes, you lose trust, keep a human clearly and genuinely in the loop. Not as a rubber stamp waving the output through, but as the person actually making the call the customer thinks a person is making. When the answer is no, automate freely and don't feel precious about it.
 

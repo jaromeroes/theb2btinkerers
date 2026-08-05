@@ -9,9 +9,9 @@ translationKey: "busy-vs-impact"
 slug: "deja-de-estar-ocupado-empieza-a-generar-impacto"
 ---
 
-Hay una paradoja rara en el marketing B2B ahora mismo. Los equipos producen más contenido que nunca. Lanzan campañas en más canales, vigilan más dashboards, asisten a más dailies y entregan más informes. Todo el mundo está ocupado. Las agendas están a rebosar. Slack no duerme.
+Hay una paradoja rara en el marketing B2B ahora mismo. Los equipos producen más contenido que nunca. Lanzan campañas en más canales, vigilan más dashboards, asisten a más dailies y entregan más informes. Todo el mundo está ocupado, las agendas están a rebosar, Slack no duerme.
 
-Y sin embargo, cuando el CFO hace la pregunta sencilla —*"¿Qué aportó marketing a los ingresos este trimestre?"*— la sala se queda en silencio.
+Y sin embargo, cuando el CFO hace la pregunta sencilla, *"¿Qué aportó marketing a los ingresos este trimestre?"*, la sala se queda en silencio.
 
 Esto no es un problema de talento. Es un problema de foco. Y si diriges o trabajas dentro de una función de marketing B2B, hay bastantes probabilidades de que estés atrapado en él ahora mismo sin darte cuenta.
 
@@ -35,7 +35,7 @@ Los outputs son cosas que produces: posts, emails, campañas, eventos. Puedes co
 
 Los resultados son lo que esos outputs consiguen de verdad: pipeline generado, operaciones aceleradas, ingresos influidos, retención de clientes mejorada. Son más difíciles de medir, tardan más en materializarse y a menudo requieren conversaciones incómodas sobre qué está funcionando de verdad.
 
-Cuando los equipos están bajo presión para "demostrar que marketing hace algo", el instinto natural es hacer más. Más contenido. Más canales. Más campañas. Pero hacer más de las cosas equivocadas y más rápido no mueve la aguja: solo hace girar la rueda.
+Cuando los equipos están bajo presión para "demostrar que marketing hace algo", el instinto natural es hacer más. Más contenido, más canales, más campañas. Pero hacer más de las cosas equivocadas y más rápido no mueve la aguja: solo hace girar la rueda.
 
 Hay una expresión en B2B que merece la pena rumiar: *la trampa de la actividad*. Es cuando el ritmo de ejecución se convierte en un sustituto del pensamiento estratégico. Estás tan ocupado enviando cosas que nunca paras a preguntarte si lo que envías importa de verdad.
 

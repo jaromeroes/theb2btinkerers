@@ -9,7 +9,7 @@ export const ui = {
     site: {
       name: 'The B2B Tinkerers',
       defaultDescription:
-        'B2B Marketing Strategy Consultancy. We help B2B tech, industrial, and financial services companies get more from marketing — without spending more.',
+        'B2B Marketing Strategy Consultancy. We help B2B tech, industrial, and financial services companies get more from marketing, without spending more.',
       logoAlt: 'The B2B Tinkerers',
       skipToContent: 'Skip to content',
     },

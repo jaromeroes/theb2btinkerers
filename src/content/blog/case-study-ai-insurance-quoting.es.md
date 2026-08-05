@@ -46,7 +46,7 @@ La solución fue una arquitectura de cotización de dos capas. Un agente de IA s
 
 ![Un gran embudo filtrando una masa de documentos en un único output optimizado](../../assets/blog/case-study-insurance-quoting-02.webp)
 
-La capa de IA funciona así. Cuando llega una solicitud —por formulario web, widget de chat o teléfono (convertido a input estructurado)—, el agente reúne la información básica del negocio, ejecuta una comprobación de cualificación contra los criterios de la aseguradora y produce una primera cotización para las cuentas elegibles. Para solicitudes estándar, esto lleva menos de siete minutos desde el primer contacto hasta la cotización entregada. El sistema opera 24 horas, siete días a la semana.
+La capa de IA funciona así. Cuando llega una solicitud, por formulario web, widget de chat o teléfono (convertido a input estructurado), el agente reúne la información básica del negocio, ejecuta una comprobación de cualificación contra los criterios de la aseguradora y produce una primera cotización para las cuentas elegibles. Para solicitudes estándar, esto lleva menos de siete minutos desde el primer contacto hasta la cotización entregada. El sistema opera 24 horas, siete días a la semana.
 
 El agente no finge ser humano. Es transparente sobre lo que es. Y está diseñado explícitamente para hacer un traspaso limpio cuando una solicitud se sale de sus parámetros: estructuras de cobertura complejas, códigos de sector de alto riesgo, cuentas con historial de siniestros, o cualquier situación en la que el prospecto señale que quiere hablar con alguien.
 
@@ -86,4 +86,4 @@ Para el cliente, el resultado fue una operación de cotización más rápida par
 
 ---
 
-Si tu operación de ventas o servicio se topa con restricciones parecidas —capacidad demasiado estirada, expectativas de velocidad que el modelo actual no puede cumplir—, la conversación suele empezar con la misma pregunta: ¿dónde está gastando tiempo tu equipo en cosas que no requieren su experiencia real? Ahí está la palanca.
+Si tu operación de ventas o servicio se topa con restricciones parecidas, capacidad demasiado estirada, expectativas de velocidad que el modelo actual no puede cumplir, la conversación suele empezar con la misma pregunta: ¿dónde está gastando tiempo tu equipo en cosas que no requieren su experiencia real? Ahí está la palanca.

@@ -12,13 +12,11 @@ lang: "es"
 translationKey: "icp-too-broad"
 ---
 
-Pídele a un equipo B2B que te describa su ICP y te responden en cuatro segundos. "Fabricantes mid-market en Europa, de 50 a 500 empleados, dirección de IT u operaciones, con presupuesto de transformación digital." Con seguridad. Ensayado. Viviendo en la diapositiva seis del deck desde el último ciclo de planificación.
+La mayoría de equipos B2B describe su ICP en cuatro segundos, porque lleva en la diapositiva seis del deck desde el último ciclo de planificación. "Fabricantes mid-market en Europa, de 50 a 500 empleados, dirección de IT u operaciones, con presupuesto de transformación digital." Suena seguro sobre todo porque está ensayado.
 
-Ahora la pregunta difícil. Nómbrame una empresa que encaje perfectamente en esa descripción y a la que aun así le dirías que no a una reunión.
+La pregunta difícil es la que nadie hace en esa reunión: nómbrame una empresa que encaje perfectamente en esa descripción y a la que aun así le dirías que no a una reunión. Lo que suele venir después es una pausa, luego un ejemplo flojo, luego un cambio de tema.
 
-Normalmente hay una pausa. Luego un ejemplo flojo. Luego un cambio de tema.
-
-Esa pausa es todo el artículo. Tu ICP no está mal, exactamente. Es que no hace nada. No excluye a casi nadie, o sea que no decide casi nada, y un filtro que no filtra nada no es un filtro. Es una descripción del mercado en el que resulta que vendes, disfrazada de estrategia.
+Esa pausa es todo el artículo. Tu ICP no está tanto mal como inerte. No excluye a casi nadie, o sea que no decide casi nada, y un filtro que no filtra nada no es un filtro. Es una descripción del mercado en el que resulta que vendes, disfrazada de estrategia.
 
 Y luego todo el mundo se pregunta por qué no convierte nada.
 
@@ -28,7 +26,7 @@ Lo que la mayoría de empresas tienen en realidad es un contorno firmográfico. 
 
 Haz la aritmética con tu versión. "Fabricantes mid-market en Europa, de 50 a 500 empleados" son decenas de miles de organizaciones. Si tu equipo cierra treinta deals al año, has descrito una población que jamás vas a tocar y la has llamado target. La definición es tan ancha que cada lead inbound cualifica técnicamente. Cada lista que saca un BDR cualifica técnicamente. Cada deal que estuvo ocho meses dando vueltas y murió en compras también cualificaba técnicamente.
 
-Eso no es targeting. Es un permiso. Un ICP amplio es la forma que tiene una organización de autorizarse a perseguir cualquier cosa con pulso sintiéndose disciplinada, porque mira, estaban en el ICP.
+Lo que eso produce no es targeting, es un permiso. Un ICP amplio es la forma que tiene una organización de autorizarse a perseguir cualquier cosa con pulso sintiéndose disciplinada, porque mira, estaban en el ICP.
 
 El daño no es dramático, y justo por eso sobrevive. Los ICP amplios no provocan un fracaso visible. Producen un pipeline que en el CRM tiene buena pinta, un forecast que no se cree nadie y una tasa de conversión que lleva tanto tiempo siendo mediocre que ya se considera el benchmark del sector.
 
@@ -38,7 +36,7 @@ El daño no es dramático, y justo por eso sobrevive. Los ICP amplios no provoca
 
 Nadie se propone escribir un ICP inútil. Lo estiran tres presiones, cada una razonable en su momento.
 
-**Miedo a encoger el TAM.** Estrechar el ICP hace que el número de mercado direccionable del board deck baje, y nadie quiere ser quien encoge esa diapositiva. Así que la definición se ensancha hasta que el TAM impresiona, y después se defiende porque impresiona, no porque sea cierto. Un mercado enorme que no sabes convertir es una historia para inversores. Uno pequeño que dominas es un negocio.
+**Miedo a encoger el TAM.** Estrechar el ICP hace que el número de mercado direccionable del board deck baje, y nadie quiere ser quien encoge esa diapositiva. Así que la definición se ensancha hasta que el TAM impresiona, y después se defiende porque impresiona más que porque sea cierto. Un mercado enorme que no sabes convertir da una buena historia para inversores, que no es lo mismo que un negocio.
 
 **Presión de ventas para que la lista sea larga.** Los comerciales necesitan cobertura. Un ICP estrecho significa lista corta, y una lista corta parece un problema de cuota esperando a pasar. Así que las fronteras se relajan sin ruido hasta que la lista es lo bastante larga como para dar tranquilidad. La ironía se escribe sola: la lista larga es lo que hace la cuota más difícil, porque las mismas horas de venta se reparten entre cuatro veces más cuentas, y la mayoría no iba a comprar nunca.
 
@@ -62,7 +60,7 @@ Los disparadores son eventos con fecha. Dirección nueva en el área a la que ve
 
 ### Una lista explícita de quién NO es
 
-El ICP no está terminado hasta que nombra a las empresas a las que dices que no. No implícito. Escrito.
+El ICP no está terminado hasta que nombra a las empresas a las que dices que no, y las nombra por escrito en lugar de por implicación.
 
 "No somos para organizaciones que no tienen a nadie dentro que se haga dueño de esto." "No somos para quien quiere un único proveedor para todo." "No somos para menos de 50 empleados, y no por presupuesto, sino porque no hay nadie que sostenga el cambio cuando nos vamos."
 
@@ -84,7 +82,7 @@ Y fíjate en la asimetría que la gente sigue leyendo al revés. Un *sí* malo c
 
 ![Un conjunto disperso de formas abstractas cortado por una línea diagonal, lima a un lado y verde bosque al otro](../../assets/blog/icp-too-broad-02.webp)
 
-Cuatro movimientos. Ninguno necesita un workshop.
+Cuatro movimientos, y ninguno necesita un workshop.
 
 **Compara closed-won contra churn y perdidos.** Tres listas, una al lado de otra. Casi todos los equipos estudian solo sus victorias, que es como estudiar a los supervivientes y concluir que no hay ningún peligro. Las victorias te dicen qué funcionó. El churn y las pérdidas te dicen qué es lo que tu ICP no ve. Los descalificadores reales están escondidos en la segunda y la tercera columna.
 
@@ -104,7 +102,7 @@ Un ICP afilado no te quita deals. Te quita deals falsos. Esas dos cosas se parec
 
 Lo que recuperas es concentración. Menos cuentas, trabajadas bien. Un equipo que deja de estar repartido en capa fina por todo un mercado y empieza a ser desproporcionadamente bueno en una porción de él. Cada conversación se afila porque ya has tenido esa misma conversación cuarenta veces. Eso es lo que compra la definición estrecha: no un negocio más pequeño, uno que compone.
 
-Así que haz el test. Dale tu ICP a alguien que entró el mes pasado y pídele que rechace una empresa con él en treinta segundos. Si no puede, acabas de encontrar lo que llevaba todo este tiempo tapando tu conversión en silencio. No son los mensajes. No es la web. No es el presupuesto. Es que nunca llegaste a decidir para quién es esto.
+Así que haz el test. Dale tu ICP a alguien que entró el mes pasado y pídele que rechace una empresa con él en treinta segundos. Si no puede, acabas de encontrar lo que llevaba todo este tiempo tapando tu conversión en silencio, y nunca fueron los mensajes, ni la web, ni el presupuesto. Simplemente nunca llegaste a decidir para quién es esto.
 
 Para más sobre posicionamiento y go-to-market, echa un vistazo a nuestras [ideas](/es/insights).
 

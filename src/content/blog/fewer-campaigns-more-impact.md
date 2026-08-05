@@ -33,7 +33,7 @@ Here's the uncomfortable math. Attention, budget, and team focus are finite. You
 
 And most channels have a threshold. Below a certain level of spend, frequency, and consistency, a campaign simply doesn't register. Your buyers don't see it enough to remember it. The algorithm doesn't get enough signal to optimize. The team doesn't run it enough times to learn what works. You're paying for the campaign without buying the outcome, because you never crossed the line where it starts to compound.
 
-Fewer, bigger bets clear that threshold. Concentrate the same budget into two campaigns instead of eight and each one now has the spend to be seen, the runway to be iterated, and enough of the team's brain to be improved week over week. That's not doing less. That's the same resources finally arranged to break through instead of dissolve.
+Fewer, bigger bets clear that threshold. Concentrate the same budget into two campaigns instead of eight and each one now has the spend to be seen, the runway to be iterated, and enough of the team's brain to be improved week over week. That isn't doing less, it's the same resources finally arranged to break through instead of dissolve.
 
 This is the difference between motion and progress. A busy team spreading thin generates a lot of motion. A focused team generates results. If your team is stuck in reactive mode and everything already feels urgent, the [operating-system problem](/insights) usually sits underneath the portfolio problem, and it's worth fixing both.
 

@@ -68,7 +68,7 @@ Esto no es un argumento contra usar la IA. Es un argumento para usarla con una c
 
 Tres cosas que marcan la diferencia en la práctica.
 
-**Define qué requiere criterio humano antes de empezar.** Posicionamiento, jerarquía de mensajes, concepto de campaña, segmentación de audiencia: no son tareas que delegar. Son el trabajo que hace coherente cada activo posterior. Construye esa capa con tu equipo y luego usa la IA para ejecutar sobre ella.
+**Define qué requiere criterio humano antes de empezar.** Posicionamiento, jerarquía de mensajes, concepto de campaña, segmentación de audiencia: no son tareas que delegar, sino el trabajo que hace coherente cada activo posterior. Construye esa capa con tu equipo y luego usa la IA para ejecutar sobre ella.
 
 **Crea un brief compartido que viaje.** El mayor riesgo de coherencia es que varias personas prompteen de forma independiente sin contexto compartido. Un brief bien construido, con posicionamiento, reglas de voz, definición de audiencia y objetivos de campaña, usado como input de cada tarea asistida por IA, reduce drásticamente la deriva. También hace mucho más fácil detectar cuándo algo se ha salido de la marca.
 

@@ -88,6 +88,22 @@ Images are shared across languages (they're abstract/duotone, language-neutral);
   - Spanish (Spain): euro first, dollar in parentheses, ES number format (period as thousands separator, symbol after the amount) → `200.000 € (220.000 $)`.
   - Large round figures follow the same rule, e.g. EN `$2.2M (€2M)` / ES `2 M€ (2,2 M$)`. Rhetorical "trillion" industry stats use Spain's long scale: `$1 trillion` → `1 billón de dólares`.
 
+### Anti-slop rules (the humanizer layer)
+
+The prose problem is **not** vocabulary. It's uniformity of rhythm: the same rhetorical machine running in every piece. These rules are budgets, not bans, because each device is good once and mechanical four times.
+
+- **Fragment budget: max ~5% of sentences under 5 words, and never three in a row.** Staccato runs ("Confident. Rehearsed. Living on slide six.") are the loudest AI tell in modern prose. Fix by folding into one sentence with real subordination.
+- **Antithesis budget: max 1–2 per article, and only where the contrast is the actual point.** The `X isn't Y. It's Z.` / `Not because A, but because B.` construction is the house engine. In a headline it's craft; repeated four times in body copy it's a machine.
+- **No two pieces open the same way.** Rotate the opening move deliberately: second-person imperative ("Open your homepage…"), scene-setter ("There's a stat that…"), direct claim, anecdote, a number, a quoted objection. Check the last five pieces before writing the sixth.
+- **Don't end every section on a punchline.** Some sections should just stop when the point is made. A zinger at every section break reads as generated.
+- **Vary sentence length across pieces, not just within them.** If every article has the same rhythm signature, that itself is the tell.
+- **Break perfect parallelism.** Triads where all three items have identical grammatical shape, and "not A, not B, not C" runs, should be uneven or cut to two.
+- **No crystallized phrases reused across pages.** Phrases like "keep score the way the business does" or "sat in the rooms where…" must not appear on more than one page. Grep before shipping.
+- **Prefer a specific admission to a general aphorism.** "We've lost work that way and would do it again" beats "Trust compounds faster than billings."
+- Avoid em-dashes as sentence separators (see above). Also avoid: "move the needle", "no fluff, no filler", "at the end of the day", "game-changer". In ES avoid calques: "mover la aguja", "comezón", "a la hora de" as filler.
+
+Brand claims are exempt: the taglines under **Good examples of tone** and the "30 minutes. No pitch." refrain are assets and stay as written.
+
 ### Good examples of tone
 
 - "Your marketing budget isn't the problem. How you use it is."

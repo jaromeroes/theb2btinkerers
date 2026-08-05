@@ -22,7 +22,7 @@ Un CMO a tiempo completo, por definición, solo ha trabajado dentro de tu empres
 
 Eso es valioso para muchas cosas. Es un lastre para otras.
 
-Cuando necesitas a alguien que cuestione los supuestos que se han calcificado en tu organización durante años —el targeting que nadie discute, los mensajes que "siempre funcionaron", el mix de canales que no ha cambiado desde 2019— la mirada de dentro es una desventaja.
+Cuando necesitas a alguien que cuestione los supuestos que se han calcificado en tu organización durante años (el targeting que nadie discute, los mensajes que "siempre funcionaron", el mix de canales que no ha cambiado desde 2019), la mirada de dentro es una desventaja.
 
 Un CMO fraccional que ha trabajado en 8 a 12 empresas B2B en los últimos tres años trae algo distinto: una visión actual y calibrada de lo que de verdad funciona en el mercado. No teoría. No un framework de una conferencia. Reconocimiento de patrones real, sacado de situaciones reales.
 
@@ -34,17 +34,17 @@ Ha visto tu problema antes. Normalmente más de una vez. Sabe qué soluciones lu
 
 Hay un momento concreto en el crecimiento de una empresa B2B en el que el modelo fraccional tiene más sentido. Es la brecha entre "marketing es quien lleva la web y los eventos" y "necesitamos una función de marketing en condiciones, con liderazgo de verdad".
 
-En esta etapa, una contratación senior a tiempo completo suele ser el movimiento equivocado. No porque la empresa no pueda beneficiarse de un liderazgo de marketing senior —desde luego que puede—, sino porque un CMO full-time en esta etapa necesita que la empresa esté lista para apoyarlo: un equipo que dirigir, un presupuesto del que ser dueño, una infraestructura comercial en la que trabajar.
+En esta etapa, una contratación senior a tiempo completo suele ser el movimiento equivocado. No porque la empresa no pueda beneficiarse de un liderazgo de marketing senior (desde luego que puede), sino porque un CMO full-time en esta etapa necesita que la empresa esté lista para apoyarlo: un equipo que dirigir, un presupuesto del que ser dueño, una infraestructura comercial en la que trabajar.
 
 Si esas cosas no están, estás pagando salario senior para que alguien dedique sus primeros seis meses a averiguar dónde se ha metido.
 
 Un CMO fraccional puede hacer ese trabajo de diagnóstico en semanas, no en meses. Puede construir la estrategia, definir la estructura del equipo, fijar el marco de presupuesto y establecer las métricas comerciales, y luego pasárselo a una contratación a tiempo completo que se incorpora a una función lista para funcionar, no a una que tiene que construir desde cero.
 
-Eso no es un apaño. Es una secuenciación más inteligente de la inversión.
+Eso no es un apaño, sino una secuenciación más inteligente de la inversión.
 
 ![Dos plataformas unidas por un andamiaje: caos a la izquierda, orden estructurado a la derecha](../../assets/blog/fractional-cmo-seniority-gap.webp)
 
-## Qué buscar, y qué evitar
+## Qué buscar y qué evitar
 
 No todos los CMO fraccionales son iguales, y el mercado se ha llenado de consultores que se han reetiquetado.
 
