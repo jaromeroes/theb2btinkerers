@@ -39,6 +39,13 @@ const langTargets: Record<Lang, string> = {
   en: slashed(lang === 'en' ? currentPath : (alt.en ?? '/')),
   es: slashed(lang === 'es' ? currentPath : (alt.es ?? '/es/')),
 };
+
+// The other language, for the translation offer. Null when this page has no
+// counterpart (an EN-only article), so nothing is offered.
+const otherLang: Lang | null = lang === 'en' ? 'es' : 'en';
+const otherHref = otherLang === 'es'
+  ? (alt.es ? slashed(alt.es) : null)
+  : (alt.en ? slashed(alt.en) : null);
 ---
 <!DOCTYPE html>
 <html lang={htmlLang[lang]}>
@@ -68,6 +75,18 @@ const langTargets: Record<Lang, string> = {
 <body>
 
 <a class="skip-link" href="#main-content">{t.site.skipToContent}</a>
+
+{/* Translation offer. Rendered hidden and only revealed by the script at the
+    foot of this file when the visitor's browser prefers the other language, so
+    the served HTML is identical for everyone including crawlers. */}
+{otherLang && otherHref && (
+  <div class="lang-offer" id="lang-offer" data-offer-lang={otherLang} hidden>
+    <span class="lang-offer-text">{t.nav.langOffer}</span>
+    <a class="lang-offer-cta" href={otherHref} hreflang={otherLang} data-lang-pref={otherLang}>{t.nav.langOfferCta}</a>
+    <button class="lang-offer-x" type="button" data-offer-dismiss aria-label={t.nav.langOfferDismiss}>&times;</button>
+  </div>
+)}
+
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
     <a class="nav-logo" href={p('/')}><img src="/logo.svg" alt={t.site.logoAlt} class="nav-logo-img" width="99" height="36"/></a>
@@ -210,6 +229,20 @@ const langTargets: Record<Lang, string> = {
 
 <style>
 .nav-right{display:flex;align-items:center;gap:clamp(14px,2vw,24px)}
+/* Translation offer bar. Rendered with [hidden]; the script un-hides it only
+   when the visitor's browser prefers the other language. */
+.lang-offer{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 14px;
+  padding:10px var(--pad);background:var(--forest);color:var(--cream);
+  font-family:'DM Mono',ui-monospace,monospace;font-size:13px;line-height:1.4}
+.lang-offer[hidden]{display:none}
+.lang-offer-text{opacity:.9}
+.lang-offer-cta{color:var(--lime);text-decoration:underline;text-underline-offset:3px;font-weight:500}
+.lang-offer-cta:hover{text-decoration-thickness:2px}
+.lang-offer-x{background:none;border:0;color:var(--cream);opacity:.6;cursor:pointer;
+  font-size:20px;line-height:1;padding:0 4px}
+.lang-offer-x:hover{opacity:1}
+@media (max-width:600px){.lang-offer{font-size:12px;gap:6px 10px}}
+
 .lang-switch{display:flex;align-items:center;gap:6px}
 .lang-opt{font-size:12px;font-weight:700;letter-spacing:.04em;color:rgba(245,240,232,.5);text-decoration:none;transition:color .15s}
 .lang-opt:hover{color:var(--cream)}
@@ -323,19 +356,39 @@ document.getElementById('nav-services-toggle')?.addEventListener('click', functi
   });
 })();
 
-/* Remember an explicit language choice.
-   netlify/edge-functions/lang-redirect.ts sends first-time visitors from Spain
-   and Latin America to /es/. This cookie is how they opt out: once someone has
-   used the switcher, the edge function stops redirecting them, so choosing
-   English on /es/ does not bounce straight back. */
+/* Offer the translation to visitors whose browser is set to the other language.
+   Deliberately an offer, never a redirect: every URL answers identically for
+   every visitor, so there is nothing for Google to read as cloaking and nothing
+   for Search Console to flag. Runs entirely client-side and only ever adds a
+   link, so a crawler executing this sees the same page a visitor does. */
 (function () {
-  document.querySelectorAll('[data-lang-pref]').forEach(function (el) {
-    el.addEventListener('click', function () {
-      var v = el.getAttribute('data-lang-pref');
-      document.cookie =
-        'lang-pref=' + v + ';path=/;max-age=31536000;samesite=lax' +
-        (location.protocol === 'https:' ? ';secure' : '');
-    });
+  var el = document.getElementById('lang-offer');
+  if (!el) return;
+
+  var offered = el.getAttribute('data-offer-lang');   // language being offered
+  var current = document.documentElement.lang.slice(0, 2);
+  if (!offered || offered === current) return;
+
+  // Respect an explicit choice: using the switcher, or dismissing this, stops
+  // the offer coming back.
+  try {
+    if (localStorage.getItem('lang-pref')) return;
+  } catch (e) { /* private mode: just show it */ }
+
+  var browser = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+  if (browser.slice(0, 2).toLowerCase() !== offered) return;
+
+  el.hidden = false;
+
+  function remember(v) {
+    try { localStorage.setItem('lang-pref', v); } catch (e) { /* ignore */ }
+  }
+  el.querySelector('[data-offer-dismiss]').addEventListener('click', function () {
+    el.hidden = true;
+    remember(current);
+  });
+  document.querySelectorAll('[data-lang-pref]').forEach(function (a) {
+    a.addEventListener('click', function () { remember(a.getAttribute('data-lang-pref')); });
   });
 })();
 </script>

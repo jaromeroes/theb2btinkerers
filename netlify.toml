@@ -2,11 +2,17 @@
   command = "npm run build"
   publish = "dist"
 
-# ─────────── Language routing by country ───────────
-# Handled by netlify/edge-functions/lang-redirect.ts, which runs on `/` only.
-# It is an edge function rather than a [[redirects]] rule because the decision
-# needs the request cookie and user agent, and redirect conditions can read
-# neither. See the comments in that file for why.
+# ─────────── Language routing ───────────
+# There is deliberately no server-side language redirect. An earlier version
+# geo-redirected ES/LATAM visitors from `/` to `/es/` and skipped the redirect
+# for crawlers, which meant serving Googlebot something different from a real
+# visitor on the same IP. That is cloaking under Google's spam policies, and
+# dropping the crawler check instead would have made Search Console report `/`
+# as a redirect whenever Google crawled from Europe.
+#
+# Every URL now answers identically for everyone. Spanish speakers are offered
+# the translation by a dismissible banner (see Base.astro), and hreflang tells
+# Google which pages correspond.
 
 [build.environment]
   # Astro 7 requires Node >= 22.12. Keep this in step with .nvmrc and the

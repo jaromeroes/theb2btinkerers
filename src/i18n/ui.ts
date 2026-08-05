@@ -22,6 +22,11 @@ export const ui = {
       joinMobile: 'Join the team',
       cta: "Let's talk →",
       langSwitchLabel: 'Language',
+      // Shown to Spanish-speaking browsers on an English page. Offers the
+      // translation; never redirects. See Base.astro.
+      langOffer: 'Esta página también está disponible en español.',
+      langOfferCta: 'Ver en español',
+      langOfferDismiss: 'Cerrar',
     },
     contact: {
       eyebrow: "Let's talk",
@@ -75,6 +80,10 @@ export const ui = {
       joinMobile: 'Únete al equipo',
       cta: 'Hablemos →',
       langSwitchLabel: 'Idioma',
+      // Shown to English-speaking browsers on a Spanish page.
+      langOffer: 'This page is also available in English.',
+      langOfferCta: 'View in English',
+      langOfferDismiss: 'Close',
     },
     contact: {
       eyebrow: 'Hablemos',
