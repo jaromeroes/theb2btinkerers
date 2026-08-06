@@ -20,3 +20,7 @@ Thumbs.db
 # logs
 npm-debug.log*
 yarn-error.log*
+
+# credentials — never commit
+*service-account*.json
+*credentials*.json

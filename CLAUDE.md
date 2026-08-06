@@ -174,6 +174,16 @@ Instead `Base.astro` renders a `#lang-offer` bar, `hidden`, on every page. A scr
 - Reverting a commit triggers automatic redeploy of the prior version.
 - Commit messages should be descriptive and in English.
 
+## SEO & analytics monitoring
+
+Setup and rationale: **`docs/seo-monitoring.md`**.
+
+- **Google Search Console** via the `mcp-server-gsc` MCP server (needs a Google service account added as a Search Console user).
+- **Umami** via `scripts/umami-report.mjs`, a dependency-free script against Umami's REST API. Deliberately not an MCP server: the only published one had ~50 downloads/month and a single maintainer, and it would hold a live API key.
+- **DataForSEO** not set up; it is the only paid source and answers what GSC cannot (competitors, volumes, backlinks).
+
+Credentials live outside the repo. `.gitignore` blocks `*service-account*.json` and `*credentials*.json` as a backstop.
+
 ## Analytics & Integrations
 
 - **Umami Cloud** (Hobby tier) — website ID: `4b7eeb1c-03ad-4347-ab65-9bcbc445e068`
