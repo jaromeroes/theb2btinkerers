@@ -31,7 +31,7 @@ claude mcp add gsc \
   -- npx -y mcp-server-gsc
 ```
 
-Verify with `claude mcp list` — it should report `gsc: ✔ Connected`.
+`claude mcp list` will report `gsc: ✔ Connected` — but that only proves the process started. The server does not validate credentials at startup (verified: it prints "running on stdio" even when pointed at a nonexistent credentials file), so connected is not the same as working. Confirm by actually asking it for data; a 403 there means step 6 was missed.
 
 ## Umami
 
